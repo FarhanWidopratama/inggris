@@ -108,11 +108,11 @@ export default function Home() {
             <Hero3D />
             {/* floating preview card over 3D */}
             <motion.div
-              initial={{ opacity: 0, y: 20, rotate: -2 }}
-              animate={{ opacity: 1, y: 0, rotate: -1.5 }}
-              transition={{ delay: 0.8, duration: 0.7 }}
-              whileHover={{ rotate: 0, y: -6, scale: 1.02 }}
-              className="absolute bottom-[18px] left-3 right-3 rounded-[18px] border border-white/20 bg-white/90 p-4 shadow-[0_20px_60px_rgba(0,0,0,0.18)] backdrop-blur sm:left-6 sm:right-6"
+              initial={{ opacity: 0, y: 20, rotate: -1.5 }}
+              animate={{ opacity: 1, y: 0, rotate: -1.2 }}
+              transition={{ delay: 0.85, duration: 0.65 }}
+              whileHover={{ rotate: 0, y: -5, scale: 1.015 }}
+              className="absolute bottom-[12px] left-3 right-3 rounded-[18px] border border-white/20 bg-white/92 p-3.5 shadow-[0_16px_48px_rgba(0,0,0,0.16)] backdrop-blur sm:bottom-[14px] sm:left-6 sm:right-6 sm:p-4"
             >
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold tracking-widest text-zinc-500">HARI INI • LEVEL 1</span>

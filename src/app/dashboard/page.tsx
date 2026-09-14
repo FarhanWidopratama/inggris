@@ -10,6 +10,14 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function DashboardPage() {
   const [progress, setProgress] = useState<UserProgress | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const m = window.matchMedia("(max-width: 640px)");
+    const onChange = () => setIsMobile(m.matches);
+    onChange();
+    m.addEventListener("change", onChange);
+    return () => m.removeEventListener("change", onChange);
+  }, []);
 
   useEffect(() => {
     setProgress(loadProgress());
@@ -70,7 +78,8 @@ export default function DashboardPage() {
         <div className="relative mt-6 grid gap-4 sm:grid-cols-3" style={{ perspective: 1000 }}>
           {/* PROGRESS 3D */}
           <motion.div
-            whileHover={{ y: -6, rotateX: 4, rotateY: -3, scale: 1.02 }}
+            whileHover={isMobile ? undefined : { y: -6, rotateX: 4, rotateY: -3, scale: 1.02 }}
+            whileTap={isMobile ? { scale: 0.98 } : undefined}
             transition={{ type: "spring", stiffness: 300, damping: 18 }}
             style={{ transformStyle: "preserve-3d" }}
             className="relative overflow-hidden rounded-2xl border border-zinc-200 bg-[#fcfbf8] p-5 shadow-sm"
@@ -95,7 +104,8 @@ export default function DashboardPage() {
 
           {/* STREAK 3D */}
           <motion.div
-            whileHover={{ y: -6, rotateX: 4, rotateY: 3, scale: 1.02 }}
+            whileHover={isMobile ? undefined : { y: -6, rotateX: 4, rotateY: 3, scale: 1.02 }}
+            whileTap={isMobile ? { scale: 0.98 } : undefined}
             transition={{ type: "spring", stiffness: 300, damping: 18 }}
             style={{ transformStyle: "preserve-3d" }}
             className="relative overflow-hidden rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-white p-5 shadow-sm"
@@ -118,7 +128,8 @@ export default function DashboardPage() {
 
           {/* NEXT UP 3D */}
           <motion.div
-            whileHover={{ y: -6, rotateX: -4, rotateY: 3, scale: 1.02 }}
+            whileHover={isMobile ? undefined : { y: -6, rotateX: -4, rotateY: 3, scale: 1.02 }}
+            whileTap={isMobile ? { scale: 0.98 } : undefined}
             transition={{ type: "spring", stiffness: 300, damping: 18 }}
             style={{ transformStyle: "preserve-3d" }}
             className="relative overflow-hidden rounded-2xl border border-amber-200 bg-gradient-to-br from-amber-50 to-white p-5 shadow-sm"

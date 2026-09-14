@@ -4,6 +4,19 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { levels } from "@/lib/curriculum";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const m = window.matchMedia("(max-width: 640px)");
+    const onChange = () => setIsMobile(m.matches);
+    onChange();
+    m.addEventListener("change", onChange);
+    return () => m.removeEventListener("change", onChange);
+  }, []);
+  return isMobile;
+}
 
 const Hero3D = dynamic(() => import("@/components/3d/Hero3D"), { ssr: false });
 
@@ -17,6 +30,7 @@ const fadeUp = {
 };
 
 export default function Home() {
+  const isMobile = useIsMobile();
   return (
     <div className="overflow-x-hidden">
       {/* HERO 3D WOW */}
@@ -139,12 +153,13 @@ export default function Home() {
           {levels.map((lvl, i) => (
             <motion.div
               key={lvl.id}
-              initial={{ opacity: 0, y: 30, rotateX: -10 }}
+              initial={{ opacity: 0, y: 30, rotateX: isMobile ? 0 : -10 }}
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.55, delay: i * 0.05, ease: [0.22, 1, 0.36, 1] }}
-              whileHover={{ y: -10, rotateY: -6, rotateX: 4, scale: 1.02 }}
-              style={{ transformStyle: "preserve-3d" }}
+              whileHover={isMobile ? undefined : { y: -10, rotateY: -6, rotateX: 4, scale: 1.02 }}
+              whileTap={isMobile ? { scale: 0.98 } : undefined}
+              style={{ transformStyle: "preserve-3d", perspective: isMobile ? 600 : 1000 }}
               className="group relative rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)]"
             >
               <div className="absolute inset-0 rounded-2xl opacity-0 blur-xl transition group-hover:opacity-100" style={{ background: `radial-gradient(500px 180px at 50% 0%, ${lvl.color.includes("emerald") ? "rgba(16,185,129,0.18)" : lvl.color.includes("blue") ? "rgba(14,165,233,0.18)" : "rgba(245,158,11,0.16)"}, transparent)` }} />

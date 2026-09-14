@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { QuizQuestion } from "@/lib/types";
+import { saveAttempt } from "@/lib/attempts";
 
 export default function Quiz({ questions, onComplete }: { questions: QuizQuestion[]; onComplete?: (score: number) => void }) {
   const [idx, setIdx] = useState(0);
@@ -18,6 +19,12 @@ export default function Quiz({ questions, onComplete }: { questions: QuizQuestio
     setPicked(i);
     setShowResult(true);
     if (i === cur.answer) setScore((s) => s + 1);
+    // record attempt for guru koreksi
+    const isCorrect = i === cur.answer;
+    try {
+      const lessonId = cur.id.split("-q")[0] || "unknown";
+      saveAttempt({ id: cur.id, lessonId, questionId: cur.question, picked: i, correct: cur.answer, isCorrect, at: new Date().toISOString(), explanation: cur.explanation });
+    } catch {}
   }
 
   function next() {

@@ -31,11 +31,17 @@ export default function Navbar() {
           <Link href="/dashboard" className={linkCls("/dashboard")}>
             Dashboard
           </Link>
-          <Link href="/speaking" className={linkCls("/speaking")}>
-            Speaking 3D
+          <Link href="/hafalan" className={linkCls("/hafalan")}>
+            Hafalan
           </Link>
-          <Link href="/dashboard#levels" className="hidden sm:inline rounded-full px-4 py-2 text-sm font-medium text-zinc-600 hover:bg-zinc-100">
-            Level
+          <Link href="/grammar" className={linkCls("/grammar")}>
+            Grammar
+          </Link>
+          <Link href="/history" className={linkCls("/history")}>
+            Record
+          </Link>
+          <Link href="/speaking" className={linkCls("/speaking")}>
+            Speaking
           </Link>
         </nav>
         <div className="flex items-center gap-2">
@@ -43,7 +49,7 @@ export default function Navbar() {
             <span>🔥</span> {streak} streak
           </div>
           <div className="flex items-center gap-1 rounded-full bg-zinc-900 px-3 py-1.5 text-xs font-bold text-white">
-            ✓ {completed}/10
+            ✓ {completed}/60
           </div>
         </div>
       </div>

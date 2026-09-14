@@ -121,7 +121,7 @@ export default function LearnPage() {
 
         {tab === "vocab" && (
           <div className="space-y-4">
-            <Flashcard vocab={lesson.vocab} />
+            <Flashcard vocab={lesson.vocab} lessonId={lesson.id} />
             <div className="rounded-2xl border border-zinc-200 bg-white p-4">
               <h4 className="text-sm font-bold">Daftar Vocab Lengkap</h4>
               <div className="mt-3 grid gap-2 sm:grid-cols-2">

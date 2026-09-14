@@ -31,17 +31,20 @@ export default function Navbar() {
           <Link href="/dashboard" className={linkCls("/dashboard")}>
             Dashboard
           </Link>
+          <Link href="/review" className={linkCls("/review")}>
+            Review
+          </Link>
           <Link href="/hafalan" className={linkCls("/hafalan")}>
             Hafalan
-          </Link>
-          <Link href="/grammar" className={linkCls("/grammar")}>
-            Grammar
           </Link>
           <Link href="/history" className={linkCls("/history")}>
             Record
           </Link>
           <Link href="/speaking" className={linkCls("/speaking")}>
             Speaking
+          </Link>
+          <Link href="/auth" className={linkCls("/auth")}>
+            Auth
           </Link>
         </nav>
         <div className="flex items-center gap-2">

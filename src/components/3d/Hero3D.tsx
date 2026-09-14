@@ -40,7 +40,7 @@ function FloatingBook({ position, rotation, color, scale = 1 }: { position: [num
   );
 }
 
-function FloatingLetter({ letter, position, color }: { letter: string; position: [number, number, number]; color: string }) {
+function FloatingLetter({ position, color }: { position: [number, number, number]; color: string }) {
   const ref = useRef<THREE.Mesh>(null);
   useFrame((state) => {
     if (!ref.current) return;
@@ -51,7 +51,40 @@ function FloatingLetter({ letter, position, color }: { letter: string; position:
     <Float speed={2} rotationIntensity={0.5} floatIntensity={1}>
       <mesh ref={ref} position={position} castShadow>
         <boxGeometry args={[0.45, 0.45, 0.08]} />
-        <meshStandardMaterial color={color} roughness={0.3} />
+        <meshStandardMaterial color={color} roughness={0.22} metalness={0.3} />
+      </mesh>
+    </Float>
+  );
+}
+
+function FloatingRing({ position, color }: { position: [number, number, number]; color: string }) {
+  const ref = useRef<THREE.Mesh>(null);
+  useFrame((state) => {
+    if (!ref.current) return;
+    ref.current.rotation.x += 0.006;
+    ref.current.rotation.z += 0.004;
+  });
+  return (
+    <Float speed={1.2} rotationIntensity={0.2} floatIntensity={0.6}>
+      <mesh ref={ref} position={position} rotation={[0.6, 0, 0]}>
+        <torusGeometry args={[0.42, 0.06, 16, 32]} />
+        <meshStandardMaterial color={color} roughness={0.25} metalness={0.6} emissive={color} emissiveIntensity={0.12} />
+      </mesh>
+    </Float>
+  );
+}
+
+function FloatingSphere({ position, color, scale }: { position: [number, number, number]; color: string; scale: number }) {
+  const ref = useRef<THREE.Mesh>(null);
+  useFrame((state) => {
+    if (!ref.current) return;
+    ref.current.position.y = position[1] + Math.sin(state.clock.elapsedTime * 1.1 + position[0] * 2) * 0.18;
+  });
+  return (
+    <Float speed={1.8} rotationIntensity={0.4} floatIntensity={0.9}>
+      <mesh ref={ref} position={position} scale={scale} castShadow>
+        <sphereGeometry args={[0.28, 24, 24]} />
+        <meshStandardMaterial color={color} roughness={0.15} metalness={0.5} />
       </mesh>
     </Float>
   );
@@ -60,46 +93,57 @@ function FloatingLetter({ letter, position, color }: { letter: string; position:
 function Scene() {
   return (
     <>
-      <PerspectiveCamera makeDefault position={[0, 1.2, 6]} fov={38} />
-      <ambientLight intensity={0.7} />
-      <directionalLight position={[4, 6, 4]} intensity={1.2} castShadow shadow-mapSize={[1024, 1024]} />
-      <pointLight position={[-3, 2, -2]} intensity={0.6} color="#38bdf8" />
-      <pointLight position={[3, -1, 3]} intensity={0.5} color="#fb7185" />
+      <PerspectiveCamera makeDefault position={[0, 1.1, 6.2]} fov={36} />
+      <ambientLight intensity={0.85} />
+      <directionalLight position={[5, 7, 5]} intensity={1.35} castShadow shadow-mapSize={[2048, 2048]} shadow-bias={-0.0001} />
+      <pointLight position={[-4, 2.5, -2]} intensity={0.75} color="#34d399" />
+      <pointLight position={[4, -0.5, 3.5]} intensity={0.65} color="#38bdf8" />
+      <pointLight position={[0, 3, -3]} intensity={0.45} color="#f472b6" />
 
-      {/* 3 floating books - representing levels */}
-      <FloatingBook position={[-1.6, 0.3, 0]} rotation={[0.2, -0.4, 0.1]} color="#10b981" scale={1} />
-      <FloatingBook position={[0, 0.8, -0.6]} rotation={[0.1, 0.2, -0.05]} color="#0ea5e9" scale={0.85} />
-      <FloatingBook position={[1.5, -0.2, 0.3]} rotation={[-0.15, 0.5, 0.08]} color="#f59e0b" scale={0.9} />
+      {/* 3 floating books - premium palette */}
+      <FloatingBook position={[-1.65, 0.35, 0.2]} rotation={[0.18, -0.42, 0.09]} color="#059669" scale={1.05} />
+      <FloatingBook position={[0.05, 0.92, -0.55]} rotation={[0.12, 0.18, -0.06]} color="#0284c7" scale={0.88} />
+      <FloatingBook position={[1.58, -0.18, 0.4]} rotation={[-0.12, 0.48, 0.07]} color="#d97706" scale={0.92} />
 
-      {/* Floating letter blocks - A B C */}
-      <FloatingLetter letter="A" position={[-0.9, -0.9, 1]} color="#111827" />
-      <FloatingLetter letter="B" position={[0.2, -1.1, 0.8]} color="#059669" />
-      <FloatingLetter letter="C" position={[1.0, -0.8, 0.9]} color="#0284c7" />
+      {/* Floating letter blocks - A B C with metallic */}
+      <FloatingLetter position={[-0.95, -0.95, 1.05]} color="#0f172a" />
+      <FloatingLetter position={[0.18, -1.12, 0.85]} color="#10b981" />
+      <FloatingLetter position={[1.02, -0.82, 0.95]} color="#0ea5e9" />
 
-      <ContactShadows position={[0, -1.6, 0]} opacity={0.32} scale={8} blur={2.8} far={3} />
-      <Environment preset="city" />
+      {/* Premium rings & spheres for depth */}
+      <FloatingRing position={[-0.2, 0.15, -0.9]} color="#10b981" />
+      <FloatingRing position={[1.1, 0.55, -0.7]} color="#38bdf8" />
+      <FloatingSphere position={[-2.05, 0.85, -0.3]} color="#fbbf24" scale={0.7} />
+      <FloatingSphere position={[2.0, 0.35, -0.5]} color="#34d399" scale={0.55} />
+      <FloatingSphere position={[0.0, -1.35, 0.2]} color="#f472b6" scale={0.45} />
+
+      <ContactShadows position={[0, -1.62, 0]} opacity={0.38} scale={9} blur={2.6} far={3.2} color="#0a0a0a" />
+      <Environment preset="studio" />
+      <fog attach="fog" args={["#0a0a0a", 8, 16]} />
     </>
   );
 }
 
 export default function Hero3D() {
   return (
-    <div className="relative h-[360px] w-full overflow-hidden rounded-[28px] bg-gradient-to-br from-zinc-900 via-zinc-900 to-black sm:h-[420px]">
-      {/* subtle grid */}
-      <div className="pointer-events-none absolute inset-0 opacity-[0.07]" style={{ backgroundImage: "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
-      {/* orb glows */}
-      <div className="pointer-events-none absolute -top-10 -right-10 h-56 w-56 rounded-full bg-emerald-500/20 blur-[50px]" />
-      <div className="pointer-events-none absolute -bottom-10 -left-10 h-72 w-72 rounded-full bg-sky-500/15 blur-[60px]" />
-      <Canvas shadows dpr={[1, 1.6]} gl={{ antialias: true, alpha: true }} className="!absolute inset-0">
+    <div className="relative h-[380px] w-full overflow-hidden rounded-[28px] bg-gradient-to-br from-zinc-900 via-[#0f172a] to-black sm:h-[460px]">
+      {/* premium grid + vignette */}
+      <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+      {/* animated orbs - more premium */}
+      <div className="pointer-events-none absolute -top-12 -right-12 h-64 w-64 rounded-full bg-emerald-500/25 blur-[55px]" />
+      <div className="pointer-events-none absolute -bottom-14 -left-14 h-80 w-80 rounded-full bg-sky-500/20 blur-[65px]" />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-500/10 blur-[80px]" />
+      <Canvas shadows dpr={[1, 1.8]} gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }} className="!absolute inset-0">
         <Scene />
       </Canvas>
 
-      {/* overlay labels */}
+      {/* overlay labels - glass premium */}
       <div className="pointer-events-none absolute bottom-4 left-4 right-4 flex items-center justify-between">
-        <div className="rounded-full bg-white/10 px-3 py-1.5 text-xs font-bold tracking-widest text-white backdrop-blur">
-          3D • DRAG TO ROTATE (on desktop)
+        <div className="rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-bold tracking-widest text-white backdrop-blur-md">
+          ✨ 3D PREMIUM • 60 FPS • Three.js
         </div>
-        <div className="hidden rounded-full bg-emerald-500 px-3 py-1.5 text-xs font-bold text-white sm:inline-flex">60 FPS • Three.js</div>
+        <div className="hidden rounded-full bg-gradient-to-r from-emerald-500 to-sky-500 px-3 py-1.5 text-xs font-black text-white shadow-lg sm:inline-flex">Interactive • Hover me</div>
       </div>
     </div>
   );

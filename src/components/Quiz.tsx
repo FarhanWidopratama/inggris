@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import type { QuizQuestion } from "@/lib/types";
 
 export default function Quiz({ questions, onComplete }: { questions: QuizQuestion[]; onComplete?: (score: number) => void }) {
@@ -61,14 +62,15 @@ export default function Quiz({ questions, onComplete }: { questions: QuizQuestio
   }
 
   return (
-    <div className="rounded-2xl border border-zinc-200 bg-white p-6">
+    <div className="relative overflow-hidden rounded-[20px] border border-zinc-200 bg-white p-6 shadow-sm" style={{ perspective: 1000 }}>
+      <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-emerald-100/40 blur-[24px]" />
       <div className="mb-4 flex items-center justify-between">
-        <span className="text-xs font-bold tracking-widest text-zinc-500">QUIZ • {idx + 1} / {questions.length}</span>
-        <span className="rounded-full bg-zinc-900 px-3 py-1 text-xs font-bold text-white">Skor: {score}</span>
+        <span className="rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-black tracking-widest text-zinc-500">QUIZ 3D • {idx + 1} / {questions.length}</span>
+        <span className="rounded-full bg-zinc-900 px-3 py-1 text-xs font-black text-white shadow">Skor: {score}</span>
       </div>
 
-      <h4 className="text-lg font-semibold leading-snug">{cur.question}</h4>
-      {cur.questionId && <p className="text-sm text-zinc-500">{cur.questionId}</p>}
+      <motion.h4 key={idx} initial={{ x: 18, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }} className="text-lg font-black leading-snug">{cur.question}</motion.h4>
+      {cur.questionId && <p className="text-sm font-medium text-zinc-500">{cur.questionId}</p>}
 
       <div className="mt-5 grid gap-2.5">
         {cur.options.map((opt, i) => {
@@ -76,41 +78,56 @@ export default function Quiz({ questions, onComplete }: { questions: QuizQuestio
           const isCorrect = i === cur.answer;
           let cls = "border-zinc-200 bg-white hover:bg-zinc-50";
           if (showResult) {
-            if (isCorrect) cls = "border-emerald-500 bg-emerald-50 text-emerald-900";
+            if (isCorrect) cls = "border-emerald-500 bg-emerald-50 text-emerald-900 shadow-[0_6px_18px_rgba(16,185,129,0.18)]";
             else if (isPicked && !isCorrect) cls = "border-red-400 bg-red-50 text-red-900";
             else cls = "border-zinc-200 bg-zinc-50 opacity-60";
-          } else if (isPicked) cls = "border-zinc-900 bg-zinc-900 text-white";
+          } else if (isPicked) cls = "border-zinc-900 bg-zinc-900 text-white shadow-md";
 
           return (
-            <button key={i} onClick={() => choose(i)} className={`rounded-xl border px-4 py-3 text-left text-sm font-medium transition ${cls}`}>
-              <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-black/5 text-xs font-bold">{String.fromCharCode(65 + i)}</span>
+            <motion.button
+              key={i}
+              onClick={() => choose(i)}
+              whileHover={!showResult ? { scale: 1.015, rotateX: 2, y: -2 } : undefined}
+              whileTap={!showResult ? { scale: 0.98 } : undefined}
+              style={{ transformStyle: "preserve-3d" }}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.04 }}
+              className={`rounded-xl border px-4 py-3 text-left text-sm font-bold transition ${cls}`}
+            >
+              <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-black/5 text-xs font-black">{String.fromCharCode(65 + i)}</span>
               {opt}
-            </button>
+            </motion.button>
           );
         })}
       </div>
 
-      {showResult && (
-        <div className={`mt-4 rounded-xl p-4 text-sm ${picked === cur.answer ? "bg-emerald-50 text-emerald-900" : "bg-amber-50 text-amber-900"}`}>
-          <div className="font-bold">{picked === cur.answer ? "✓ Benar!" : "✗ Kurang tepat"}</div>
-          <div className="mt-1 leading-relaxed">{cur.explanation}</div>
-        </div>
-      )}
+      <AnimatePresence>
+        {showResult && (
+          <motion.div initial={{ opacity: 0, y: 12, scale: 0.96 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0 }} className={`mt-4 rounded-xl p-4 text-sm ${picked === cur.answer ? "bg-emerald-50 text-emerald-900 border border-emerald-200" : "bg-amber-50 text-amber-900 border border-amber-200"}`}>
+            <div className="font-black">{picked === cur.answer ? "✓ Benar! +10 XP" : "✗ Kurang tepat"}</div>
+            <div className="mt-1 leading-relaxed">{cur.explanation}</div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div className="mt-6 flex justify-end">
         {showResult && (
-          <button onClick={() => {
+          <motion.button whileHover={{ scale: 1.04, y: -2 }} whileTap={{ scale: 0.96 }} onClick={() => {
             if (idx + 1 >= questions.length) {
-              const finalScore = score; // score already includes current correct if any (since we setScore earlier)
+              const finalScore = score;
               setDone(true);
               onComplete?.(finalScore);
             } else {
               next();
             }
-          }} className="rounded-full bg-zinc-900 px-6 py-2.5 text-sm font-bold text-white hover:bg-black">
-            {idx + 1 >= questions.length ? "Lihat Hasil →" : "Lanjut →"}
-          </button>
+          }} className="rounded-full bg-zinc-900 px-6 py-2.5 text-sm font-black text-white shadow-[0_10px_20px_rgba(0,0,0,0.16)] hover:bg-black">
+            {idx + 1 >= questions.length ? "Lihat Hasil 3D →" : "Lanjut →"}
+          </motion.button>
         )}
+      </div>
+      <div className="mt-4 h-1.5 overflow-hidden rounded-full bg-zinc-100">
+        <motion.div initial={{ width: 0 }} animate={{ width: `${((idx + (showResult ? 1 : 0)) / questions.length) * 100}%` }} className="h-full bg-gradient-to-r from-emerald-500 to-sky-500" />
       </div>
     </div>
   );

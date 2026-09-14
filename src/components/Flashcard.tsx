@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import type { Vocab } from "@/lib/types";
 
 export default function Flashcard({ vocab }: { vocab: Vocab[] }) {
@@ -10,53 +11,79 @@ export default function Flashcard({ vocab }: { vocab: Vocab[] }) {
 
   function next() {
     setFlipped(false);
-    setTimeout(() => setIdx((i) => (i + 1) % vocab.length), 150);
+    setTimeout(() => setIdx((i) => (i + 1) % vocab.length), 220);
   }
   function prev() {
     setFlipped(false);
-    setTimeout(() => setIdx((i) => (i - 1 + vocab.length) % vocab.length), 150);
+    setTimeout(() => setIdx((i) => (i - 1 + vocab.length) % vocab.length), 220);
   }
 
   return (
-    <div className="rounded-2xl border border-zinc-200 bg-white p-6">
+    <div className="rounded-[20px] border border-zinc-200 bg-white p-5 sm:p-6" style={{ perspective: 1200 }}>
       <div className="mb-4 flex items-center justify-between">
-        <h3 className="text-sm font-bold tracking-widest text-zinc-500">FLASHCARD • {idx + 1} / {vocab.length}</h3>
-        <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-800">Tap untuk balik</span>
+        <h3 className="text-xs font-black tracking-widest text-zinc-500">FLASHCARD 3D • {idx + 1} / {vocab.length}</h3>
+        <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-black text-amber-800">Tap untuk 3D Flip</span>
       </div>
 
-      <div
-        onClick={() => setFlipped(!flipped)}
-        className="cursor-pointer rounded-2xl border-2 border-dashed border-zinc-200 bg-[#fcfbf8] p-8 text-center transition hover:border-zinc-300 sm:p-10"
-      >
-        {!flipped ? (
-          <>
-            <div className="text-3xl font-extrabold tracking-tight sm:text-4xl">{cur.en}</div>
-            <div className="mt-2 text-sm font-mono text-zinc-500">/{cur.pronounce}/</div>
-            <div className="mt-6 text-xs font-bold tracking-widest text-zinc-400">KLIK UNTUK LIHAT ARTI →</div>
-          </>
-        ) : (
-          <>
-            <div className="text-2xl font-bold text-emerald-700 sm:text-3xl">{cur.id}</div>
-            <div className="mt-4 rounded-xl bg-white p-4 text-left text-sm leading-relaxed shadow-sm">
+      {/* 3D Flip Container */}
+      <div className="relative h-[260px] sm:h-[280px]" style={{ perspective: 1200 }}>
+        <motion.div
+          onClick={() => setFlipped(!flipped)}
+          className="relative h-full w-full cursor-pointer"
+          style={{ transformStyle: "preserve-3d" }}
+          animate={{ rotateY: flipped ? 180 : 0 }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          whileHover={{ scale: 1.01, rotateX: flipped ? 180 : 2 }}
+        >
+          {/* Front */}
+          <div
+            className="absolute inset-0 flex flex-col items-center justify-center rounded-[18px] border-2 border-dashed border-zinc-200 bg-gradient-to-br from-[#fcfbf8] to-white p-8 text-center shadow-[0_12px_32px_rgba(0,0,0,0.06)]"
+            style={{ backfaceVisibility: "hidden" }}
+          >
+            <div className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-emerald-100/50 blur-[18px]" />
+            <div className="absolute -left-6 -bottom-6 h-20 w-20 rounded-full bg-sky-100/40 blur-[18px]" />
+            <motion.div initial={{ scale: 0.92 }} animate={{ scale: 1 }} className="relative text-3xl font-black tracking-tight sm:text-4xl">{cur.en}</motion.div>
+            <div className="relative mt-2 font-mono text-sm text-zinc-500">/{cur.pronounce}/</div>
+            <div className="relative mt-6 rounded-full bg-zinc-900 px-4 py-1.5 text-xs font-black tracking-widest text-white">KLIK UNTUK 3D FLIP →</div>
+            <div className="relative mt-2 text-xs font-bold text-zinc-400">hover card untuk tilt</div>
+          </div>
+
+          {/* Back */}
+          <div
+            className="absolute inset-0 flex flex-col items-center justify-center rounded-[18px] border-2 border-emerald-200 bg-gradient-to-br from-emerald-50 to-white p-6 text-center shadow-[0_12px_32px_rgba(0,0,0,0.08)]"
+            style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
+          >
+            <div className="text-2xl font-black text-emerald-700 sm:text-3xl">{cur.id}</div>
+            <div className="mt-4 w-full rounded-xl bg-white p-4 text-left text-sm leading-relaxed shadow-sm">
               <div className="font-semibold text-zinc-900">{cur.example}</div>
               <div className="text-zinc-500">{cur.exampleId}</div>
             </div>
-          </>
-        )}
+            <div className="mt-3 text-xs font-bold tracking-widest text-emerald-600">TAP LAGI UNTUK KEMBALI</div>
+          </div>
+        </motion.div>
       </div>
 
       <div className="mt-6 flex items-center justify-between gap-3">
-        <button onClick={prev} className="rounded-full border border-zinc-200 bg-white px-5 py-2.5 text-sm font-semibold hover:bg-zinc-50">
+        <motion.button whileHover={{ x: -3 }} whileTap={{ scale: 0.96 }} onClick={prev} className="rounded-full border border-zinc-200 bg-white px-5 py-2.5 text-sm font-bold hover:bg-zinc-50">
           ← Sebelumnya
-        </button>
+        </motion.button>
         <div className="flex gap-1.5">
           {vocab.map((_, i) => (
-            <span key={i} className={`h-1.5 w-6 rounded-full transition ${i === idx ? "bg-zinc-900" : "bg-zinc-200"}`} />
+            <motion.span key={i} animate={{ scale: i === idx ? 1.15 : 1, opacity: i === idx ? 1 : 0.5 }} className={`h-1.5 w-6 rounded-full ${i === idx ? "bg-zinc-900" : "bg-zinc-200"}`} />
           ))}
         </div>
-        <button onClick={next} className="rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-bold text-white hover:bg-black">
+        <motion.button whileHover={{ x: 3, scale: 1.03 }} whileTap={{ scale: 0.96 }} onClick={next} className="rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-black text-white shadow-md hover:bg-black">
           Lanjut →
-        </button>
+        </motion.button>
+      </div>
+
+      {/* progress dots 3D bar */}
+      <div className="mt-4 flex gap-1">
+        {vocab.map((_, i) => (
+          <motion.div key={i} className="h-1 flex-1 rounded-full bg-zinc-100 overflow-hidden">
+            <motion.div initial={{ width: 0 }} animate={{ width: i <= idx ? "100%" : "0%" }} transition={{ duration: 0.4, delay: i * 0.03 }} className="h-full bg-gradient-to-r from-emerald-500 to-sky-500" />
+          </motion.div>
+        ))}
       </div>
     </div>
   );

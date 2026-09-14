@@ -20,49 +20,63 @@ export const lessons: Lesson[] = [
     order: 1,
     title: "Sapa & Perkenalan",
     titleEn: "Greeting & Introduction",
-    objective: "Bisa perkenalan 30 detik",
+    objective: "Bisa perkenalan 30 detik + sapa sesuai jam",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Sapa & Perkenalan (Greeting & Introduction) — Bisa perkenalan 30 detik. Fokus 15 menit, hafal EI em.",
+      intro: "Ini pelajaran paling penting. 90% kerja dimulai dari sapa & perkenalan. Hafal EI em, jangan kata per kata.",
       sections: [
       {
-          heading: "1. Pola Sapa & Perkenalan",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Sapaan Sesuai Jam (EI em)",
+          headingId: "Sapaan",
+          body: "Hello/Hi bebas. Good morning (pagi), afternoon (siang 12-18), evening (sore), Good night HANYA mau tidur — jangan buat sapa!",
           examples: [
-            { en: "Example Greeting & Introduction A", id: "Contoh Sapa & Perkenalan A" },
-            { en: "Example Greeting & Introduction B", id: "Contoh Sapa & Perkenalan B" }
+            { en: "Hello! Hi! Good morning, team!", id: "Halo! Hai! Selamat pagi, tim!" },
+            { en: "Good afternoon, Mr. Andi. Good evening!", id: "Selamat siang Pak Andi. Selamat sore!" },
+            { en: "How are you? — I'm good, thank you. And you?", id: "Apa kabar? — Saya baik, terima kasih. Kamu?" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Jawab How are you? → I'm good / I'm great, thanks. And you? Jangan I'm fine terus kalau bos tanya."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Perkenalan 30 Detik (Template Wajib Kerja)",
+          headingId: "Template",
+          body: "Hafal 3 kalimat ini. Ganti [nama] [kota] [job]. Ini juga template interview Tell me about yourself.",
           examples: [
-            { en: "I use Greeting & Introduction at work", id: "Saya pakai Sapa & Perkenalan di kerja" }
-          ]
+            { en: "Hello, my name is Farha. I am from Jakarta.", id: "Halo, nama saya Farha. Saya dari Jakarta." },
+            { en: "I work as a marketing staff at SIMPEG.", id: "Saya kerja sebagai staff marketing di SIMPEG." },
+            { en: "Nice to meet you! I am ready for the meeting.", id: "Senang bertemu! Saya siap rapat." }
+          ],
+          tip: "Rumus: My name is... / I am from... / I work as a... — I = AI, am = em, is = iz, are = ar"
+        },
+        {
+          heading: "3. Pamit Sopan",
+          headingId: "Pamit",
+          body: "Tutup dengan sopan. Have a great day dipakai bos bule tiap hari.",
+          examples: [
+            { en: "Nice to meet you too! See you later!", id: "Senang bertemu juga! Sampai nanti!" },
+            { en: "Have a great day! Thank you so much!", id: "Semoga harimu bagus! Terima kasih banyak!" }
+          ],
+          tip: "Hindari Good night untuk sapa — itu pamit tidur."
         }
       ]
     },
     vocab: [
-      { en: "Thank you", id: "Terima kasih", pronounce: "THENG-kyu", example: "Thank you!", exampleId: "Terima kasih!" },
-      { en: "Please", id: "Tolong", pronounce: "pliiz", example: "Please help me", exampleId: "Tolong bantu saya" },
-      { en: "Yes/No", id: "Ya/Tidak", pronounce: "yes/no", example: "Yes, I am", exampleId: "Ya, saya" },
-      { en: "Good morning", id: "Selamat pagi", pronounce: "gud MOR-ning", example: "Good morning!", exampleId: "Selamat pagi!" },
-      { en: "Good afternoon", id: "Selamat siang", pronounce: "gud af-ter-NUN", example: "Good afternoon", exampleId: "Selamat siang" },
-      { en: "See you", id: "Sampai jumpa", pronounce: "si yu", example: "See you later", exampleId: "Sampai jumpa nanti" },
-      { en: "I am", id: "Saya adalah", pronounce: "ai em", example: "I am ready", exampleId: "Saya siap" },
-      { en: "You are", id: "Kamu adalah", pronounce: "yu ar", example: "You are kind", exampleId: "Kamu baik" },
-      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team!", exampleId: "Halo, tim!" },
-      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina", exampleId: "Nama saya Rina" }
+      { en: "Please help me", id: "Tolong bantu saya", pronounce: "pliiz help mi", example: "Please help me with this.", exampleId: "Tolong bantu saya dengan ini." },
+      { en: "Nice to meet you", id: "Senang bertemu", pronounce: "nais tu miit yu", example: "Nice to meet you, John!", exampleId: "Senang bertemu, John!" },
+      { en: "Good morning team", id: "Selamat pagi tim", pronounce: "gud MOR-ning tiim", example: "Good morning, team! Ready?", exampleId: "Selamat pagi, tim! Siap?" },
+      { en: "How are you", id: "Apa kabar", pronounce: "hau ar yu", example: "How are you today?", exampleId: "Apa kabar hari ini?" },
+      { en: "I am from Jakarta", id: "Saya dari Jakarta", pronounce: "ai em from ja-KAR-ta", example: "I am from Jakarta.", exampleId: "Saya dari Jakarta." },
+      { en: "See you tomorrow", id: "Sampai jumpa besok", pronounce: "si yu tu-MO-rou", example: "See you tomorrow at 9!", exampleId: "Sampai jumpa besok jam 9!" },
+      { en: "I am ready", id: "Saya siap", pronounce: "ai em RE-di", example: "I am ready for meeting.", exampleId: "Saya siap untuk rapat." },
+      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team! Good morning.", exampleId: "Halo, tim! Selamat pagi." },
+      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina Wijaya.", exampleId: "Nama saya Rina Wijaya." },
+      { en: "Thank you so much", id: "Terima kasih banyak", pronounce: "THENG-kyu sou mach", example: "Thank you so much for help!", exampleId: "Terima kasih banyak atas bantuannya!" }
     ],
     quiz: [
-      { id: "1-1-q1", question: "Lesson 1-1 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Greeting & Introduction: ingat EI em pronounce." },
-      { id: "1-1-q2", question: "Lesson 1-1 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Greeting & Introduction: ingat EI em pronounce." },
-      { id: "1-1-q3", question: "Lesson 1-1 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Greeting & Introduction: ingat EI em pronounce." },
-      { id: "1-1-q4", question: "Lesson 1-1 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Greeting & Introduction: ingat EI em pronounce." },
-      { id: "1-1-q5", question: "Lesson 1-1 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Greeting & Introduction: ingat EI em pronounce." }
+      { id: "1-1-q1", question: "My name ____ John (is?)", options: ["My name John", "My name is John (correct)", "I is John", "My are John"], answer: 1, explanation: "My name + IS + nama. EI em: IZ" },
+      { id: "1-1-q2", question: "How are you? Jawab", options: ["I good", "I am good, thank you (correct)", "Me good", "Good you"], answer: 1, explanation: "I AM good, thank you. And you?" },
+      { id: "1-1-q3", question: "I work as a ____ (staff)", options: ["work staff", "work as a staff (correct)", "as work staff", "working as"], answer: 1, explanation: "I work AS A staff." },
+      { id: "1-1-q4", question: "Good morning artinya", options: ["Selamat malam", "Selamat pagi (correct)", "Selamat siang", "Halo"], answer: 1, explanation: "Good morning = pagi, Good night = tidur." },
+      { id: "1-1-q5", question: "Nice to meet you", options: ["Senang bertemu (correct)", "Apa kabar", "Nama saya", "Halo"], answer: 0, explanation: "Nice to meet you = senang bertemu." }
     ]
   },
   {
@@ -71,49 +85,60 @@ export const lessons: Lesson[] = [
     order: 2,
     title: "Angka, Hari & Waktu",
     titleEn: "Numbers, Days & Time",
-    objective: "Bisa sebut tanggal & jam kerja",
+    objective: "Bisa sebut tanggal & jam meeting",
     duration: "20 menit",
     content: {
-      intro: "Pelajaran Angka, Hari & Waktu (Numbers, Days & Time) — Bisa sebut tanggal & jam kerja. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Angka, Hari & Waktu (Numbers, Days & Time) — Bisa sebut tanggal & jam meeting. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Angka, Hari & Waktu",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Numbers, Days & Time A", id: "Contoh Angka, Hari & Waktu A" },
-            { en: "Example Numbers, Days & Time B", id: "Contoh Angka, Hari & Waktu B" }
+            { en: "Nice to meet you, John!", id: "Senang bertemu, John!" },
+            { en: "Good morning, team! Ready?", id: "Selamat pagi, tim! Siap?" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Numbers, Days & Time at work", id: "Saya pakai Angka, Hari & Waktu di kerja" }
-          ]
+            { en: "How are you today?", id: "Apa kabar hari ini?" },
+            { en: "I use Numbers, Days & Time at work today.", id: "Saya pakai Angka, Hari & Waktu di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Numbers, Days & Time now.", id: "Mari latihan Angka, Hari & Waktu sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Yes/No", id: "Ya/Tidak", pronounce: "yes/no", example: "Yes, I am", exampleId: "Ya, saya" },
-      { en: "Good morning", id: "Selamat pagi", pronounce: "gud MOR-ning", example: "Good morning!", exampleId: "Selamat pagi!" },
-      { en: "Good afternoon", id: "Selamat siang", pronounce: "gud af-ter-NUN", example: "Good afternoon", exampleId: "Selamat siang" },
-      { en: "See you", id: "Sampai jumpa", pronounce: "si yu", example: "See you later", exampleId: "Sampai jumpa nanti" },
-      { en: "I am", id: "Saya adalah", pronounce: "ai em", example: "I am ready", exampleId: "Saya siap" },
-      { en: "You are", id: "Kamu adalah", pronounce: "yu ar", example: "You are kind", exampleId: "Kamu baik" },
-      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team!", exampleId: "Halo, tim!" },
-      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina", exampleId: "Nama saya Rina" },
-      { en: "Thank you", id: "Terima kasih", pronounce: "THENG-kyu", example: "Thank you!", exampleId: "Terima kasih!" },
-      { en: "Please", id: "Tolong", pronounce: "pliiz", example: "Please help me", exampleId: "Tolong bantu saya" }
+      { en: "How are you", id: "Apa kabar", pronounce: "hau ar yu", example: "How are you today?", exampleId: "Apa kabar hari ini?" },
+      { en: "I am from Jakarta", id: "Saya dari Jakarta", pronounce: "ai em from ja-KAR-ta", example: "I am from Jakarta.", exampleId: "Saya dari Jakarta." },
+      { en: "See you tomorrow", id: "Sampai jumpa besok", pronounce: "si yu tu-MO-rou", example: "See you tomorrow at 9!", exampleId: "Sampai jumpa besok jam 9!" },
+      { en: "I am ready", id: "Saya siap", pronounce: "ai em RE-di", example: "I am ready for meeting.", exampleId: "Saya siap untuk rapat." },
+      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team! Good morning.", exampleId: "Halo, tim! Selamat pagi." },
+      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina Wijaya.", exampleId: "Nama saya Rina Wijaya." },
+      { en: "Thank you so much", id: "Terima kasih banyak", pronounce: "THENG-kyu sou mach", example: "Thank you so much for help!", exampleId: "Terima kasih banyak atas bantuannya!" },
+      { en: "Please help me", id: "Tolong bantu saya", pronounce: "pliiz help mi", example: "Please help me with this.", exampleId: "Tolong bantu saya dengan ini." },
+      { en: "Nice to meet you", id: "Senang bertemu", pronounce: "nais tu miit yu", example: "Nice to meet you, John!", exampleId: "Senang bertemu, John!" },
+      { en: "Good morning team", id: "Selamat pagi tim", pronounce: "gud MOR-ning tiim", example: "Good morning, team! Ready?", exampleId: "Selamat pagi, tim! Siap?" }
     ],
     quiz: [
-      { id: "1-2-q1", question: "Lesson 1-2 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Numbers, Days & Time: ingat EI em pronounce." },
-      { id: "1-2-q2", question: "Lesson 1-2 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Numbers, Days & Time: ingat EI em pronounce." },
-      { id: "1-2-q3", question: "Lesson 1-2 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Numbers, Days & Time: ingat EI em pronounce." },
-      { id: "1-2-q4", question: "Lesson 1-2 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Numbers, Days & Time: ingat EI em pronounce." },
-      { id: "1-2-q5", question: "Lesson 1-2 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Numbers, Days & Time: ingat EI em pronounce." }
+      { id: "1-2-q1", question: "My name ____ John (is?)", options: ["My name John", "My name is John (correct)", "I is John", "My are John"], answer: 1, explanation: "My name + IS + nama. EI em: IZ" },
+      { id: "1-2-q2", question: "How are you? Jawab", options: ["I good", "I am good, thank you (correct)", "Me good", "Good you"], answer: 1, explanation: "I AM good, thank you. And you?" },
+      { id: "1-2-q3", question: "I work as a ____ (staff)", options: ["work staff", "work as a staff (correct)", "as work staff", "working as"], answer: 1, explanation: "I work AS A staff." },
+      { id: "1-2-q4", question: "Good morning artinya", options: ["Selamat malam", "Selamat pagi (correct)", "Selamat siang", "Halo"], answer: 1, explanation: "Good morning = pagi, Good night = tidur." },
+      { id: "1-2-q5", question: "Nice to meet you", options: ["Senang bertemu (correct)", "Apa kabar", "Nama saya", "Halo"], answer: 0, explanation: "Nice to meet you = senang bertemu." }
     ]
   },
   {
@@ -122,49 +147,62 @@ export const lessons: Lesson[] = [
     order: 3,
     title: "To Be: I am, You are",
     titleEn: "To Be Basics",
-    objective: "Paham am/is/are",
+    objective: "Paham am/is/are tanpa ngapalin",
     duration: "20 menit",
     content: {
-      intro: "Pelajaran To Be: I am, You are (To Be Basics) — Paham am/is/are. Fokus 15 menit, hafal EI em.",
+      intro: "Di Indonesia 'adalah' satu kata, Inggris ada 3: am/is/are. Ini fondasi TOEFL juga.",
       sections: [
       {
-          heading: "1. Pola To Be: I am, You are",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus To Be (EI em)",
+          headingId: "Rumus",
+          body: "I AM (ai em), You/We/They ARE (yu ar/wi ar/dhei ar), He/She/It IS (hi iz/shi iz). Hafal ini 1 menit.",
           examples: [
-            { en: "Example To Be Basics A", id: "Contoh To Be: I am, You are A" },
-            { en: "Example To Be Basics B", id: "Contoh To Be: I am, You are B" }
+            { en: "I am happy. You are kind. We are ready.", id: "Saya senang. Kamu baik. Kita siap." },
+            { en: "He is my manager. She is busy. It is important.", id: "Dia (laki) manajer. Dia (perempuan) sibuk. Ini penting." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "He/She/It selalu IS, bukan are. Ini jebakan TOEFL #1."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Negatif: tambah NOT",
+          headingId: "Negatif",
+          body: "I am NOT busy. Are you busy? — dibalik untuk tanya.",
           examples: [
-            { en: "I use To Be Basics at work", id: "Saya pakai To Be: I am, You are di kerja" }
-          ]
+            { en: "I am not busy. She is not ready.", id: "Saya tidak sibuk. Dia tidak siap." },
+            { en: "Are you ready? Yes, I am. / No, I'm not.", id: "Apakah siap? Ya. / Tidak." },
+            { en: "Is he your boss? Yes, he is.", id: "Apakah dia bosmu? Ya." }
+          ],
+          tip: "Singkat: I'm not, She isn't, They aren't — pakai di chat kerja biar natural."
+        },
+        {
+          heading: "3. Pakai di Kantor (Collocation)",
+          headingId: "Kantor",
+          body: "Langsung pakai 3 kalimat ini besok pagi.",
+          examples: [
+            { en: "I am ready for the meeting at 9.", id: "Saya siap rapat jam 9." },
+            { en: "She is on time. We are busy today.", id: "Dia tepat waktu. Kita sibuk hari ini." }
+          ],
+          tip: "Latih shadowing: denger 🔊 Native → rekam di Speaking 3D → bandingin waveform."
         }
       ]
     },
     vocab: [
-      { en: "Good afternoon", id: "Selamat siang", pronounce: "gud af-ter-NUN", example: "Good afternoon", exampleId: "Selamat siang" },
-      { en: "See you", id: "Sampai jumpa", pronounce: "si yu", example: "See you later", exampleId: "Sampai jumpa nanti" },
-      { en: "I am", id: "Saya adalah", pronounce: "ai em", example: "I am ready", exampleId: "Saya siap" },
-      { en: "You are", id: "Kamu adalah", pronounce: "yu ar", example: "You are kind", exampleId: "Kamu baik" },
-      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team!", exampleId: "Halo, tim!" },
-      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina", exampleId: "Nama saya Rina" },
-      { en: "Thank you", id: "Terima kasih", pronounce: "THENG-kyu", example: "Thank you!", exampleId: "Terima kasih!" },
-      { en: "Please", id: "Tolong", pronounce: "pliiz", example: "Please help me", exampleId: "Tolong bantu saya" },
-      { en: "Yes/No", id: "Ya/Tidak", pronounce: "yes/no", example: "Yes, I am", exampleId: "Ya, saya" },
-      { en: "Good morning", id: "Selamat pagi", pronounce: "gud MOR-ning", example: "Good morning!", exampleId: "Selamat pagi!" }
+      { en: "I am ready", id: "Saya siap", pronounce: "ai em RE-di", example: "I am ready for meeting.", exampleId: "Saya siap untuk rapat." },
+      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team! Good morning.", exampleId: "Halo, tim! Selamat pagi." },
+      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina Wijaya.", exampleId: "Nama saya Rina Wijaya." },
+      { en: "Thank you so much", id: "Terima kasih banyak", pronounce: "THENG-kyu sou mach", example: "Thank you so much for help!", exampleId: "Terima kasih banyak atas bantuannya!" },
+      { en: "Please help me", id: "Tolong bantu saya", pronounce: "pliiz help mi", example: "Please help me with this.", exampleId: "Tolong bantu saya dengan ini." },
+      { en: "Nice to meet you", id: "Senang bertemu", pronounce: "nais tu miit yu", example: "Nice to meet you, John!", exampleId: "Senang bertemu, John!" },
+      { en: "Good morning team", id: "Selamat pagi tim", pronounce: "gud MOR-ning tiim", example: "Good morning, team! Ready?", exampleId: "Selamat pagi, tim! Siap?" },
+      { en: "How are you", id: "Apa kabar", pronounce: "hau ar yu", example: "How are you today?", exampleId: "Apa kabar hari ini?" },
+      { en: "I am from Jakarta", id: "Saya dari Jakarta", pronounce: "ai em from ja-KAR-ta", example: "I am from Jakarta.", exampleId: "Saya dari Jakarta." },
+      { en: "See you tomorrow", id: "Sampai jumpa besok", pronounce: "si yu tu-MO-rou", example: "See you tomorrow at 9!", exampleId: "Sampai jumpa besok jam 9!" }
     ],
     quiz: [
-      { id: "1-3-q1", question: "Lesson 1-3 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola To Be Basics: ingat EI em pronounce." },
-      { id: "1-3-q2", question: "Lesson 1-3 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola To Be Basics: ingat EI em pronounce." },
-      { id: "1-3-q3", question: "Lesson 1-3 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola To Be Basics: ingat EI em pronounce." },
-      { id: "1-3-q4", question: "Lesson 1-3 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola To Be Basics: ingat EI em pronounce." },
-      { id: "1-3-q5", question: "Lesson 1-3 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola To Be Basics: ingat EI em pronounce." }
+      { id: "1-3-q1", question: "My name ____ John (is?)", options: ["My name John", "My name is John (correct)", "I is John", "My are John"], answer: 1, explanation: "My name + IS + nama. EI em: IZ" },
+      { id: "1-3-q2", question: "How are you? Jawab", options: ["I good", "I am good, thank you (correct)", "Me good", "Good you"], answer: 1, explanation: "I AM good, thank you. And you?" },
+      { id: "1-3-q3", question: "I work as a ____ (staff)", options: ["work staff", "work as a staff (correct)", "as work staff", "working as"], answer: 1, explanation: "I work AS A staff." },
+      { id: "1-3-q4", question: "Good morning artinya", options: ["Selamat malam", "Selamat pagi (correct)", "Selamat siang", "Halo"], answer: 1, explanation: "Good morning = pagi, Good night = tidur." },
+      { id: "1-3-q5", question: "Nice to meet you", options: ["Senang bertemu (correct)", "Apa kabar", "Nama saya", "Halo"], answer: 0, explanation: "Nice to meet you = senang bertemu." }
     ]
   },
   {
@@ -173,49 +211,60 @@ export const lessons: Lesson[] = [
     order: 4,
     title: "This, That & Benda",
     titleEn: "This/That & Objects",
-    objective: "Tunjuk barang di kantor",
+    objective: "Tunjuk barang di kantor dengan tepat",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran This, That & Benda (This/That & Objects) — Tunjuk barang di kantor. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran This, That & Benda (This/That & Objects) — Tunjuk barang di kantor dengan tepat. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola This, That & Benda",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example This/That & Objects A", id: "Contoh This, That & Benda A" },
-            { en: "Example This/That & Objects B", id: "Contoh This, That & Benda B" }
+            { en: "See you tomorrow at 9!", id: "Sampai jumpa besok jam 9!" },
+            { en: "I am ready for meeting.", id: "Saya siap untuk rapat." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use This/That & Objects at work", id: "Saya pakai This, That & Benda di kerja" }
-          ]
+            { en: "Hello, team! Good morning.", id: "Halo, tim! Selamat pagi." },
+            { en: "I use This/That & Objects at work today.", id: "Saya pakai This, That & Benda di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice This/That & Objects now.", id: "Mari latihan This, That & Benda sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "I am", id: "Saya adalah", pronounce: "ai em", example: "I am ready", exampleId: "Saya siap" },
-      { en: "You are", id: "Kamu adalah", pronounce: "yu ar", example: "You are kind", exampleId: "Kamu baik" },
-      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team!", exampleId: "Halo, tim!" },
-      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina", exampleId: "Nama saya Rina" },
-      { en: "Thank you", id: "Terima kasih", pronounce: "THENG-kyu", example: "Thank you!", exampleId: "Terima kasih!" },
-      { en: "Please", id: "Tolong", pronounce: "pliiz", example: "Please help me", exampleId: "Tolong bantu saya" },
-      { en: "Yes/No", id: "Ya/Tidak", pronounce: "yes/no", example: "Yes, I am", exampleId: "Ya, saya" },
-      { en: "Good morning", id: "Selamat pagi", pronounce: "gud MOR-ning", example: "Good morning!", exampleId: "Selamat pagi!" },
-      { en: "Good afternoon", id: "Selamat siang", pronounce: "gud af-ter-NUN", example: "Good afternoon", exampleId: "Selamat siang" },
-      { en: "See you", id: "Sampai jumpa", pronounce: "si yu", example: "See you later", exampleId: "Sampai jumpa nanti" }
+      { en: "Thank you so much", id: "Terima kasih banyak", pronounce: "THENG-kyu sou mach", example: "Thank you so much for help!", exampleId: "Terima kasih banyak atas bantuannya!" },
+      { en: "Please help me", id: "Tolong bantu saya", pronounce: "pliiz help mi", example: "Please help me with this.", exampleId: "Tolong bantu saya dengan ini." },
+      { en: "Nice to meet you", id: "Senang bertemu", pronounce: "nais tu miit yu", example: "Nice to meet you, John!", exampleId: "Senang bertemu, John!" },
+      { en: "Good morning team", id: "Selamat pagi tim", pronounce: "gud MOR-ning tiim", example: "Good morning, team! Ready?", exampleId: "Selamat pagi, tim! Siap?" },
+      { en: "How are you", id: "Apa kabar", pronounce: "hau ar yu", example: "How are you today?", exampleId: "Apa kabar hari ini?" },
+      { en: "I am from Jakarta", id: "Saya dari Jakarta", pronounce: "ai em from ja-KAR-ta", example: "I am from Jakarta.", exampleId: "Saya dari Jakarta." },
+      { en: "See you tomorrow", id: "Sampai jumpa besok", pronounce: "si yu tu-MO-rou", example: "See you tomorrow at 9!", exampleId: "Sampai jumpa besok jam 9!" },
+      { en: "I am ready", id: "Saya siap", pronounce: "ai em RE-di", example: "I am ready for meeting.", exampleId: "Saya siap untuk rapat." },
+      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team! Good morning.", exampleId: "Halo, tim! Selamat pagi." },
+      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina Wijaya.", exampleId: "Nama saya Rina Wijaya." }
     ],
     quiz: [
-      { id: "1-4-q1", question: "Lesson 1-4 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola This/That & Objects: ingat EI em pronounce." },
-      { id: "1-4-q2", question: "Lesson 1-4 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola This/That & Objects: ingat EI em pronounce." },
-      { id: "1-4-q3", question: "Lesson 1-4 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola This/That & Objects: ingat EI em pronounce." },
-      { id: "1-4-q4", question: "Lesson 1-4 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola This/That & Objects: ingat EI em pronounce." },
-      { id: "1-4-q5", question: "Lesson 1-4 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola This/That & Objects: ingat EI em pronounce." }
+      { id: "1-4-q1", question: "My name ____ John (is?)", options: ["My name John", "My name is John (correct)", "I is John", "My are John"], answer: 1, explanation: "My name + IS + nama. EI em: IZ" },
+      { id: "1-4-q2", question: "How are you? Jawab", options: ["I good", "I am good, thank you (correct)", "Me good", "Good you"], answer: 1, explanation: "I AM good, thank you. And you?" },
+      { id: "1-4-q3", question: "I work as a ____ (staff)", options: ["work staff", "work as a staff (correct)", "as work staff", "working as"], answer: 1, explanation: "I work AS A staff." },
+      { id: "1-4-q4", question: "Good morning artinya", options: ["Selamat malam", "Selamat pagi (correct)", "Selamat siang", "Halo"], answer: 1, explanation: "Good morning = pagi, Good night = tidur." },
+      { id: "1-4-q5", question: "Nice to meet you", options: ["Senang bertemu (correct)", "Apa kabar", "Nama saya", "Halo"], answer: 0, explanation: "Nice to meet you = senang bertemu." }
     ]
   },
   {
@@ -224,49 +273,60 @@ export const lessons: Lesson[] = [
     order: 5,
     title: "Keluarga & Kepemilikan",
     titleEn: "Family & Possessive",
-    objective: "My/your/his/her",
+    objective: "My/your/his/her + 's",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Keluarga & Kepemilikan (Family & Possessive) — My/your/his/her. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Keluarga & Kepemilikan (Family & Possessive) — My/your/his/her + 's. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Keluarga & Kepemilikan",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Family & Possessive A", id: "Contoh Keluarga & Kepemilikan A" },
-            { en: "Example Family & Possessive B", id: "Contoh Keluarga & Kepemilikan B" }
+            { en: "Hello, team! Good morning.", id: "Halo, tim! Selamat pagi." },
+            { en: "My name is Rina Wijaya.", id: "Nama saya Rina Wijaya." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Family & Possessive at work", id: "Saya pakai Keluarga & Kepemilikan di kerja" }
-          ]
+            { en: "Thank you so much for help!", id: "Terima kasih banyak atas bantuannya!" },
+            { en: "I use Family & Possessive at work today.", id: "Saya pakai Keluarga & Kepemilikan di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Family & Possessive now.", id: "Mari latihan Keluarga & Kepemilikan sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team!", exampleId: "Halo, tim!" },
-      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina", exampleId: "Nama saya Rina" },
-      { en: "Thank you", id: "Terima kasih", pronounce: "THENG-kyu", example: "Thank you!", exampleId: "Terima kasih!" },
-      { en: "Please", id: "Tolong", pronounce: "pliiz", example: "Please help me", exampleId: "Tolong bantu saya" },
-      { en: "Yes/No", id: "Ya/Tidak", pronounce: "yes/no", example: "Yes, I am", exampleId: "Ya, saya" },
-      { en: "Good morning", id: "Selamat pagi", pronounce: "gud MOR-ning", example: "Good morning!", exampleId: "Selamat pagi!" },
-      { en: "Good afternoon", id: "Selamat siang", pronounce: "gud af-ter-NUN", example: "Good afternoon", exampleId: "Selamat siang" },
-      { en: "See you", id: "Sampai jumpa", pronounce: "si yu", example: "See you later", exampleId: "Sampai jumpa nanti" },
-      { en: "I am", id: "Saya adalah", pronounce: "ai em", example: "I am ready", exampleId: "Saya siap" },
-      { en: "You are", id: "Kamu adalah", pronounce: "yu ar", example: "You are kind", exampleId: "Kamu baik" }
+      { en: "Good morning team", id: "Selamat pagi tim", pronounce: "gud MOR-ning tiim", example: "Good morning, team! Ready?", exampleId: "Selamat pagi, tim! Siap?" },
+      { en: "How are you", id: "Apa kabar", pronounce: "hau ar yu", example: "How are you today?", exampleId: "Apa kabar hari ini?" },
+      { en: "I am from Jakarta", id: "Saya dari Jakarta", pronounce: "ai em from ja-KAR-ta", example: "I am from Jakarta.", exampleId: "Saya dari Jakarta." },
+      { en: "See you tomorrow", id: "Sampai jumpa besok", pronounce: "si yu tu-MO-rou", example: "See you tomorrow at 9!", exampleId: "Sampai jumpa besok jam 9!" },
+      { en: "I am ready", id: "Saya siap", pronounce: "ai em RE-di", example: "I am ready for meeting.", exampleId: "Saya siap untuk rapat." },
+      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team! Good morning.", exampleId: "Halo, tim! Selamat pagi." },
+      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina Wijaya.", exampleId: "Nama saya Rina Wijaya." },
+      { en: "Thank you so much", id: "Terima kasih banyak", pronounce: "THENG-kyu sou mach", example: "Thank you so much for help!", exampleId: "Terima kasih banyak atas bantuannya!" },
+      { en: "Please help me", id: "Tolong bantu saya", pronounce: "pliiz help mi", example: "Please help me with this.", exampleId: "Tolong bantu saya dengan ini." },
+      { en: "Nice to meet you", id: "Senang bertemu", pronounce: "nais tu miit yu", example: "Nice to meet you, John!", exampleId: "Senang bertemu, John!" }
     ],
     quiz: [
-      { id: "1-5-q1", question: "Lesson 1-5 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Family & Possessive: ingat EI em pronounce." },
-      { id: "1-5-q2", question: "Lesson 1-5 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Family & Possessive: ingat EI em pronounce." },
-      { id: "1-5-q3", question: "Lesson 1-5 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Family & Possessive: ingat EI em pronounce." },
-      { id: "1-5-q4", question: "Lesson 1-5 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Family & Possessive: ingat EI em pronounce." },
-      { id: "1-5-q5", question: "Lesson 1-5 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Family & Possessive: ingat EI em pronounce." }
+      { id: "1-5-q1", question: "My name ____ John (is?)", options: ["My name John", "My name is John (correct)", "I is John", "My are John"], answer: 1, explanation: "My name + IS + nama. EI em: IZ" },
+      { id: "1-5-q2", question: "How are you? Jawab", options: ["I good", "I am good, thank you (correct)", "Me good", "Good you"], answer: 1, explanation: "I AM good, thank you. And you?" },
+      { id: "1-5-q3", question: "I work as a ____ (staff)", options: ["work staff", "work as a staff (correct)", "as work staff", "working as"], answer: 1, explanation: "I work AS A staff." },
+      { id: "1-5-q4", question: "Good morning artinya", options: ["Selamat malam", "Selamat pagi (correct)", "Selamat siang", "Halo"], answer: 1, explanation: "Good morning = pagi, Good night = tidur." },
+      { id: "1-5-q5", question: "Nice to meet you", options: ["Senang bertemu (correct)", "Apa kabar", "Nama saya", "Halo"], answer: 0, explanation: "Nice to meet you = senang bertemu." }
     ]
   },
   {
@@ -275,49 +335,60 @@ export const lessons: Lesson[] = [
     order: 6,
     title: "There is/are & Di mana",
     titleEn: "There is/are & Places",
-    objective: "Ada di mana",
+    objective: "Ada di mana + preposisi",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran There is/are & Di mana (There is/are & Places) — Ada di mana. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran There is/are & Di mana (There is/are & Places) — Ada di mana + preposisi. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola There is/are & Di mana",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example There is/are & Places A", id: "Contoh There is/are & Di mana A" },
-            { en: "Example There is/are & Places B", id: "Contoh There is/are & Di mana B" }
+            { en: "Thank you so much for help!", id: "Terima kasih banyak atas bantuannya!" },
+            { en: "Please help me with this.", id: "Tolong bantu saya dengan ini." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use There is/are & Places at work", id: "Saya pakai There is/are & Di mana di kerja" }
-          ]
+            { en: "Nice to meet you, John!", id: "Senang bertemu, John!" },
+            { en: "I use There is/are & Places at work today.", id: "Saya pakai There is/are & Di mana di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice There is/are & Places now.", id: "Mari latihan There is/are & Di mana sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Thank you", id: "Terima kasih", pronounce: "THENG-kyu", example: "Thank you!", exampleId: "Terima kasih!" },
-      { en: "Please", id: "Tolong", pronounce: "pliiz", example: "Please help me", exampleId: "Tolong bantu saya" },
-      { en: "Yes/No", id: "Ya/Tidak", pronounce: "yes/no", example: "Yes, I am", exampleId: "Ya, saya" },
-      { en: "Good morning", id: "Selamat pagi", pronounce: "gud MOR-ning", example: "Good morning!", exampleId: "Selamat pagi!" },
-      { en: "Good afternoon", id: "Selamat siang", pronounce: "gud af-ter-NUN", example: "Good afternoon", exampleId: "Selamat siang" },
-      { en: "See you", id: "Sampai jumpa", pronounce: "si yu", example: "See you later", exampleId: "Sampai jumpa nanti" },
-      { en: "I am", id: "Saya adalah", pronounce: "ai em", example: "I am ready", exampleId: "Saya siap" },
-      { en: "You are", id: "Kamu adalah", pronounce: "yu ar", example: "You are kind", exampleId: "Kamu baik" },
-      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team!", exampleId: "Halo, tim!" },
-      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina", exampleId: "Nama saya Rina" }
+      { en: "See you tomorrow", id: "Sampai jumpa besok", pronounce: "si yu tu-MO-rou", example: "See you tomorrow at 9!", exampleId: "Sampai jumpa besok jam 9!" },
+      { en: "I am ready", id: "Saya siap", pronounce: "ai em RE-di", example: "I am ready for meeting.", exampleId: "Saya siap untuk rapat." },
+      { en: "Hello", id: "Halo", pronounce: "he-LOU", example: "Hello, team! Good morning.", exampleId: "Halo, tim! Selamat pagi." },
+      { en: "My name is", id: "Nama saya", pronounce: "mai neim iz", example: "My name is Rina Wijaya.", exampleId: "Nama saya Rina Wijaya." },
+      { en: "Thank you so much", id: "Terima kasih banyak", pronounce: "THENG-kyu sou mach", example: "Thank you so much for help!", exampleId: "Terima kasih banyak atas bantuannya!" },
+      { en: "Please help me", id: "Tolong bantu saya", pronounce: "pliiz help mi", example: "Please help me with this.", exampleId: "Tolong bantu saya dengan ini." },
+      { en: "Nice to meet you", id: "Senang bertemu", pronounce: "nais tu miit yu", example: "Nice to meet you, John!", exampleId: "Senang bertemu, John!" },
+      { en: "Good morning team", id: "Selamat pagi tim", pronounce: "gud MOR-ning tiim", example: "Good morning, team! Ready?", exampleId: "Selamat pagi, tim! Siap?" },
+      { en: "How are you", id: "Apa kabar", pronounce: "hau ar yu", example: "How are you today?", exampleId: "Apa kabar hari ini?" },
+      { en: "I am from Jakarta", id: "Saya dari Jakarta", pronounce: "ai em from ja-KAR-ta", example: "I am from Jakarta.", exampleId: "Saya dari Jakarta." }
     ],
     quiz: [
-      { id: "1-6-q1", question: "Lesson 1-6 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola There is/are & Places: ingat EI em pronounce." },
-      { id: "1-6-q2", question: "Lesson 1-6 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola There is/are & Places: ingat EI em pronounce." },
-      { id: "1-6-q3", question: "Lesson 1-6 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola There is/are & Places: ingat EI em pronounce." },
-      { id: "1-6-q4", question: "Lesson 1-6 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola There is/are & Places: ingat EI em pronounce." },
-      { id: "1-6-q5", question: "Lesson 1-6 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola There is/are & Places: ingat EI em pronounce." }
+      { id: "1-6-q1", question: "My name ____ John (is?)", options: ["My name John", "My name is John (correct)", "I is John", "My are John"], answer: 1, explanation: "My name + IS + nama. EI em: IZ" },
+      { id: "1-6-q2", question: "How are you? Jawab", options: ["I good", "I am good, thank you (correct)", "Me good", "Good you"], answer: 1, explanation: "I AM good, thank you. And you?" },
+      { id: "1-6-q3", question: "I work as a ____ (staff)", options: ["work staff", "work as a staff (correct)", "as work staff", "working as"], answer: 1, explanation: "I work AS A staff." },
+      { id: "1-6-q4", question: "Good morning artinya", options: ["Selamat malam", "Selamat pagi (correct)", "Selamat siang", "Halo"], answer: 1, explanation: "Good morning = pagi, Good night = tidur." },
+      { id: "1-6-q5", question: "Nice to meet you", options: ["Senang bertemu (correct)", "Apa kabar", "Nama saya", "Halo"], answer: 0, explanation: "Nice to meet you = senang bertemu." }
     ]
   },
   {
@@ -326,49 +397,60 @@ export const lessons: Lesson[] = [
     order: 7,
     title: "Kata Kerja Harian",
     titleEn: "Daily Verbs",
-    objective: "50 verb kerja",
+    objective: "50 verb kerja paling sering",
     duration: "18 menit",
     content: {
-      intro: "Pelajaran Kata Kerja Harian (Daily Verbs) — 50 verb kerja. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Kata Kerja Harian (Daily Verbs) — 50 verb kerja paling sering. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Kata Kerja Harian",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Daily Verbs A", id: "Contoh Kata Kerja Harian A" },
-            { en: "Example Daily Verbs B", id: "Contoh Kata Kerja Harian B" }
+            { en: "What time is the meeting?", id: "Jam berapa rapatnya?" },
+            { en: "I work at 9 AM every day.", id: "Saya kerja jam 9 tiap hari." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Daily Verbs at work", id: "Saya pakai Kata Kerja Harian di kerja" }
-          ]
+            { en: "I go to office by bus.", id: "Saya ke kantor naik bus." },
+            { en: "I use Daily Verbs at work today.", id: "Saya pakai Kata Kerja Harian di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Daily Verbs now.", id: "Mari latihan Kata Kerja Harian sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Desk", id: "Meja", pronounce: "desk", example: "My desk", exampleId: "Meja saya" },
-      { en: "Time", id: "Waktu", pronounce: "taim", example: "What time?", exampleId: "Jam berapa?" },
-      { en: "Work", id: "Kerja", pronounce: "werk", example: "I work", exampleId: "Saya kerja" },
-      { en: "Go", id: "Pergi", pronounce: "go", example: "I go to office", exampleId: "Saya pergi ke kantor" },
-      { en: "Eat", id: "Makan", pronounce: "iit", example: "I eat lunch", exampleId: "Saya makan siang" },
-      { en: "Make", id: "Buat", pronounce: "meik", example: "I make report", exampleId: "Saya buat laporan" },
-      { en: "Help", id: "Bantu", pronounce: "help", example: "Please help", exampleId: "Tolong bantu" },
-      { en: "Need", id: "Butuh", pronounce: "niid", example: "I need time", exampleId: "Saya butuh waktu" },
-      { en: "I have", id: "Saya punya", pronounce: "ai hev", example: "I have a laptop", exampleId: "Saya punya laptop" },
-      { en: "Book", id: "Buku", pronounce: "buk", example: "This book", exampleId: "Buku ini" }
+      { en: "I work at 9", id: "Saya kerja jam 9", pronounce: "ai werk et nain", example: "I work at 9 AM every day.", exampleId: "Saya kerja jam 9 tiap hari." },
+      { en: "I go to office", id: "Saya pergi ke kantor", pronounce: "ai go tu O-fis", example: "I go to office by bus.", exampleId: "Saya ke kantor naik bus." },
+      { en: "I need help", id: "Saya butuh bantuan", pronounce: "ai niid help", example: "I need help with Excel.", exampleId: "Saya butuh bantuan Excel." },
+      { en: "How much is it", id: "Berapa harganya", pronounce: "hau mach iz it", example: "How much is this book?", exampleId: "Berapa harga buku ini?" },
+      { en: "Please check", id: "Tolong cek", pronounce: "pliiz chek", example: "Please check the file.", exampleId: "Tolong cek berkasnya." },
+      { en: "I don't understand", id: "Saya tidak paham", pronounce: "ai dount an-der-STEND", example: "I don't understand, sorry.", exampleId: "Saya tidak paham, maaf." },
+      { en: "Where is my desk", id: "Di mana meja saya", pronounce: "wer iz mai desk", example: "Where is my desk?", exampleId: "Di mana meja saya?" },
+      { en: "I have a laptop", id: "Saya punya laptop", pronounce: "ai hev e LEP-top", example: "I have a laptop and a mouse.", exampleId: "Saya punya laptop dan mouse." },
+      { en: "This is my book", id: "Ini buku saya", pronounce: "dis iz mai buk", example: "This is my book, that is yours.", exampleId: "Ini buku saya, itu milikmu." },
+      { en: "What time is it", id: "Jam berapa", pronounce: "wot taim iz it", example: "What time is the meeting?", exampleId: "Jam berapa rapatnya?" }
     ],
     quiz: [
-      { id: "2-1-q1", question: "Lesson 2-1 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Daily Verbs: ingat EI em pronounce." },
-      { id: "2-1-q2", question: "Lesson 2-1 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Daily Verbs: ingat EI em pronounce." },
-      { id: "2-1-q3", question: "Lesson 2-1 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Daily Verbs: ingat EI em pronounce." },
-      { id: "2-1-q4", question: "Lesson 2-1 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Daily Verbs: ingat EI em pronounce." },
-      { id: "2-1-q5", question: "Lesson 2-1 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Daily Verbs: ingat EI em pronounce." }
+      { id: "2-1-q1", question: "I ____ a laptop (have)", options: ["has", "have (correct)", "having", "had"], answer: 1, explanation: "I have, She has." },
+      { id: "2-1-q2", question: "This is ____ book", options: ["me", "my (correct)", "I", "mine"], answer: 1, explanation: "This is MY book." },
+      { id: "2-1-q3", question: "What time ____ it", options: ["are", "is (correct)", "am", "be"], answer: 1, explanation: "What time IS it?" },
+      { id: "2-1-q4", question: "I ____ to office", options: ["go (correct)", "goes", "going", "went"], answer: 0, explanation: "I go, He goes." },
+      { id: "2-1-q5", question: "I don't ____ (understand)", options: ["understands", "understand (correct)", "understanding", "understood"], answer: 1, explanation: "I don't + V1." }
     ]
   },
   {
@@ -377,49 +459,60 @@ export const lessons: Lesson[] = [
     order: 8,
     title: "Saya Punya",
     titleEn: "Have/Has",
-    objective: "I have 2 laptops",
+    objective: "I have vs She has",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Saya Punya (Have/Has) — I have 2 laptops. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Saya Punya (Have/Has) — I have vs She has. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Saya Punya",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Have/Has A", id: "Contoh Saya Punya A" },
-            { en: "Example Have/Has B", id: "Contoh Saya Punya B" }
+            { en: "I go to office by bus.", id: "Saya ke kantor naik bus." },
+            { en: "I need help with Excel.", id: "Saya butuh bantuan Excel." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Have/Has at work", id: "Saya pakai Saya Punya di kerja" }
-          ]
+            { en: "How much is this book?", id: "Berapa harga buku ini?" },
+            { en: "I use Have/Has at work today.", id: "Saya pakai Saya Punya di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Have/Has now.", id: "Mari latihan Saya Punya sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Work", id: "Kerja", pronounce: "werk", example: "I work", exampleId: "Saya kerja" },
-      { en: "Go", id: "Pergi", pronounce: "go", example: "I go to office", exampleId: "Saya pergi ke kantor" },
-      { en: "Eat", id: "Makan", pronounce: "iit", example: "I eat lunch", exampleId: "Saya makan siang" },
-      { en: "Make", id: "Buat", pronounce: "meik", example: "I make report", exampleId: "Saya buat laporan" },
-      { en: "Help", id: "Bantu", pronounce: "help", example: "Please help", exampleId: "Tolong bantu" },
-      { en: "Need", id: "Butuh", pronounce: "niid", example: "I need time", exampleId: "Saya butuh waktu" },
-      { en: "I have", id: "Saya punya", pronounce: "ai hev", example: "I have a laptop", exampleId: "Saya punya laptop" },
-      { en: "Book", id: "Buku", pronounce: "buk", example: "This book", exampleId: "Buku ini" },
-      { en: "Desk", id: "Meja", pronounce: "desk", example: "My desk", exampleId: "Meja saya" },
-      { en: "Time", id: "Waktu", pronounce: "taim", example: "What time?", exampleId: "Jam berapa?" }
+      { en: "How much is it", id: "Berapa harganya", pronounce: "hau mach iz it", example: "How much is this book?", exampleId: "Berapa harga buku ini?" },
+      { en: "Please check", id: "Tolong cek", pronounce: "pliiz chek", example: "Please check the file.", exampleId: "Tolong cek berkasnya." },
+      { en: "I don't understand", id: "Saya tidak paham", pronounce: "ai dount an-der-STEND", example: "I don't understand, sorry.", exampleId: "Saya tidak paham, maaf." },
+      { en: "Where is my desk", id: "Di mana meja saya", pronounce: "wer iz mai desk", example: "Where is my desk?", exampleId: "Di mana meja saya?" },
+      { en: "I have a laptop", id: "Saya punya laptop", pronounce: "ai hev e LEP-top", example: "I have a laptop and a mouse.", exampleId: "Saya punya laptop dan mouse." },
+      { en: "This is my book", id: "Ini buku saya", pronounce: "dis iz mai buk", example: "This is my book, that is yours.", exampleId: "Ini buku saya, itu milikmu." },
+      { en: "What time is it", id: "Jam berapa", pronounce: "wot taim iz it", example: "What time is the meeting?", exampleId: "Jam berapa rapatnya?" },
+      { en: "I work at 9", id: "Saya kerja jam 9", pronounce: "ai werk et nain", example: "I work at 9 AM every day.", exampleId: "Saya kerja jam 9 tiap hari." },
+      { en: "I go to office", id: "Saya pergi ke kantor", pronounce: "ai go tu O-fis", example: "I go to office by bus.", exampleId: "Saya ke kantor naik bus." },
+      { en: "I need help", id: "Saya butuh bantuan", pronounce: "ai niid help", example: "I need help with Excel.", exampleId: "Saya butuh bantuan Excel." }
     ],
     quiz: [
-      { id: "2-2-q1", question: "Lesson 2-2 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Have/Has: ingat EI em pronounce." },
-      { id: "2-2-q2", question: "Lesson 2-2 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Have/Has: ingat EI em pronounce." },
-      { id: "2-2-q3", question: "Lesson 2-2 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Have/Has: ingat EI em pronounce." },
-      { id: "2-2-q4", question: "Lesson 2-2 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Have/Has: ingat EI em pronounce." },
-      { id: "2-2-q5", question: "Lesson 2-2 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Have/Has: ingat EI em pronounce." }
+      { id: "2-2-q1", question: "I ____ a laptop (have)", options: ["has", "have (correct)", "having", "had"], answer: 1, explanation: "I have, She has." },
+      { id: "2-2-q2", question: "This is ____ book", options: ["me", "my (correct)", "I", "mine"], answer: 1, explanation: "This is MY book." },
+      { id: "2-2-q3", question: "What time ____ it", options: ["are", "is (correct)", "am", "be"], answer: 1, explanation: "What time IS it?" },
+      { id: "2-2-q4", question: "I ____ to office", options: ["go (correct)", "goes", "going", "went"], answer: 0, explanation: "I go, He goes." },
+      { id: "2-2-q5", question: "I don't ____ (understand)", options: ["understands", "understand (correct)", "understanding", "understood"], answer: 1, explanation: "I don't + V1." }
     ]
   },
   {
@@ -428,49 +521,60 @@ export const lessons: Lesson[] = [
     order: 9,
     title: "Jadwal & Rutinitas",
     titleEn: "Schedule & Routine",
-    objective: "I wake up at 6",
+    objective: "I wake up at 6, I go to...",
     duration: "18 menit",
     content: {
-      intro: "Pelajaran Jadwal & Rutinitas (Schedule & Routine) — I wake up at 6. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Jadwal & Rutinitas (Schedule & Routine) — I wake up at 6, I go to.... Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Jadwal & Rutinitas",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Schedule & Routine A", id: "Contoh Jadwal & Rutinitas A" },
-            { en: "Example Schedule & Routine B", id: "Contoh Jadwal & Rutinitas B" }
+            { en: "How much is this book?", id: "Berapa harga buku ini?" },
+            { en: "Please check the file.", id: "Tolong cek berkasnya." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Schedule & Routine at work", id: "Saya pakai Jadwal & Rutinitas di kerja" }
-          ]
+            { en: "I don't understand, sorry.", id: "Saya tidak paham, maaf." },
+            { en: "I use Schedule & Routine at work today.", id: "Saya pakai Jadwal & Rutinitas di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Schedule & Routine now.", id: "Mari latihan Jadwal & Rutinitas sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Eat", id: "Makan", pronounce: "iit", example: "I eat lunch", exampleId: "Saya makan siang" },
-      { en: "Make", id: "Buat", pronounce: "meik", example: "I make report", exampleId: "Saya buat laporan" },
-      { en: "Help", id: "Bantu", pronounce: "help", example: "Please help", exampleId: "Tolong bantu" },
-      { en: "Need", id: "Butuh", pronounce: "niid", example: "I need time", exampleId: "Saya butuh waktu" },
-      { en: "I have", id: "Saya punya", pronounce: "ai hev", example: "I have a laptop", exampleId: "Saya punya laptop" },
-      { en: "Book", id: "Buku", pronounce: "buk", example: "This book", exampleId: "Buku ini" },
-      { en: "Desk", id: "Meja", pronounce: "desk", example: "My desk", exampleId: "Meja saya" },
-      { en: "Time", id: "Waktu", pronounce: "taim", example: "What time?", exampleId: "Jam berapa?" },
-      { en: "Work", id: "Kerja", pronounce: "werk", example: "I work", exampleId: "Saya kerja" },
-      { en: "Go", id: "Pergi", pronounce: "go", example: "I go to office", exampleId: "Saya pergi ke kantor" }
+      { en: "Where is my desk", id: "Di mana meja saya", pronounce: "wer iz mai desk", example: "Where is my desk?", exampleId: "Di mana meja saya?" },
+      { en: "I have a laptop", id: "Saya punya laptop", pronounce: "ai hev e LEP-top", example: "I have a laptop and a mouse.", exampleId: "Saya punya laptop dan mouse." },
+      { en: "This is my book", id: "Ini buku saya", pronounce: "dis iz mai buk", example: "This is my book, that is yours.", exampleId: "Ini buku saya, itu milikmu." },
+      { en: "What time is it", id: "Jam berapa", pronounce: "wot taim iz it", example: "What time is the meeting?", exampleId: "Jam berapa rapatnya?" },
+      { en: "I work at 9", id: "Saya kerja jam 9", pronounce: "ai werk et nain", example: "I work at 9 AM every day.", exampleId: "Saya kerja jam 9 tiap hari." },
+      { en: "I go to office", id: "Saya pergi ke kantor", pronounce: "ai go tu O-fis", example: "I go to office by bus.", exampleId: "Saya ke kantor naik bus." },
+      { en: "I need help", id: "Saya butuh bantuan", pronounce: "ai niid help", example: "I need help with Excel.", exampleId: "Saya butuh bantuan Excel." },
+      { en: "How much is it", id: "Berapa harganya", pronounce: "hau mach iz it", example: "How much is this book?", exampleId: "Berapa harga buku ini?" },
+      { en: "Please check", id: "Tolong cek", pronounce: "pliiz chek", example: "Please check the file.", exampleId: "Tolong cek berkasnya." },
+      { en: "I don't understand", id: "Saya tidak paham", pronounce: "ai dount an-der-STEND", example: "I don't understand, sorry.", exampleId: "Saya tidak paham, maaf." }
     ],
     quiz: [
-      { id: "2-3-q1", question: "Lesson 2-3 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Schedule & Routine: ingat EI em pronounce." },
-      { id: "2-3-q2", question: "Lesson 2-3 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Schedule & Routine: ingat EI em pronounce." },
-      { id: "2-3-q3", question: "Lesson 2-3 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Schedule & Routine: ingat EI em pronounce." },
-      { id: "2-3-q4", question: "Lesson 2-3 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Schedule & Routine: ingat EI em pronounce." },
-      { id: "2-3-q5", question: "Lesson 2-3 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Schedule & Routine: ingat EI em pronounce." }
+      { id: "2-3-q1", question: "I ____ a laptop (have)", options: ["has", "have (correct)", "having", "had"], answer: 1, explanation: "I have, She has." },
+      { id: "2-3-q2", question: "This is ____ book", options: ["me", "my (correct)", "I", "mine"], answer: 1, explanation: "This is MY book." },
+      { id: "2-3-q3", question: "What time ____ it", options: ["are", "is (correct)", "am", "be"], answer: 1, explanation: "What time IS it?" },
+      { id: "2-3-q4", question: "I ____ to office", options: ["go (correct)", "goes", "going", "went"], answer: 0, explanation: "I go, He goes." },
+      { id: "2-3-q5", question: "I don't ____ (understand)", options: ["understands", "understand (correct)", "understanding", "understood"], answer: 1, explanation: "I don't + V1." }
     ]
   },
   {
@@ -482,46 +586,57 @@ export const lessons: Lesson[] = [
     objective: "What is...? Where is...?",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Tanya What/Where (Asking Questions) — What is...? Where is...?. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Tanya What/Where (Asking Questions) — What is...? Where is...?. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Tanya What/Where",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Asking Questions A", id: "Contoh Tanya What/Where A" },
-            { en: "Example Asking Questions B", id: "Contoh Tanya What/Where B" }
+            { en: "I don't understand, sorry.", id: "Saya tidak paham, maaf." },
+            { en: "Where is my desk?", id: "Di mana meja saya?" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Asking Questions at work", id: "Saya pakai Tanya What/Where di kerja" }
-          ]
+            { en: "I have a laptop and a mouse.", id: "Saya punya laptop dan mouse." },
+            { en: "I use Asking Questions at work today.", id: "Saya pakai Tanya What/Where di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Asking Questions now.", id: "Mari latihan Tanya What/Where sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Help", id: "Bantu", pronounce: "help", example: "Please help", exampleId: "Tolong bantu" },
-      { en: "Need", id: "Butuh", pronounce: "niid", example: "I need time", exampleId: "Saya butuh waktu" },
-      { en: "I have", id: "Saya punya", pronounce: "ai hev", example: "I have a laptop", exampleId: "Saya punya laptop" },
-      { en: "Book", id: "Buku", pronounce: "buk", example: "This book", exampleId: "Buku ini" },
-      { en: "Desk", id: "Meja", pronounce: "desk", example: "My desk", exampleId: "Meja saya" },
-      { en: "Time", id: "Waktu", pronounce: "taim", example: "What time?", exampleId: "Jam berapa?" },
-      { en: "Work", id: "Kerja", pronounce: "werk", example: "I work", exampleId: "Saya kerja" },
-      { en: "Go", id: "Pergi", pronounce: "go", example: "I go to office", exampleId: "Saya pergi ke kantor" },
-      { en: "Eat", id: "Makan", pronounce: "iit", example: "I eat lunch", exampleId: "Saya makan siang" },
-      { en: "Make", id: "Buat", pronounce: "meik", example: "I make report", exampleId: "Saya buat laporan" }
+      { en: "What time is it", id: "Jam berapa", pronounce: "wot taim iz it", example: "What time is the meeting?", exampleId: "Jam berapa rapatnya?" },
+      { en: "I work at 9", id: "Saya kerja jam 9", pronounce: "ai werk et nain", example: "I work at 9 AM every day.", exampleId: "Saya kerja jam 9 tiap hari." },
+      { en: "I go to office", id: "Saya pergi ke kantor", pronounce: "ai go tu O-fis", example: "I go to office by bus.", exampleId: "Saya ke kantor naik bus." },
+      { en: "I need help", id: "Saya butuh bantuan", pronounce: "ai niid help", example: "I need help with Excel.", exampleId: "Saya butuh bantuan Excel." },
+      { en: "How much is it", id: "Berapa harganya", pronounce: "hau mach iz it", example: "How much is this book?", exampleId: "Berapa harga buku ini?" },
+      { en: "Please check", id: "Tolong cek", pronounce: "pliiz chek", example: "Please check the file.", exampleId: "Tolong cek berkasnya." },
+      { en: "I don't understand", id: "Saya tidak paham", pronounce: "ai dount an-der-STEND", example: "I don't understand, sorry.", exampleId: "Saya tidak paham, maaf." },
+      { en: "Where is my desk", id: "Di mana meja saya", pronounce: "wer iz mai desk", example: "Where is my desk?", exampleId: "Di mana meja saya?" },
+      { en: "I have a laptop", id: "Saya punya laptop", pronounce: "ai hev e LEP-top", example: "I have a laptop and a mouse.", exampleId: "Saya punya laptop dan mouse." },
+      { en: "This is my book", id: "Ini buku saya", pronounce: "dis iz mai buk", example: "This is my book, that is yours.", exampleId: "Ini buku saya, itu milikmu." }
     ],
     quiz: [
-      { id: "2-4-q1", question: "Lesson 2-4 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Asking Questions: ingat EI em pronounce." },
-      { id: "2-4-q2", question: "Lesson 2-4 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Asking Questions: ingat EI em pronounce." },
-      { id: "2-4-q3", question: "Lesson 2-4 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Asking Questions: ingat EI em pronounce." },
-      { id: "2-4-q4", question: "Lesson 2-4 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Asking Questions: ingat EI em pronounce." },
-      { id: "2-4-q5", question: "Lesson 2-4 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Asking Questions: ingat EI em pronounce." }
+      { id: "2-4-q1", question: "I ____ a laptop (have)", options: ["has", "have (correct)", "having", "had"], answer: 1, explanation: "I have, She has." },
+      { id: "2-4-q2", question: "This is ____ book", options: ["me", "my (correct)", "I", "mine"], answer: 1, explanation: "This is MY book." },
+      { id: "2-4-q3", question: "What time ____ it", options: ["are", "is (correct)", "am", "be"], answer: 1, explanation: "What time IS it?" },
+      { id: "2-4-q4", question: "I ____ to office", options: ["go (correct)", "goes", "going", "went"], answer: 0, explanation: "I go, He goes." },
+      { id: "2-4-q5", question: "I don't ____ (understand)", options: ["understands", "understand (correct)", "understanding", "understood"], answer: 1, explanation: "I don't + V1." }
     ]
   },
   {
@@ -530,49 +645,60 @@ export const lessons: Lesson[] = [
     order: 11,
     title: "Negatif & Jangan",
     titleEn: "Negatives & Don't",
-    objective: "I don't work...",
+    objective: "I don't, He doesn't",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Negatif & Jangan (Negatives & Don't) — I don't work.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Negatif & Jangan (Negatives & Don't) — I don't, He doesn't. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Negatif & Jangan",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Negatives & Don't A", id: "Contoh Negatif & Jangan A" },
-            { en: "Example Negatives & Don't B", id: "Contoh Negatif & Jangan B" }
+            { en: "I have a laptop and a mouse.", id: "Saya punya laptop dan mouse." },
+            { en: "This is my book, that is yours.", id: "Ini buku saya, itu milikmu." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Negatives & Don't at work", id: "Saya pakai Negatif & Jangan di kerja" }
-          ]
+            { en: "What time is the meeting?", id: "Jam berapa rapatnya?" },
+            { en: "I use Negatives & Don't at work today.", id: "Saya pakai Negatif & Jangan di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Negatives & Don't now.", id: "Mari latihan Negatif & Jangan sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "I have", id: "Saya punya", pronounce: "ai hev", example: "I have a laptop", exampleId: "Saya punya laptop" },
-      { en: "Book", id: "Buku", pronounce: "buk", example: "This book", exampleId: "Buku ini" },
-      { en: "Desk", id: "Meja", pronounce: "desk", example: "My desk", exampleId: "Meja saya" },
-      { en: "Time", id: "Waktu", pronounce: "taim", example: "What time?", exampleId: "Jam berapa?" },
-      { en: "Work", id: "Kerja", pronounce: "werk", example: "I work", exampleId: "Saya kerja" },
-      { en: "Go", id: "Pergi", pronounce: "go", example: "I go to office", exampleId: "Saya pergi ke kantor" },
-      { en: "Eat", id: "Makan", pronounce: "iit", example: "I eat lunch", exampleId: "Saya makan siang" },
-      { en: "Make", id: "Buat", pronounce: "meik", example: "I make report", exampleId: "Saya buat laporan" },
-      { en: "Help", id: "Bantu", pronounce: "help", example: "Please help", exampleId: "Tolong bantu" },
-      { en: "Need", id: "Butuh", pronounce: "niid", example: "I need time", exampleId: "Saya butuh waktu" }
+      { en: "I need help", id: "Saya butuh bantuan", pronounce: "ai niid help", example: "I need help with Excel.", exampleId: "Saya butuh bantuan Excel." },
+      { en: "How much is it", id: "Berapa harganya", pronounce: "hau mach iz it", example: "How much is this book?", exampleId: "Berapa harga buku ini?" },
+      { en: "Please check", id: "Tolong cek", pronounce: "pliiz chek", example: "Please check the file.", exampleId: "Tolong cek berkasnya." },
+      { en: "I don't understand", id: "Saya tidak paham", pronounce: "ai dount an-der-STEND", example: "I don't understand, sorry.", exampleId: "Saya tidak paham, maaf." },
+      { en: "Where is my desk", id: "Di mana meja saya", pronounce: "wer iz mai desk", example: "Where is my desk?", exampleId: "Di mana meja saya?" },
+      { en: "I have a laptop", id: "Saya punya laptop", pronounce: "ai hev e LEP-top", example: "I have a laptop and a mouse.", exampleId: "Saya punya laptop dan mouse." },
+      { en: "This is my book", id: "Ini buku saya", pronounce: "dis iz mai buk", example: "This is my book, that is yours.", exampleId: "Ini buku saya, itu milikmu." },
+      { en: "What time is it", id: "Jam berapa", pronounce: "wot taim iz it", example: "What time is the meeting?", exampleId: "Jam berapa rapatnya?" },
+      { en: "I work at 9", id: "Saya kerja jam 9", pronounce: "ai werk et nain", example: "I work at 9 AM every day.", exampleId: "Saya kerja jam 9 tiap hari." },
+      { en: "I go to office", id: "Saya pergi ke kantor", pronounce: "ai go tu O-fis", example: "I go to office by bus.", exampleId: "Saya ke kantor naik bus." }
     ],
     quiz: [
-      { id: "2-5-q1", question: "Lesson 2-5 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Negatives & Don't: ingat EI em pronounce." },
-      { id: "2-5-q2", question: "Lesson 2-5 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Negatives & Don't: ingat EI em pronounce." },
-      { id: "2-5-q3", question: "Lesson 2-5 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Negatives & Don't: ingat EI em pronounce." },
-      { id: "2-5-q4", question: "Lesson 2-5 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Negatives & Don't: ingat EI em pronounce." },
-      { id: "2-5-q5", question: "Lesson 2-5 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Negatives & Don't: ingat EI em pronounce." }
+      { id: "2-5-q1", question: "I ____ a laptop (have)", options: ["has", "have (correct)", "having", "had"], answer: 1, explanation: "I have, She has." },
+      { id: "2-5-q2", question: "This is ____ book", options: ["me", "my (correct)", "I", "mine"], answer: 1, explanation: "This is MY book." },
+      { id: "2-5-q3", question: "What time ____ it", options: ["are", "is (correct)", "am", "be"], answer: 1, explanation: "What time IS it?" },
+      { id: "2-5-q4", question: "I ____ to office", options: ["go (correct)", "goes", "going", "went"], answer: 0, explanation: "I go, He goes." },
+      { id: "2-5-q5", question: "I don't ____ (understand)", options: ["understands", "understand (correct)", "understanding", "understood"], answer: 1, explanation: "I don't + V1." }
     ]
   },
   {
@@ -581,49 +707,60 @@ export const lessons: Lesson[] = [
     order: 12,
     title: "Hitung & Harga",
     titleEn: "Numbers & Prices",
-    objective: "How much is...",
+    objective: "How much? How many?",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Hitung & Harga (Numbers & Prices) — How much is.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Hitung & Harga (Numbers & Prices) — How much? How many?. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Hitung & Harga",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Numbers & Prices A", id: "Contoh Hitung & Harga A" },
-            { en: "Example Numbers & Prices B", id: "Contoh Hitung & Harga B" }
+            { en: "What time is the meeting?", id: "Jam berapa rapatnya?" },
+            { en: "I work at 9 AM every day.", id: "Saya kerja jam 9 tiap hari." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Numbers & Prices at work", id: "Saya pakai Hitung & Harga di kerja" }
-          ]
+            { en: "I go to office by bus.", id: "Saya ke kantor naik bus." },
+            { en: "I use Numbers & Prices at work today.", id: "Saya pakai Hitung & Harga di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Numbers & Prices now.", id: "Mari latihan Hitung & Harga sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Desk", id: "Meja", pronounce: "desk", example: "My desk", exampleId: "Meja saya" },
-      { en: "Time", id: "Waktu", pronounce: "taim", example: "What time?", exampleId: "Jam berapa?" },
-      { en: "Work", id: "Kerja", pronounce: "werk", example: "I work", exampleId: "Saya kerja" },
-      { en: "Go", id: "Pergi", pronounce: "go", example: "I go to office", exampleId: "Saya pergi ke kantor" },
-      { en: "Eat", id: "Makan", pronounce: "iit", example: "I eat lunch", exampleId: "Saya makan siang" },
-      { en: "Make", id: "Buat", pronounce: "meik", example: "I make report", exampleId: "Saya buat laporan" },
-      { en: "Help", id: "Bantu", pronounce: "help", example: "Please help", exampleId: "Tolong bantu" },
-      { en: "Need", id: "Butuh", pronounce: "niid", example: "I need time", exampleId: "Saya butuh waktu" },
-      { en: "I have", id: "Saya punya", pronounce: "ai hev", example: "I have a laptop", exampleId: "Saya punya laptop" },
-      { en: "Book", id: "Buku", pronounce: "buk", example: "This book", exampleId: "Buku ini" }
+      { en: "I don't understand", id: "Saya tidak paham", pronounce: "ai dount an-der-STEND", example: "I don't understand, sorry.", exampleId: "Saya tidak paham, maaf." },
+      { en: "Where is my desk", id: "Di mana meja saya", pronounce: "wer iz mai desk", example: "Where is my desk?", exampleId: "Di mana meja saya?" },
+      { en: "I have a laptop", id: "Saya punya laptop", pronounce: "ai hev e LEP-top", example: "I have a laptop and a mouse.", exampleId: "Saya punya laptop dan mouse." },
+      { en: "This is my book", id: "Ini buku saya", pronounce: "dis iz mai buk", example: "This is my book, that is yours.", exampleId: "Ini buku saya, itu milikmu." },
+      { en: "What time is it", id: "Jam berapa", pronounce: "wot taim iz it", example: "What time is the meeting?", exampleId: "Jam berapa rapatnya?" },
+      { en: "I work at 9", id: "Saya kerja jam 9", pronounce: "ai werk et nain", example: "I work at 9 AM every day.", exampleId: "Saya kerja jam 9 tiap hari." },
+      { en: "I go to office", id: "Saya pergi ke kantor", pronounce: "ai go tu O-fis", example: "I go to office by bus.", exampleId: "Saya ke kantor naik bus." },
+      { en: "I need help", id: "Saya butuh bantuan", pronounce: "ai niid help", example: "I need help with Excel.", exampleId: "Saya butuh bantuan Excel." },
+      { en: "How much is it", id: "Berapa harganya", pronounce: "hau mach iz it", example: "How much is this book?", exampleId: "Berapa harga buku ini?" },
+      { en: "Please check", id: "Tolong cek", pronounce: "pliiz chek", example: "Please check the file.", exampleId: "Tolong cek berkasnya." }
     ],
     quiz: [
-      { id: "2-6-q1", question: "Lesson 2-6 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Numbers & Prices: ingat EI em pronounce." },
-      { id: "2-6-q2", question: "Lesson 2-6 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Numbers & Prices: ingat EI em pronounce." },
-      { id: "2-6-q3", question: "Lesson 2-6 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Numbers & Prices: ingat EI em pronounce." },
-      { id: "2-6-q4", question: "Lesson 2-6 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Numbers & Prices: ingat EI em pronounce." },
-      { id: "2-6-q5", question: "Lesson 2-6 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Numbers & Prices: ingat EI em pronounce." }
+      { id: "2-6-q1", question: "I ____ a laptop (have)", options: ["has", "have (correct)", "having", "had"], answer: 1, explanation: "I have, She has." },
+      { id: "2-6-q2", question: "This is ____ book", options: ["me", "my (correct)", "I", "mine"], answer: 1, explanation: "This is MY book." },
+      { id: "2-6-q3", question: "What time ____ it", options: ["are", "is (correct)", "am", "be"], answer: 1, explanation: "What time IS it?" },
+      { id: "2-6-q4", question: "I ____ to office", options: ["go (correct)", "goes", "going", "went"], answer: 0, explanation: "I go, He goes." },
+      { id: "2-6-q5", question: "I don't ____ (understand)", options: ["understands", "understand (correct)", "understanding", "understood"], answer: 1, explanation: "I don't + V1." }
     ]
   },
   {
@@ -632,49 +769,60 @@ export const lessons: Lesson[] = [
     order: 13,
     title: "Present: I work",
     titleEn: "Simple Present",
-    objective: "I work from 9-5",
+    objective: "I work from 9-5 + s/es",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Present: I work (Simple Present) — I work from 9-5. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Present: I work (Simple Present) — I work from 9-5 + s/es. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Present: I work",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Simple Present A", id: "Contoh Present: I work A" },
-            { en: "Example Simple Present B", id: "Contoh Present: I work B" }
+            { en: "I like strong coffee in morning.", id: "Saya suka kopi kental pagi." },
+            { en: "I want to learn English.", id: "Saya ingin belajar Inggris." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Simple Present at work", id: "Saya pakai Present: I work di kerja" }
-          ]
+            { en: "I get up at 6 every day.", id: "Saya bangun jam 6 tiap hari." },
+            { en: "I use Simple Present at work today.", id: "Saya pakai Present: I work di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Simple Present now.", id: "Mari latihan Present: I work sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Like", id: "Suka", pronounce: "laik", example: "I like coffee", exampleId: "Saya suka kopi" },
-      { en: "Want", id: "Ingin", pronounce: "wont", example: "I want to go", exampleId: "Saya ingin pergi" },
-      { en: "Get up", id: "Bangun", pronounce: "get ap", example: "I get up at 6", exampleId: "Saya bangun jam 6" },
-      { en: "Office", id: "Kantor", pronounce: "O-fis", example: "My office", exampleId: "Kantor saya" },
-      { en: "Team", id: "Tim", pronounce: "tiim", example: "Our team", exampleId: "Tim kita" },
-      { en: "Meeting", id: "Rapat", pronounce: "MII-ting", example: "Meeting at 9", exampleId: "Rapat jam 9" },
-      { en: "Today", id: "Hari ini", pronounce: "tu-DEI", example: "Today is busy", exampleId: "Hari ini sibuk" },
-      { en: "Every day", id: "Setiap hari", pronounce: "EV-ri dei", example: "Every day I work", exampleId: "Setiap hari saya kerja" },
-      { en: "Always", id: "Selalu", pronounce: "OL-weis", example: "I always come", exampleId: "Saya selalu datang" },
-      { en: "Usually", id: "Biasanya", pronounce: "YU-zwa-li", example: "I usually eat", exampleId: "Saya biasanya makan" }
+      { en: "I want to learn", id: "Saya ingin belajar", pronounce: "ai wont tu lern", example: "I want to learn English.", exampleId: "Saya ingin belajar Inggris." },
+      { en: "I get up at 6", id: "Saya bangun jam 6", pronounce: "ai get ap et siks", example: "I get up at 6 every day.", exampleId: "Saya bangun jam 6 tiap hari." },
+      { en: "Our team is friendly", id: "Tim kita ramah", pronounce: "aur tiim iz FREN-dli", example: "Our team is friendly and busy.", exampleId: "Tim kita ramah dan sibuk." },
+      { en: "Meeting at 9 sharp", id: "Rapat jam 9 tepat", pronounce: "MII-ting et nain sharp", example: "Meeting at 9 sharp!", exampleId: "Rapat jam 9 tepat!" },
+      { en: "How are you today", id: "Apa kabar hari ini", pronounce: "hau ar yu tu-DEI", example: "How are you today, Rina?", exampleId: "Apa kabar hari ini, Rina?" },
+      { en: "I work from home", id: "Saya kerja dari rumah", pronounce: "ai werk from houm", example: "I work from home today.", exampleId: "Saya kerja dari rumah hari ini." },
+      { en: "Every day I practice", id: "Tiap hari saya latihan", pronounce: "EV-ri dei ai PREK-tis", example: "Every day I practice 15 minutes.", exampleId: "Tiap hari saya latihan 15 menit." },
+      { en: "I always come early", id: "Saya selalu datang awal", pronounce: "ai OL-weis kam ER-li", example: "I always come early on Monday.", exampleId: "Saya selalu datang awal Senin." },
+      { en: "I usually have lunch", id: "Saya biasanya makan siang", pronounce: "ai YU-zwa-li hev lanch", example: "I usually have lunch at 12.", exampleId: "Saya biasanya makan siang jam 12." },
+      { en: "I like strong coffee", id: "Saya suka kopi kental", pronounce: "ai laik strong KO-fi", example: "I like strong coffee in morning.", exampleId: "Saya suka kopi kental pagi." }
     ],
     quiz: [
-      { id: "3-1-q1", question: "Lesson 3-1 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Simple Present: ingat EI em pronounce." },
-      { id: "3-1-q2", question: "Lesson 3-1 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Simple Present: ingat EI em pronounce." },
-      { id: "3-1-q3", question: "Lesson 3-1 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Simple Present: ingat EI em pronounce." },
-      { id: "3-1-q4", question: "Lesson 3-1 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Simple Present: ingat EI em pronounce." },
-      { id: "3-1-q5", question: "Lesson 3-1 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Simple Present: ingat EI em pronounce." }
+      { id: "3-1-q1", question: "I ____ (work) at 9", options: ["work (correct)", "works", "working", "worked"], answer: 0, explanation: "I work, He works + s." },
+      { id: "3-1-q2", question: "She ____ coffee (like)", options: ["like", "likes (correct)", "liking", "liked"], answer: 1, explanation: "She likes." },
+      { id: "3-1-q3", question: "I ____ come early", options: ["always (correct) always", "always come?", "come always", "always coming"], answer: 0, explanation: "Always sebelum verb." },
+      { id: "3-1-q4", question: "What ____ you do", options: ["do (correct)", "does", "doing", "did"], answer: 0, explanation: "What DO you do?" },
+      { id: "3-1-q5", question: "Office is ____ (clean)", options: ["clean (correct)", "cleaning", "cleans", "cleaned"], answer: 0, explanation: "to be + adjective." }
     ]
   },
   {
@@ -683,49 +831,60 @@ export const lessons: Lesson[] = [
     order: 14,
     title: "Kebiasaan & Suka",
     titleEn: "Habits & Likes",
-    objective: "I like coffee",
+    objective: "I like, I want, I need",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Kebiasaan & Suka (Habits & Likes) — I like coffee. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Kebiasaan & Suka (Habits & Likes) — I like, I want, I need. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Kebiasaan & Suka",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Habits & Likes A", id: "Contoh Kebiasaan & Suka A" },
-            { en: "Example Habits & Likes B", id: "Contoh Kebiasaan & Suka B" }
+            { en: "I get up at 6 every day.", id: "Saya bangun jam 6 tiap hari." },
+            { en: "Our team is friendly and busy.", id: "Tim kita ramah dan sibuk." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Habits & Likes at work", id: "Saya pakai Kebiasaan & Suka di kerja" }
-          ]
+            { en: "Meeting at 9 sharp!", id: "Rapat jam 9 tepat!" },
+            { en: "I use Habits & Likes at work today.", id: "Saya pakai Kebiasaan & Suka di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Habits & Likes now.", id: "Mari latihan Kebiasaan & Suka sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Get up", id: "Bangun", pronounce: "get ap", example: "I get up at 6", exampleId: "Saya bangun jam 6" },
-      { en: "Office", id: "Kantor", pronounce: "O-fis", example: "My office", exampleId: "Kantor saya" },
-      { en: "Team", id: "Tim", pronounce: "tiim", example: "Our team", exampleId: "Tim kita" },
-      { en: "Meeting", id: "Rapat", pronounce: "MII-ting", example: "Meeting at 9", exampleId: "Rapat jam 9" },
-      { en: "Today", id: "Hari ini", pronounce: "tu-DEI", example: "Today is busy", exampleId: "Hari ini sibuk" },
-      { en: "Every day", id: "Setiap hari", pronounce: "EV-ri dei", example: "Every day I work", exampleId: "Setiap hari saya kerja" },
-      { en: "Always", id: "Selalu", pronounce: "OL-weis", example: "I always come", exampleId: "Saya selalu datang" },
-      { en: "Usually", id: "Biasanya", pronounce: "YU-zwa-li", example: "I usually eat", exampleId: "Saya biasanya makan" },
-      { en: "Like", id: "Suka", pronounce: "laik", example: "I like coffee", exampleId: "Saya suka kopi" },
-      { en: "Want", id: "Ingin", pronounce: "wont", example: "I want to go", exampleId: "Saya ingin pergi" }
+      { en: "Meeting at 9 sharp", id: "Rapat jam 9 tepat", pronounce: "MII-ting et nain sharp", example: "Meeting at 9 sharp!", exampleId: "Rapat jam 9 tepat!" },
+      { en: "How are you today", id: "Apa kabar hari ini", pronounce: "hau ar yu tu-DEI", example: "How are you today, Rina?", exampleId: "Apa kabar hari ini, Rina?" },
+      { en: "I work from home", id: "Saya kerja dari rumah", pronounce: "ai werk from houm", example: "I work from home today.", exampleId: "Saya kerja dari rumah hari ini." },
+      { en: "Every day I practice", id: "Tiap hari saya latihan", pronounce: "EV-ri dei ai PREK-tis", example: "Every day I practice 15 minutes.", exampleId: "Tiap hari saya latihan 15 menit." },
+      { en: "I always come early", id: "Saya selalu datang awal", pronounce: "ai OL-weis kam ER-li", example: "I always come early on Monday.", exampleId: "Saya selalu datang awal Senin." },
+      { en: "I usually have lunch", id: "Saya biasanya makan siang", pronounce: "ai YU-zwa-li hev lanch", example: "I usually have lunch at 12.", exampleId: "Saya biasanya makan siang jam 12." },
+      { en: "I like strong coffee", id: "Saya suka kopi kental", pronounce: "ai laik strong KO-fi", example: "I like strong coffee in morning.", exampleId: "Saya suka kopi kental pagi." },
+      { en: "I want to learn", id: "Saya ingin belajar", pronounce: "ai wont tu lern", example: "I want to learn English.", exampleId: "Saya ingin belajar Inggris." },
+      { en: "I get up at 6", id: "Saya bangun jam 6", pronounce: "ai get ap et siks", example: "I get up at 6 every day.", exampleId: "Saya bangun jam 6 tiap hari." },
+      { en: "Our team is friendly", id: "Tim kita ramah", pronounce: "aur tiim iz FREN-dli", example: "Our team is friendly and busy.", exampleId: "Tim kita ramah dan sibuk." }
     ],
     quiz: [
-      { id: "3-2-q1", question: "Lesson 3-2 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Habits & Likes: ingat EI em pronounce." },
-      { id: "3-2-q2", question: "Lesson 3-2 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Habits & Likes: ingat EI em pronounce." },
-      { id: "3-2-q3", question: "Lesson 3-2 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Habits & Likes: ingat EI em pronounce." },
-      { id: "3-2-q4", question: "Lesson 3-2 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Habits & Likes: ingat EI em pronounce." },
-      { id: "3-2-q5", question: "Lesson 3-2 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Habits & Likes: ingat EI em pronounce." }
+      { id: "3-2-q1", question: "I ____ (work) at 9", options: ["work (correct)", "works", "working", "worked"], answer: 0, explanation: "I work, He works + s." },
+      { id: "3-2-q2", question: "She ____ coffee (like)", options: ["like", "likes (correct)", "liking", "liked"], answer: 1, explanation: "She likes." },
+      { id: "3-2-q3", question: "I ____ come early", options: ["always (correct) always", "always come?", "come always", "always coming"], answer: 0, explanation: "Always sebelum verb." },
+      { id: "3-2-q4", question: "What ____ you do", options: ["do (correct)", "does", "doing", "did"], answer: 0, explanation: "What DO you do?" },
+      { id: "3-2-q5", question: "Office is ____ (clean)", options: ["clean (correct)", "cleaning", "cleans", "cleaned"], answer: 0, explanation: "to be + adjective." }
     ]
   },
   {
@@ -737,46 +896,57 @@ export const lessons: Lesson[] = [
     objective: "Always, usually, never",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Kata Keterangan Waktu (Adverbs of Time) — Always, usually, never. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Kata Keterangan Waktu (Adverbs of Time) — Always, usually, never. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Kata Keterangan Waktu",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Adverbs of Time A", id: "Contoh Kata Keterangan Waktu A" },
-            { en: "Example Adverbs of Time B", id: "Contoh Kata Keterangan Waktu B" }
+            { en: "Meeting at 9 sharp!", id: "Rapat jam 9 tepat!" },
+            { en: "How are you today, Rina?", id: "Apa kabar hari ini, Rina?" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Adverbs of Time at work", id: "Saya pakai Kata Keterangan Waktu di kerja" }
-          ]
+            { en: "I work from home today.", id: "Saya kerja dari rumah hari ini." },
+            { en: "I use Adverbs of Time at work today.", id: "Saya pakai Kata Keterangan Waktu di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Adverbs of Time now.", id: "Mari latihan Kata Keterangan Waktu sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Team", id: "Tim", pronounce: "tiim", example: "Our team", exampleId: "Tim kita" },
-      { en: "Meeting", id: "Rapat", pronounce: "MII-ting", example: "Meeting at 9", exampleId: "Rapat jam 9" },
-      { en: "Today", id: "Hari ini", pronounce: "tu-DEI", example: "Today is busy", exampleId: "Hari ini sibuk" },
-      { en: "Every day", id: "Setiap hari", pronounce: "EV-ri dei", example: "Every day I work", exampleId: "Setiap hari saya kerja" },
-      { en: "Always", id: "Selalu", pronounce: "OL-weis", example: "I always come", exampleId: "Saya selalu datang" },
-      { en: "Usually", id: "Biasanya", pronounce: "YU-zwa-li", example: "I usually eat", exampleId: "Saya biasanya makan" },
-      { en: "Like", id: "Suka", pronounce: "laik", example: "I like coffee", exampleId: "Saya suka kopi" },
-      { en: "Want", id: "Ingin", pronounce: "wont", example: "I want to go", exampleId: "Saya ingin pergi" },
-      { en: "Get up", id: "Bangun", pronounce: "get ap", example: "I get up at 6", exampleId: "Saya bangun jam 6" },
-      { en: "Office", id: "Kantor", pronounce: "O-fis", example: "My office", exampleId: "Kantor saya" }
+      { en: "Every day I practice", id: "Tiap hari saya latihan", pronounce: "EV-ri dei ai PREK-tis", example: "Every day I practice 15 minutes.", exampleId: "Tiap hari saya latihan 15 menit." },
+      { en: "I always come early", id: "Saya selalu datang awal", pronounce: "ai OL-weis kam ER-li", example: "I always come early on Monday.", exampleId: "Saya selalu datang awal Senin." },
+      { en: "I usually have lunch", id: "Saya biasanya makan siang", pronounce: "ai YU-zwa-li hev lanch", example: "I usually have lunch at 12.", exampleId: "Saya biasanya makan siang jam 12." },
+      { en: "I like strong coffee", id: "Saya suka kopi kental", pronounce: "ai laik strong KO-fi", example: "I like strong coffee in morning.", exampleId: "Saya suka kopi kental pagi." },
+      { en: "I want to learn", id: "Saya ingin belajar", pronounce: "ai wont tu lern", example: "I want to learn English.", exampleId: "Saya ingin belajar Inggris." },
+      { en: "I get up at 6", id: "Saya bangun jam 6", pronounce: "ai get ap et siks", example: "I get up at 6 every day.", exampleId: "Saya bangun jam 6 tiap hari." },
+      { en: "Our team is friendly", id: "Tim kita ramah", pronounce: "aur tiim iz FREN-dli", example: "Our team is friendly and busy.", exampleId: "Tim kita ramah dan sibuk." },
+      { en: "Meeting at 9 sharp", id: "Rapat jam 9 tepat", pronounce: "MII-ting et nain sharp", example: "Meeting at 9 sharp!", exampleId: "Rapat jam 9 tepat!" },
+      { en: "How are you today", id: "Apa kabar hari ini", pronounce: "hau ar yu tu-DEI", example: "How are you today, Rina?", exampleId: "Apa kabar hari ini, Rina?" },
+      { en: "I work from home", id: "Saya kerja dari rumah", pronounce: "ai werk from houm", example: "I work from home today.", exampleId: "Saya kerja dari rumah hari ini." }
     ],
     quiz: [
-      { id: "3-3-q1", question: "Lesson 3-3 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Adverbs of Time: ingat EI em pronounce." },
-      { id: "3-3-q2", question: "Lesson 3-3 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Adverbs of Time: ingat EI em pronounce." },
-      { id: "3-3-q3", question: "Lesson 3-3 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Adverbs of Time: ingat EI em pronounce." },
-      { id: "3-3-q4", question: "Lesson 3-3 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Adverbs of Time: ingat EI em pronounce." },
-      { id: "3-3-q5", question: "Lesson 3-3 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Adverbs of Time: ingat EI em pronounce." }
+      { id: "3-3-q1", question: "I ____ (work) at 9", options: ["work (correct)", "works", "working", "worked"], answer: 0, explanation: "I work, He works + s." },
+      { id: "3-3-q2", question: "She ____ coffee (like)", options: ["like", "likes (correct)", "liking", "liked"], answer: 1, explanation: "She likes." },
+      { id: "3-3-q3", question: "I ____ come early", options: ["always (correct) always", "always come?", "come always", "always coming"], answer: 0, explanation: "Always sebelum verb." },
+      { id: "3-3-q4", question: "What ____ you do", options: ["do (correct)", "does", "doing", "did"], answer: 0, explanation: "What DO you do?" },
+      { id: "3-3-q5", question: "Office is ____ (clean)", options: ["clean (correct)", "cleaning", "cleans", "cleaned"], answer: 0, explanation: "to be + adjective." }
     ]
   },
   {
@@ -785,49 +955,60 @@ export const lessons: Lesson[] = [
     order: 16,
     title: "Tanya Jawab Kerja",
     titleEn: "Work Q&A",
-    objective: "What do you do?",
+    objective: "What do you do? Where do you work?",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Tanya Jawab Kerja (Work Q&A) — What do you do?. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Tanya Jawab Kerja (Work Q&A) — What do you do? Where do you work?. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Tanya Jawab Kerja",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Work Q&A A", id: "Contoh Tanya Jawab Kerja A" },
-            { en: "Example Work Q&A B", id: "Contoh Tanya Jawab Kerja B" }
+            { en: "I work from home today.", id: "Saya kerja dari rumah hari ini." },
+            { en: "Every day I practice 15 minutes.", id: "Tiap hari saya latihan 15 menit." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Work Q&A at work", id: "Saya pakai Tanya Jawab Kerja di kerja" }
-          ]
+            { en: "I always come early on Monday.", id: "Saya selalu datang awal Senin." },
+            { en: "I use Work Q&A at work today.", id: "Saya pakai Tanya Jawab Kerja di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Work Q&A now.", id: "Mari latihan Tanya Jawab Kerja sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Today", id: "Hari ini", pronounce: "tu-DEI", example: "Today is busy", exampleId: "Hari ini sibuk" },
-      { en: "Every day", id: "Setiap hari", pronounce: "EV-ri dei", example: "Every day I work", exampleId: "Setiap hari saya kerja" },
-      { en: "Always", id: "Selalu", pronounce: "OL-weis", example: "I always come", exampleId: "Saya selalu datang" },
-      { en: "Usually", id: "Biasanya", pronounce: "YU-zwa-li", example: "I usually eat", exampleId: "Saya biasanya makan" },
-      { en: "Like", id: "Suka", pronounce: "laik", example: "I like coffee", exampleId: "Saya suka kopi" },
-      { en: "Want", id: "Ingin", pronounce: "wont", example: "I want to go", exampleId: "Saya ingin pergi" },
-      { en: "Get up", id: "Bangun", pronounce: "get ap", example: "I get up at 6", exampleId: "Saya bangun jam 6" },
-      { en: "Office", id: "Kantor", pronounce: "O-fis", example: "My office", exampleId: "Kantor saya" },
-      { en: "Team", id: "Tim", pronounce: "tiim", example: "Our team", exampleId: "Tim kita" },
-      { en: "Meeting", id: "Rapat", pronounce: "MII-ting", example: "Meeting at 9", exampleId: "Rapat jam 9" }
+      { en: "I like strong coffee", id: "Saya suka kopi kental", pronounce: "ai laik strong KO-fi", example: "I like strong coffee in morning.", exampleId: "Saya suka kopi kental pagi." },
+      { en: "I want to learn", id: "Saya ingin belajar", pronounce: "ai wont tu lern", example: "I want to learn English.", exampleId: "Saya ingin belajar Inggris." },
+      { en: "I get up at 6", id: "Saya bangun jam 6", pronounce: "ai get ap et siks", example: "I get up at 6 every day.", exampleId: "Saya bangun jam 6 tiap hari." },
+      { en: "Our team is friendly", id: "Tim kita ramah", pronounce: "aur tiim iz FREN-dli", example: "Our team is friendly and busy.", exampleId: "Tim kita ramah dan sibuk." },
+      { en: "Meeting at 9 sharp", id: "Rapat jam 9 tepat", pronounce: "MII-ting et nain sharp", example: "Meeting at 9 sharp!", exampleId: "Rapat jam 9 tepat!" },
+      { en: "How are you today", id: "Apa kabar hari ini", pronounce: "hau ar yu tu-DEI", example: "How are you today, Rina?", exampleId: "Apa kabar hari ini, Rina?" },
+      { en: "I work from home", id: "Saya kerja dari rumah", pronounce: "ai werk from houm", example: "I work from home today.", exampleId: "Saya kerja dari rumah hari ini." },
+      { en: "Every day I practice", id: "Tiap hari saya latihan", pronounce: "EV-ri dei ai PREK-tis", example: "Every day I practice 15 minutes.", exampleId: "Tiap hari saya latihan 15 menit." },
+      { en: "I always come early", id: "Saya selalu datang awal", pronounce: "ai OL-weis kam ER-li", example: "I always come early on Monday.", exampleId: "Saya selalu datang awal Senin." },
+      { en: "I usually have lunch", id: "Saya biasanya makan siang", pronounce: "ai YU-zwa-li hev lanch", example: "I usually have lunch at 12.", exampleId: "Saya biasanya makan siang jam 12." }
     ],
     quiz: [
-      { id: "3-4-q1", question: "Lesson 3-4 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Work Q&A: ingat EI em pronounce." },
-      { id: "3-4-q2", question: "Lesson 3-4 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Work Q&A: ingat EI em pronounce." },
-      { id: "3-4-q3", question: "Lesson 3-4 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Work Q&A: ingat EI em pronounce." },
-      { id: "3-4-q4", question: "Lesson 3-4 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Work Q&A: ingat EI em pronounce." },
-      { id: "3-4-q5", question: "Lesson 3-4 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Work Q&A: ingat EI em pronounce." }
+      { id: "3-4-q1", question: "I ____ (work) at 9", options: ["work (correct)", "works", "working", "worked"], answer: 0, explanation: "I work, He works + s." },
+      { id: "3-4-q2", question: "She ____ coffee (like)", options: ["like", "likes (correct)", "liking", "liked"], answer: 1, explanation: "She likes." },
+      { id: "3-4-q3", question: "I ____ come early", options: ["always (correct) always", "always come?", "come always", "always coming"], answer: 0, explanation: "Always sebelum verb." },
+      { id: "3-4-q4", question: "What ____ you do", options: ["do (correct)", "does", "doing", "did"], answer: 0, explanation: "What DO you do?" },
+      { id: "3-4-q5", question: "Office is ____ (clean)", options: ["clean (correct)", "cleaning", "cleans", "cleaned"], answer: 0, explanation: "to be + adjective." }
     ]
   },
   {
@@ -839,46 +1020,57 @@ export const lessons: Lesson[] = [
     objective: "He is tall & friendly",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Deskripsi Orang (Describing People) — He is tall & friendly. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Deskripsi Orang (Describing People) — He is tall & friendly. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Deskripsi Orang",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Describing People A", id: "Contoh Deskripsi Orang A" },
-            { en: "Example Describing People B", id: "Contoh Deskripsi Orang B" }
+            { en: "I always come early on Monday.", id: "Saya selalu datang awal Senin." },
+            { en: "I usually have lunch at 12.", id: "Saya biasanya makan siang jam 12." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Describing People at work", id: "Saya pakai Deskripsi Orang di kerja" }
-          ]
+            { en: "I like strong coffee in morning.", id: "Saya suka kopi kental pagi." },
+            { en: "I use Describing People at work today.", id: "Saya pakai Deskripsi Orang di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Describing People now.", id: "Mari latihan Deskripsi Orang sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Always", id: "Selalu", pronounce: "OL-weis", example: "I always come", exampleId: "Saya selalu datang" },
-      { en: "Usually", id: "Biasanya", pronounce: "YU-zwa-li", example: "I usually eat", exampleId: "Saya biasanya makan" },
-      { en: "Like", id: "Suka", pronounce: "laik", example: "I like coffee", exampleId: "Saya suka kopi" },
-      { en: "Want", id: "Ingin", pronounce: "wont", example: "I want to go", exampleId: "Saya ingin pergi" },
-      { en: "Get up", id: "Bangun", pronounce: "get ap", example: "I get up at 6", exampleId: "Saya bangun jam 6" },
-      { en: "Office", id: "Kantor", pronounce: "O-fis", example: "My office", exampleId: "Kantor saya" },
-      { en: "Team", id: "Tim", pronounce: "tiim", example: "Our team", exampleId: "Tim kita" },
-      { en: "Meeting", id: "Rapat", pronounce: "MII-ting", example: "Meeting at 9", exampleId: "Rapat jam 9" },
-      { en: "Today", id: "Hari ini", pronounce: "tu-DEI", example: "Today is busy", exampleId: "Hari ini sibuk" },
-      { en: "Every day", id: "Setiap hari", pronounce: "EV-ri dei", example: "Every day I work", exampleId: "Setiap hari saya kerja" }
+      { en: "Our team is friendly", id: "Tim kita ramah", pronounce: "aur tiim iz FREN-dli", example: "Our team is friendly and busy.", exampleId: "Tim kita ramah dan sibuk." },
+      { en: "Meeting at 9 sharp", id: "Rapat jam 9 tepat", pronounce: "MII-ting et nain sharp", example: "Meeting at 9 sharp!", exampleId: "Rapat jam 9 tepat!" },
+      { en: "How are you today", id: "Apa kabar hari ini", pronounce: "hau ar yu tu-DEI", example: "How are you today, Rina?", exampleId: "Apa kabar hari ini, Rina?" },
+      { en: "I work from home", id: "Saya kerja dari rumah", pronounce: "ai werk from houm", example: "I work from home today.", exampleId: "Saya kerja dari rumah hari ini." },
+      { en: "Every day I practice", id: "Tiap hari saya latihan", pronounce: "EV-ri dei ai PREK-tis", example: "Every day I practice 15 minutes.", exampleId: "Tiap hari saya latihan 15 menit." },
+      { en: "I always come early", id: "Saya selalu datang awal", pronounce: "ai OL-weis kam ER-li", example: "I always come early on Monday.", exampleId: "Saya selalu datang awal Senin." },
+      { en: "I usually have lunch", id: "Saya biasanya makan siang", pronounce: "ai YU-zwa-li hev lanch", example: "I usually have lunch at 12.", exampleId: "Saya biasanya makan siang jam 12." },
+      { en: "I like strong coffee", id: "Saya suka kopi kental", pronounce: "ai laik strong KO-fi", example: "I like strong coffee in morning.", exampleId: "Saya suka kopi kental pagi." },
+      { en: "I want to learn", id: "Saya ingin belajar", pronounce: "ai wont tu lern", example: "I want to learn English.", exampleId: "Saya ingin belajar Inggris." },
+      { en: "I get up at 6", id: "Saya bangun jam 6", pronounce: "ai get ap et siks", example: "I get up at 6 every day.", exampleId: "Saya bangun jam 6 tiap hari." }
     ],
     quiz: [
-      { id: "3-5-q1", question: "Lesson 3-5 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Describing People: ingat EI em pronounce." },
-      { id: "3-5-q2", question: "Lesson 3-5 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Describing People: ingat EI em pronounce." },
-      { id: "3-5-q3", question: "Lesson 3-5 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Describing People: ingat EI em pronounce." },
-      { id: "3-5-q4", question: "Lesson 3-5 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Describing People: ingat EI em pronounce." },
-      { id: "3-5-q5", question: "Lesson 3-5 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Describing People: ingat EI em pronounce." }
+      { id: "3-5-q1", question: "I ____ (work) at 9", options: ["work (correct)", "works", "working", "worked"], answer: 0, explanation: "I work, He works + s." },
+      { id: "3-5-q2", question: "She ____ coffee (like)", options: ["like", "likes (correct)", "liking", "liked"], answer: 1, explanation: "She likes." },
+      { id: "3-5-q3", question: "I ____ come early", options: ["always (correct) always", "always come?", "come always", "always coming"], answer: 0, explanation: "Always sebelum verb." },
+      { id: "3-5-q4", question: "What ____ you do", options: ["do (correct)", "does", "doing", "did"], answer: 0, explanation: "What DO you do?" },
+      { id: "3-5-q5", question: "Office is ____ (clean)", options: ["clean (correct)", "cleaning", "cleans", "cleaned"], answer: 0, explanation: "to be + adjective." }
     ]
   },
   {
@@ -887,49 +1079,60 @@ export const lessons: Lesson[] = [
     order: 18,
     title: "Deskripsi Tempat",
     titleEn: "Describing Places",
-    objective: "My office is clean",
+    objective: "My office is clean & big",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Deskripsi Tempat (Describing Places) — My office is clean. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Deskripsi Tempat (Describing Places) — My office is clean & big. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Deskripsi Tempat",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Pola Inti + EI em",
+          headingId: "Pola Inti + EI em",
+          body: "Hafal pola, jangan kata per kata. EI em: baca pelan.",
           examples: [
-            { en: "Example Describing Places A", id: "Contoh Deskripsi Tempat A" },
-            { en: "Example Describing Places B", id: "Contoh Deskripsi Tempat B" }
+            { en: "I like strong coffee in morning.", id: "Saya suka kopi kental pagi." },
+            { en: "I want to learn English.", id: "Saya ingin belajar Inggris." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Contoh Real Kerja",
+          headingId: "Contoh Real Kerja",
+          body: "Pakai besok pagi di kantor/slack.",
           examples: [
-            { en: "I use Describing Places at work", id: "Saya pakai Deskripsi Tempat di kerja" }
-          ]
+            { en: "I get up at 6 every day.", id: "Saya bangun jam 6 tiap hari." },
+            { en: "I use Describing Places at work today.", id: "Saya pakai Deskripsi Tempat di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Latihan Shadowing",
+          headingId: "Latihan Shadowing",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Describing Places now.", id: "Mari latihan Deskripsi Tempat sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Like", id: "Suka", pronounce: "laik", example: "I like coffee", exampleId: "Saya suka kopi" },
-      { en: "Want", id: "Ingin", pronounce: "wont", example: "I want to go", exampleId: "Saya ingin pergi" },
-      { en: "Get up", id: "Bangun", pronounce: "get ap", example: "I get up at 6", exampleId: "Saya bangun jam 6" },
-      { en: "Office", id: "Kantor", pronounce: "O-fis", example: "My office", exampleId: "Kantor saya" },
-      { en: "Team", id: "Tim", pronounce: "tiim", example: "Our team", exampleId: "Tim kita" },
-      { en: "Meeting", id: "Rapat", pronounce: "MII-ting", example: "Meeting at 9", exampleId: "Rapat jam 9" },
-      { en: "Today", id: "Hari ini", pronounce: "tu-DEI", example: "Today is busy", exampleId: "Hari ini sibuk" },
-      { en: "Every day", id: "Setiap hari", pronounce: "EV-ri dei", example: "Every day I work", exampleId: "Setiap hari saya kerja" },
-      { en: "Always", id: "Selalu", pronounce: "OL-weis", example: "I always come", exampleId: "Saya selalu datang" },
-      { en: "Usually", id: "Biasanya", pronounce: "YU-zwa-li", example: "I usually eat", exampleId: "Saya biasanya makan" }
+      { en: "I work from home", id: "Saya kerja dari rumah", pronounce: "ai werk from houm", example: "I work from home today.", exampleId: "Saya kerja dari rumah hari ini." },
+      { en: "Every day I practice", id: "Tiap hari saya latihan", pronounce: "EV-ri dei ai PREK-tis", example: "Every day I practice 15 minutes.", exampleId: "Tiap hari saya latihan 15 menit." },
+      { en: "I always come early", id: "Saya selalu datang awal", pronounce: "ai OL-weis kam ER-li", example: "I always come early on Monday.", exampleId: "Saya selalu datang awal Senin." },
+      { en: "I usually have lunch", id: "Saya biasanya makan siang", pronounce: "ai YU-zwa-li hev lanch", example: "I usually have lunch at 12.", exampleId: "Saya biasanya makan siang jam 12." },
+      { en: "I like strong coffee", id: "Saya suka kopi kental", pronounce: "ai laik strong KO-fi", example: "I like strong coffee in morning.", exampleId: "Saya suka kopi kental pagi." },
+      { en: "I want to learn", id: "Saya ingin belajar", pronounce: "ai wont tu lern", example: "I want to learn English.", exampleId: "Saya ingin belajar Inggris." },
+      { en: "I get up at 6", id: "Saya bangun jam 6", pronounce: "ai get ap et siks", example: "I get up at 6 every day.", exampleId: "Saya bangun jam 6 tiap hari." },
+      { en: "Our team is friendly", id: "Tim kita ramah", pronounce: "aur tiim iz FREN-dli", example: "Our team is friendly and busy.", exampleId: "Tim kita ramah dan sibuk." },
+      { en: "Meeting at 9 sharp", id: "Rapat jam 9 tepat", pronounce: "MII-ting et nain sharp", example: "Meeting at 9 sharp!", exampleId: "Rapat jam 9 tepat!" },
+      { en: "How are you today", id: "Apa kabar hari ini", pronounce: "hau ar yu tu-DEI", example: "How are you today, Rina?", exampleId: "Apa kabar hari ini, Rina?" }
     ],
     quiz: [
-      { id: "3-6-q1", question: "Lesson 3-6 Q1: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Describing Places: ingat EI em pronounce." },
-      { id: "3-6-q2", question: "Lesson 3-6 Q2: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Describing Places: ingat EI em pronounce." },
-      { id: "3-6-q3", question: "Lesson 3-6 Q3: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Describing Places: ingat EI em pronounce." },
-      { id: "3-6-q4", question: "Lesson 3-6 Q4: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Describing Places: ingat EI em pronounce." },
-      { id: "3-6-q5", question: "Lesson 3-6 Q5: Choose correct", options: ["Option A","Option B (correct)","Option C","Option D"], answer: 1, explanation: "Pola Describing Places: ingat EI em pronounce." }
+      { id: "3-6-q1", question: "I ____ (work) at 9", options: ["work (correct)", "works", "working", "worked"], answer: 0, explanation: "I work, He works + s." },
+      { id: "3-6-q2", question: "She ____ coffee (like)", options: ["like", "likes (correct)", "liking", "liked"], answer: 1, explanation: "She likes." },
+      { id: "3-6-q3", question: "I ____ come early", options: ["always (correct) always", "always come?", "come always", "always coming"], answer: 0, explanation: "Always sebelum verb." },
+      { id: "3-6-q4", question: "What ____ you do", options: ["do (correct)", "does", "doing", "did"], answer: 0, explanation: "What DO you do?" },
+      { id: "3-6-q5", question: "Office is ____ (clean)", options: ["clean (correct)", "cleaning", "cleans", "cleaned"], answer: 0, explanation: "to be + adjective." }
     ]
   },
   {
@@ -938,49 +1141,60 @@ export const lessons: Lesson[] = [
     order: 19,
     title: "Past: Yesterday",
     titleEn: "Simple Past Basics",
-    objective: "I went yesterday",
+    objective: "I went yesterday + V2",
     duration: "18 menit",
     content: {
-      intro: "Pelajaran Past: Yesterday (Simple Past Basics) — I went yesterday. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Past: Yesterday (Simple Past Basics) — I went yesterday + V2. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Past: Yesterday",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Simple Past Basics A", id: "Contoh Past: Yesterday A" },
-            { en: "Example Simple Past Basics B", id: "Contoh Past: Yesterday B" }
+            { en: "We were at office at 8.", id: "Kita di kantor jam 8." },
+            { en: "Did you call me yesterday?", id: "Apakah kamu telepon saya kemarin?" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Simple Past Basics at work", id: "Saya pakai Past: Yesterday di kerja" }
-          ]
+            { en: "I visited my family on weekend.", id: "Saya kunjungi keluarga akhir pekan." },
+            { en: "I use Simple Past Basics at work today.", id: "Saya pakai Past: Yesterday di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Simple Past Basics now.", id: "Mari latihan Past: Yesterday sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Was", id: "Adalah (past)", pronounce: "woz", example: "I was busy", exampleId: "Saya sibuk" },
-      { en: "Were", id: "Adalah (past pl)", pronounce: "wer", example: "We were ready", exampleId: "Kita siap" },
-      { en: "Did", id: "Apakah (past)", pronounce: "did", example: "Did you go?", exampleId: "Apakah kamu pergi?" },
-      { en: "Visited", id: "Mengunjungi", pronounce: "VI-zi-tid", example: "I visited family", exampleId: "Saya kunjungi keluarga" },
-      { en: "Finished", id: "Selesai", pronounce: "FI-nishd", example: "I finished work", exampleId: "Saya selesai kerja" },
-      { en: "Called", id: "Menelepon", pronounce: "kold", example: "He called me", exampleId: "Dia menelepon saya" },
-      { en: "Had", id: "Punya (past)", pronounce: "hed", example: "I had time", exampleId: "Saya punya waktu" },
-      { en: "Said", id: "Berkata", pronounce: "sed", example: "She said hello", exampleId: "Dia berkata halo" },
-      { en: "Yesterday", id: "Kemarin", pronounce: "YES-ter-dei", example: "Yesterday I went", exampleId: "Kemarin saya pergi" },
-      { en: "Went", id: "Pergi (past)", pronounce: "went", example: "I went home", exampleId: "Saya pulang" }
+      { en: "Did you call me", id: "Apakah kamu telepon saya", pronounce: "did yu kol mi", example: "Did you call me yesterday?", exampleId: "Apakah kamu telepon saya kemarin?" },
+      { en: "I visited my family", id: "Saya kunjungi keluarga", pronounce: "ai VI-zi-tid mai FEM-li", example: "I visited my family on weekend.", exampleId: "Saya kunjungi keluarga akhir pekan." },
+      { en: "I finished the report", id: "Saya selesaikan laporan", pronounce: "ai FI-nishd dhe ri-PORT", example: "I finished the report at 5.", exampleId: "Saya selesaikan laporan jam 5." },
+      { en: "She said thank you", id: "Dia bilang terima kasih", pronounce: "shi sed THENG-kyu", example: "She said thank you so much.", exampleId: "Dia bilang terima kasih banyak." },
+      { en: "I had lunch at 12", id: "Saya makan siang jam 12", pronounce: "ai hed lanch et twelv", example: "I had lunch at 12 with team.", exampleId: "Saya makan siang jam 12 dengan tim." },
+      { en: "First I woke up, then I went", id: "Pertama bangun, lalu pergi", pronounce: "ferst ai wouk ap dhen ai went", example: "First I woke up, then I went to work.", exampleId: "Pertama bangun, lalu pergi kerja." },
+      { en: "How was your weekend", id: "Gimana akhir pekanmu", pronounce: "hau woz yor wiik-END", example: "How was your weekend?", exampleId: "Gimana akhir pekanmu?" },
+      { en: "Yesterday I went home", id: "Kemarin saya pulang", pronounce: "YES-ter-dei ai went houm", example: "Yesterday I went home late.", exampleId: "Kemarin saya pulang telat." },
+      { en: "I was busy yesterday", id: "Saya sibuk kemarin", pronounce: "ai woz BI-zi YES-ter-dei", example: "I was busy yesterday.", exampleId: "Saya sibuk kemarin." },
+      { en: "We were at office", id: "Kita di kantor (past)", pronounce: "wi wer et O-fis", example: "We were at office at 8.", exampleId: "Kita di kantor jam 8." }
     ],
     quiz: [
-      { id: "4-1-q1", question: "Past/Future Q1 for Simple Past Basics", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-1-q2", question: "Past/Future Q2 for Simple Past Basics", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-1-q3", question: "Past/Future Q3 for Simple Past Basics", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-1-q4", question: "Past/Future Q4 for Simple Past Basics", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-1-q5", question: "Past/Future Q5 for Simple Past Basics", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "4-1-q1", question: "Yesterday I ____ (go) home", options: ["go", "went (correct)", "going", "goed"], answer: 1, explanation: "V2: go→went." },
+      { id: "4-1-q2", question: "I ____ busy yesterday", options: ["am", "was (correct)", "were", "is"], answer: 1, explanation: "Past: I was." },
+      { id: "4-1-q3", question: "Did you ____ me", options: ["called", "call (correct)", "calling", "calls"], answer: 1, explanation: "Did + V1." },
+      { id: "4-1-q4", question: "I ____ my family", options: ["visit", "visited (correct)", "visiting", "visits"], answer: 1, explanation: "Past V2." },
+      { id: "4-1-q5", question: "First I woke, ____ I went", options: ["then (correct)", "than", "there", "the"], answer: 0, explanation: "First, then, finally." }
     ]
   },
   {
@@ -989,49 +1203,60 @@ export const lessons: Lesson[] = [
     order: 20,
     title: "Was/Were",
     titleEn: "Was & Were",
-    objective: "I was busy",
+    objective: "I was busy vs They were",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Was/Were (Was & Were) — I was busy. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Was/Were (Was & Were) — I was busy vs They were. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Was/Were",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Was & Were A", id: "Contoh Was/Were A" },
-            { en: "Example Was & Were B", id: "Contoh Was/Were B" }
+            { en: "I visited my family on weekend.", id: "Saya kunjungi keluarga akhir pekan." },
+            { en: "I finished the report at 5.", id: "Saya selesaikan laporan jam 5." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Was & Were at work", id: "Saya pakai Was/Were di kerja" }
-          ]
+            { en: "She said thank you so much.", id: "Dia bilang terima kasih banyak." },
+            { en: "I use Was & Were at work today.", id: "Saya pakai Was/Were di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Was & Were now.", id: "Mari latihan Was/Were sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Did", id: "Apakah (past)", pronounce: "did", example: "Did you go?", exampleId: "Apakah kamu pergi?" },
-      { en: "Visited", id: "Mengunjungi", pronounce: "VI-zi-tid", example: "I visited family", exampleId: "Saya kunjungi keluarga" },
-      { en: "Finished", id: "Selesai", pronounce: "FI-nishd", example: "I finished work", exampleId: "Saya selesai kerja" },
-      { en: "Called", id: "Menelepon", pronounce: "kold", example: "He called me", exampleId: "Dia menelepon saya" },
-      { en: "Had", id: "Punya (past)", pronounce: "hed", example: "I had time", exampleId: "Saya punya waktu" },
-      { en: "Said", id: "Berkata", pronounce: "sed", example: "She said hello", exampleId: "Dia berkata halo" },
-      { en: "Yesterday", id: "Kemarin", pronounce: "YES-ter-dei", example: "Yesterday I went", exampleId: "Kemarin saya pergi" },
-      { en: "Went", id: "Pergi (past)", pronounce: "went", example: "I went home", exampleId: "Saya pulang" },
-      { en: "Was", id: "Adalah (past)", pronounce: "woz", example: "I was busy", exampleId: "Saya sibuk" },
-      { en: "Were", id: "Adalah (past pl)", pronounce: "wer", example: "We were ready", exampleId: "Kita siap" }
+      { en: "She said thank you", id: "Dia bilang terima kasih", pronounce: "shi sed THENG-kyu", example: "She said thank you so much.", exampleId: "Dia bilang terima kasih banyak." },
+      { en: "I had lunch at 12", id: "Saya makan siang jam 12", pronounce: "ai hed lanch et twelv", example: "I had lunch at 12 with team.", exampleId: "Saya makan siang jam 12 dengan tim." },
+      { en: "First I woke up, then I went", id: "Pertama bangun, lalu pergi", pronounce: "ferst ai wouk ap dhen ai went", example: "First I woke up, then I went to work.", exampleId: "Pertama bangun, lalu pergi kerja." },
+      { en: "How was your weekend", id: "Gimana akhir pekanmu", pronounce: "hau woz yor wiik-END", example: "How was your weekend?", exampleId: "Gimana akhir pekanmu?" },
+      { en: "Yesterday I went home", id: "Kemarin saya pulang", pronounce: "YES-ter-dei ai went houm", example: "Yesterday I went home late.", exampleId: "Kemarin saya pulang telat." },
+      { en: "I was busy yesterday", id: "Saya sibuk kemarin", pronounce: "ai woz BI-zi YES-ter-dei", example: "I was busy yesterday.", exampleId: "Saya sibuk kemarin." },
+      { en: "We were at office", id: "Kita di kantor (past)", pronounce: "wi wer et O-fis", example: "We were at office at 8.", exampleId: "Kita di kantor jam 8." },
+      { en: "Did you call me", id: "Apakah kamu telepon saya", pronounce: "did yu kol mi", example: "Did you call me yesterday?", exampleId: "Apakah kamu telepon saya kemarin?" },
+      { en: "I visited my family", id: "Saya kunjungi keluarga", pronounce: "ai VI-zi-tid mai FEM-li", example: "I visited my family on weekend.", exampleId: "Saya kunjungi keluarga akhir pekan." },
+      { en: "I finished the report", id: "Saya selesaikan laporan", pronounce: "ai FI-nishd dhe ri-PORT", example: "I finished the report at 5.", exampleId: "Saya selesaikan laporan jam 5." }
     ],
     quiz: [
-      { id: "4-2-q1", question: "Past/Future Q1 for Was & Were", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-2-q2", question: "Past/Future Q2 for Was & Were", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-2-q3", question: "Past/Future Q3 for Was & Were", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-2-q4", question: "Past/Future Q4 for Was & Were", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-2-q5", question: "Past/Future Q5 for Was & Were", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "4-2-q1", question: "Yesterday I ____ (go) home", options: ["go", "went (correct)", "going", "goed"], answer: 1, explanation: "V2: go→went." },
+      { id: "4-2-q2", question: "I ____ busy yesterday", options: ["am", "was (correct)", "were", "is"], answer: 1, explanation: "Past: I was." },
+      { id: "4-2-q3", question: "Did you ____ me", options: ["called", "call (correct)", "calling", "calls"], answer: 1, explanation: "Did + V1." },
+      { id: "4-2-q4", question: "I ____ my family", options: ["visit", "visited (correct)", "visiting", "visits"], answer: 1, explanation: "Past V2." },
+      { id: "4-2-q5", question: "First I woke, ____ I went", options: ["then (correct)", "than", "there", "the"], answer: 0, explanation: "First, then, finally." }
     ]
   },
   {
@@ -1040,49 +1265,60 @@ export const lessons: Lesson[] = [
     order: 21,
     title: "Cerita Libur",
     titleEn: "Weekend Story",
-    objective: "I visited my family",
+    objective: "I visited, I ate, I saw",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Cerita Libur (Weekend Story) — I visited my family. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Cerita Libur (Weekend Story) — I visited, I ate, I saw. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Cerita Libur",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Weekend Story A", id: "Contoh Cerita Libur A" },
-            { en: "Example Weekend Story B", id: "Contoh Cerita Libur B" }
+            { en: "She said thank you so much.", id: "Dia bilang terima kasih banyak." },
+            { en: "I had lunch at 12 with team.", id: "Saya makan siang jam 12 dengan tim." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Weekend Story at work", id: "Saya pakai Cerita Libur di kerja" }
-          ]
+            { en: "First I woke up, then I went to work.", id: "Pertama bangun, lalu pergi kerja." },
+            { en: "I use Weekend Story at work today.", id: "Saya pakai Cerita Libur di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Weekend Story now.", id: "Mari latihan Cerita Libur sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Finished", id: "Selesai", pronounce: "FI-nishd", example: "I finished work", exampleId: "Saya selesai kerja" },
-      { en: "Called", id: "Menelepon", pronounce: "kold", example: "He called me", exampleId: "Dia menelepon saya" },
-      { en: "Had", id: "Punya (past)", pronounce: "hed", example: "I had time", exampleId: "Saya punya waktu" },
-      { en: "Said", id: "Berkata", pronounce: "sed", example: "She said hello", exampleId: "Dia berkata halo" },
-      { en: "Yesterday", id: "Kemarin", pronounce: "YES-ter-dei", example: "Yesterday I went", exampleId: "Kemarin saya pergi" },
-      { en: "Went", id: "Pergi (past)", pronounce: "went", example: "I went home", exampleId: "Saya pulang" },
-      { en: "Was", id: "Adalah (past)", pronounce: "woz", example: "I was busy", exampleId: "Saya sibuk" },
-      { en: "Were", id: "Adalah (past pl)", pronounce: "wer", example: "We were ready", exampleId: "Kita siap" },
-      { en: "Did", id: "Apakah (past)", pronounce: "did", example: "Did you go?", exampleId: "Apakah kamu pergi?" },
-      { en: "Visited", id: "Mengunjungi", pronounce: "VI-zi-tid", example: "I visited family", exampleId: "Saya kunjungi keluarga" }
+      { en: "How was your weekend", id: "Gimana akhir pekanmu", pronounce: "hau woz yor wiik-END", example: "How was your weekend?", exampleId: "Gimana akhir pekanmu?" },
+      { en: "Yesterday I went home", id: "Kemarin saya pulang", pronounce: "YES-ter-dei ai went houm", example: "Yesterday I went home late.", exampleId: "Kemarin saya pulang telat." },
+      { en: "I was busy yesterday", id: "Saya sibuk kemarin", pronounce: "ai woz BI-zi YES-ter-dei", example: "I was busy yesterday.", exampleId: "Saya sibuk kemarin." },
+      { en: "We were at office", id: "Kita di kantor (past)", pronounce: "wi wer et O-fis", example: "We were at office at 8.", exampleId: "Kita di kantor jam 8." },
+      { en: "Did you call me", id: "Apakah kamu telepon saya", pronounce: "did yu kol mi", example: "Did you call me yesterday?", exampleId: "Apakah kamu telepon saya kemarin?" },
+      { en: "I visited my family", id: "Saya kunjungi keluarga", pronounce: "ai VI-zi-tid mai FEM-li", example: "I visited my family on weekend.", exampleId: "Saya kunjungi keluarga akhir pekan." },
+      { en: "I finished the report", id: "Saya selesaikan laporan", pronounce: "ai FI-nishd dhe ri-PORT", example: "I finished the report at 5.", exampleId: "Saya selesaikan laporan jam 5." },
+      { en: "She said thank you", id: "Dia bilang terima kasih", pronounce: "shi sed THENG-kyu", example: "She said thank you so much.", exampleId: "Dia bilang terima kasih banyak." },
+      { en: "I had lunch at 12", id: "Saya makan siang jam 12", pronounce: "ai hed lanch et twelv", example: "I had lunch at 12 with team.", exampleId: "Saya makan siang jam 12 dengan tim." },
+      { en: "First I woke up, then I went", id: "Pertama bangun, lalu pergi", pronounce: "ferst ai wouk ap dhen ai went", example: "First I woke up, then I went to work.", exampleId: "Pertama bangun, lalu pergi kerja." }
     ],
     quiz: [
-      { id: "4-3-q1", question: "Past/Future Q1 for Weekend Story", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-3-q2", question: "Past/Future Q2 for Weekend Story", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-3-q3", question: "Past/Future Q3 for Weekend Story", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-3-q4", question: "Past/Future Q4 for Weekend Story", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-3-q5", question: "Past/Future Q5 for Weekend Story", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "4-3-q1", question: "Yesterday I ____ (go) home", options: ["go", "went (correct)", "going", "goed"], answer: 1, explanation: "V2: go→went." },
+      { id: "4-3-q2", question: "I ____ busy yesterday", options: ["am", "was (correct)", "were", "is"], answer: 1, explanation: "Past: I was." },
+      { id: "4-3-q3", question: "Did you ____ me", options: ["called", "call (correct)", "calling", "calls"], answer: 1, explanation: "Did + V1." },
+      { id: "4-3-q4", question: "I ____ my family", options: ["visit", "visited (correct)", "visiting", "visits"], answer: 1, explanation: "Past V2." },
+      { id: "4-3-q5", question: "First I woke, ____ I went", options: ["then (correct)", "than", "there", "the"], answer: 0, explanation: "First, then, finally." }
     ]
   },
   {
@@ -1091,49 +1327,60 @@ export const lessons: Lesson[] = [
     order: 22,
     title: "Tanya Past",
     titleEn: "Past Questions",
-    objective: "Did you...?",
+    objective: "Did you...? Was it...?",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Tanya Past (Past Questions) — Did you...?. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Tanya Past (Past Questions) — Did you...? Was it...?. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Tanya Past",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Past Questions A", id: "Contoh Tanya Past A" },
-            { en: "Example Past Questions B", id: "Contoh Tanya Past B" }
+            { en: "First I woke up, then I went to work.", id: "Pertama bangun, lalu pergi kerja." },
+            { en: "How was your weekend?", id: "Gimana akhir pekanmu?" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Past Questions at work", id: "Saya pakai Tanya Past di kerja" }
-          ]
+            { en: "Yesterday I went home late.", id: "Kemarin saya pulang telat." },
+            { en: "I use Past Questions at work today.", id: "Saya pakai Tanya Past di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Past Questions now.", id: "Mari latihan Tanya Past sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Had", id: "Punya (past)", pronounce: "hed", example: "I had time", exampleId: "Saya punya waktu" },
-      { en: "Said", id: "Berkata", pronounce: "sed", example: "She said hello", exampleId: "Dia berkata halo" },
-      { en: "Yesterday", id: "Kemarin", pronounce: "YES-ter-dei", example: "Yesterday I went", exampleId: "Kemarin saya pergi" },
-      { en: "Went", id: "Pergi (past)", pronounce: "went", example: "I went home", exampleId: "Saya pulang" },
-      { en: "Was", id: "Adalah (past)", pronounce: "woz", example: "I was busy", exampleId: "Saya sibuk" },
-      { en: "Were", id: "Adalah (past pl)", pronounce: "wer", example: "We were ready", exampleId: "Kita siap" },
-      { en: "Did", id: "Apakah (past)", pronounce: "did", example: "Did you go?", exampleId: "Apakah kamu pergi?" },
-      { en: "Visited", id: "Mengunjungi", pronounce: "VI-zi-tid", example: "I visited family", exampleId: "Saya kunjungi keluarga" },
-      { en: "Finished", id: "Selesai", pronounce: "FI-nishd", example: "I finished work", exampleId: "Saya selesai kerja" },
-      { en: "Called", id: "Menelepon", pronounce: "kold", example: "He called me", exampleId: "Dia menelepon saya" }
+      { en: "We were at office", id: "Kita di kantor (past)", pronounce: "wi wer et O-fis", example: "We were at office at 8.", exampleId: "Kita di kantor jam 8." },
+      { en: "Did you call me", id: "Apakah kamu telepon saya", pronounce: "did yu kol mi", example: "Did you call me yesterday?", exampleId: "Apakah kamu telepon saya kemarin?" },
+      { en: "I visited my family", id: "Saya kunjungi keluarga", pronounce: "ai VI-zi-tid mai FEM-li", example: "I visited my family on weekend.", exampleId: "Saya kunjungi keluarga akhir pekan." },
+      { en: "I finished the report", id: "Saya selesaikan laporan", pronounce: "ai FI-nishd dhe ri-PORT", example: "I finished the report at 5.", exampleId: "Saya selesaikan laporan jam 5." },
+      { en: "She said thank you", id: "Dia bilang terima kasih", pronounce: "shi sed THENG-kyu", example: "She said thank you so much.", exampleId: "Dia bilang terima kasih banyak." },
+      { en: "I had lunch at 12", id: "Saya makan siang jam 12", pronounce: "ai hed lanch et twelv", example: "I had lunch at 12 with team.", exampleId: "Saya makan siang jam 12 dengan tim." },
+      { en: "First I woke up, then I went", id: "Pertama bangun, lalu pergi", pronounce: "ferst ai wouk ap dhen ai went", example: "First I woke up, then I went to work.", exampleId: "Pertama bangun, lalu pergi kerja." },
+      { en: "How was your weekend", id: "Gimana akhir pekanmu", pronounce: "hau woz yor wiik-END", example: "How was your weekend?", exampleId: "Gimana akhir pekanmu?" },
+      { en: "Yesterday I went home", id: "Kemarin saya pulang", pronounce: "YES-ter-dei ai went houm", example: "Yesterday I went home late.", exampleId: "Kemarin saya pulang telat." },
+      { en: "I was busy yesterday", id: "Saya sibuk kemarin", pronounce: "ai woz BI-zi YES-ter-dei", example: "I was busy yesterday.", exampleId: "Saya sibuk kemarin." }
     ],
     quiz: [
-      { id: "4-4-q1", question: "Past/Future Q1 for Past Questions", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-4-q2", question: "Past/Future Q2 for Past Questions", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-4-q3", question: "Past/Future Q3 for Past Questions", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-4-q4", question: "Past/Future Q4 for Past Questions", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-4-q5", question: "Past/Future Q5 for Past Questions", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "4-4-q1", question: "Yesterday I ____ (go) home", options: ["go", "went (correct)", "going", "goed"], answer: 1, explanation: "V2: go→went." },
+      { id: "4-4-q2", question: "I ____ busy yesterday", options: ["am", "was (correct)", "were", "is"], answer: 1, explanation: "Past: I was." },
+      { id: "4-4-q3", question: "Did you ____ me", options: ["called", "call (correct)", "calling", "calls"], answer: 1, explanation: "Did + V1." },
+      { id: "4-4-q4", question: "I ____ my family", options: ["visit", "visited (correct)", "visiting", "visits"], answer: 1, explanation: "Past V2." },
+      { id: "4-4-q5", question: "First I woke, ____ I went", options: ["then (correct)", "than", "there", "the"], answer: 0, explanation: "First, then, finally." }
     ]
   },
   {
@@ -1142,49 +1389,60 @@ export const lessons: Lesson[] = [
     order: 23,
     title: "Pengalaman Kerja",
     titleEn: "Work Experience",
-    objective: "I worked as...",
+    objective: "I worked as... for 2 years",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Pengalaman Kerja (Work Experience) — I worked as.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Pengalaman Kerja (Work Experience) — I worked as... for 2 years. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Pengalaman Kerja",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Work Experience A", id: "Contoh Pengalaman Kerja A" },
-            { en: "Example Work Experience B", id: "Contoh Pengalaman Kerja B" }
+            { en: "Yesterday I went home late.", id: "Kemarin saya pulang telat." },
+            { en: "I was busy yesterday.", id: "Saya sibuk kemarin." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Work Experience at work", id: "Saya pakai Pengalaman Kerja di kerja" }
-          ]
+            { en: "We were at office at 8.", id: "Kita di kantor jam 8." },
+            { en: "I use Work Experience at work today.", id: "Saya pakai Pengalaman Kerja di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Work Experience now.", id: "Mari latihan Pengalaman Kerja sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Yesterday", id: "Kemarin", pronounce: "YES-ter-dei", example: "Yesterday I went", exampleId: "Kemarin saya pergi" },
-      { en: "Went", id: "Pergi (past)", pronounce: "went", example: "I went home", exampleId: "Saya pulang" },
-      { en: "Was", id: "Adalah (past)", pronounce: "woz", example: "I was busy", exampleId: "Saya sibuk" },
-      { en: "Were", id: "Adalah (past pl)", pronounce: "wer", example: "We were ready", exampleId: "Kita siap" },
-      { en: "Did", id: "Apakah (past)", pronounce: "did", example: "Did you go?", exampleId: "Apakah kamu pergi?" },
-      { en: "Visited", id: "Mengunjungi", pronounce: "VI-zi-tid", example: "I visited family", exampleId: "Saya kunjungi keluarga" },
-      { en: "Finished", id: "Selesai", pronounce: "FI-nishd", example: "I finished work", exampleId: "Saya selesai kerja" },
-      { en: "Called", id: "Menelepon", pronounce: "kold", example: "He called me", exampleId: "Dia menelepon saya" },
-      { en: "Had", id: "Punya (past)", pronounce: "hed", example: "I had time", exampleId: "Saya punya waktu" },
-      { en: "Said", id: "Berkata", pronounce: "sed", example: "She said hello", exampleId: "Dia berkata halo" }
+      { en: "I finished the report", id: "Saya selesaikan laporan", pronounce: "ai FI-nishd dhe ri-PORT", example: "I finished the report at 5.", exampleId: "Saya selesaikan laporan jam 5." },
+      { en: "She said thank you", id: "Dia bilang terima kasih", pronounce: "shi sed THENG-kyu", example: "She said thank you so much.", exampleId: "Dia bilang terima kasih banyak." },
+      { en: "I had lunch at 12", id: "Saya makan siang jam 12", pronounce: "ai hed lanch et twelv", example: "I had lunch at 12 with team.", exampleId: "Saya makan siang jam 12 dengan tim." },
+      { en: "First I woke up, then I went", id: "Pertama bangun, lalu pergi", pronounce: "ferst ai wouk ap dhen ai went", example: "First I woke up, then I went to work.", exampleId: "Pertama bangun, lalu pergi kerja." },
+      { en: "How was your weekend", id: "Gimana akhir pekanmu", pronounce: "hau woz yor wiik-END", example: "How was your weekend?", exampleId: "Gimana akhir pekanmu?" },
+      { en: "Yesterday I went home", id: "Kemarin saya pulang", pronounce: "YES-ter-dei ai went houm", example: "Yesterday I went home late.", exampleId: "Kemarin saya pulang telat." },
+      { en: "I was busy yesterday", id: "Saya sibuk kemarin", pronounce: "ai woz BI-zi YES-ter-dei", example: "I was busy yesterday.", exampleId: "Saya sibuk kemarin." },
+      { en: "We were at office", id: "Kita di kantor (past)", pronounce: "wi wer et O-fis", example: "We were at office at 8.", exampleId: "Kita di kantor jam 8." },
+      { en: "Did you call me", id: "Apakah kamu telepon saya", pronounce: "did yu kol mi", example: "Did you call me yesterday?", exampleId: "Apakah kamu telepon saya kemarin?" },
+      { en: "I visited my family", id: "Saya kunjungi keluarga", pronounce: "ai VI-zi-tid mai FEM-li", example: "I visited my family on weekend.", exampleId: "Saya kunjungi keluarga akhir pekan." }
     ],
     quiz: [
-      { id: "4-5-q1", question: "Past/Future Q1 for Work Experience", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-5-q2", question: "Past/Future Q2 for Work Experience", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-5-q3", question: "Past/Future Q3 for Work Experience", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-5-q4", question: "Past/Future Q4 for Work Experience", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-5-q5", question: "Past/Future Q5 for Work Experience", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "4-5-q1", question: "Yesterday I ____ (go) home", options: ["go", "went (correct)", "going", "goed"], answer: 1, explanation: "V2: go→went." },
+      { id: "4-5-q2", question: "I ____ busy yesterday", options: ["am", "was (correct)", "were", "is"], answer: 1, explanation: "Past: I was." },
+      { id: "4-5-q3", question: "Did you ____ me", options: ["called", "call (correct)", "calling", "calls"], answer: 1, explanation: "Did + V1." },
+      { id: "4-5-q4", question: "I ____ my family", options: ["visit", "visited (correct)", "visiting", "visits"], answer: 1, explanation: "Past V2." },
+      { id: "4-5-q5", question: "First I woke, ____ I went", options: ["then (correct)", "than", "there", "the"], answer: 0, explanation: "First, then, finally." }
     ]
   },
   {
@@ -1193,49 +1451,60 @@ export const lessons: Lesson[] = [
     order: 24,
     title: "Cerita Berurutan",
     titleEn: "Sequence Past",
-    objective: "First, then, finally",
+    objective: "First, then, after that, finally",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Cerita Berurutan (Sequence Past) — First, then, finally. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Cerita Berurutan (Sequence Past) — First, then, after that, finally. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Cerita Berurutan",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Sequence Past A", id: "Contoh Cerita Berurutan A" },
-            { en: "Example Sequence Past B", id: "Contoh Cerita Berurutan B" }
+            { en: "We were at office at 8.", id: "Kita di kantor jam 8." },
+            { en: "Did you call me yesterday?", id: "Apakah kamu telepon saya kemarin?" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Sequence Past at work", id: "Saya pakai Cerita Berurutan di kerja" }
-          ]
+            { en: "I visited my family on weekend.", id: "Saya kunjungi keluarga akhir pekan." },
+            { en: "I use Sequence Past at work today.", id: "Saya pakai Cerita Berurutan di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Sequence Past now.", id: "Mari latihan Cerita Berurutan sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Was", id: "Adalah (past)", pronounce: "woz", example: "I was busy", exampleId: "Saya sibuk" },
-      { en: "Were", id: "Adalah (past pl)", pronounce: "wer", example: "We were ready", exampleId: "Kita siap" },
-      { en: "Did", id: "Apakah (past)", pronounce: "did", example: "Did you go?", exampleId: "Apakah kamu pergi?" },
-      { en: "Visited", id: "Mengunjungi", pronounce: "VI-zi-tid", example: "I visited family", exampleId: "Saya kunjungi keluarga" },
-      { en: "Finished", id: "Selesai", pronounce: "FI-nishd", example: "I finished work", exampleId: "Saya selesai kerja" },
-      { en: "Called", id: "Menelepon", pronounce: "kold", example: "He called me", exampleId: "Dia menelepon saya" },
-      { en: "Had", id: "Punya (past)", pronounce: "hed", example: "I had time", exampleId: "Saya punya waktu" },
-      { en: "Said", id: "Berkata", pronounce: "sed", example: "She said hello", exampleId: "Dia berkata halo" },
-      { en: "Yesterday", id: "Kemarin", pronounce: "YES-ter-dei", example: "Yesterday I went", exampleId: "Kemarin saya pergi" },
-      { en: "Went", id: "Pergi (past)", pronounce: "went", example: "I went home", exampleId: "Saya pulang" }
+      { en: "First I woke up, then I went", id: "Pertama bangun, lalu pergi", pronounce: "ferst ai wouk ap dhen ai went", example: "First I woke up, then I went to work.", exampleId: "Pertama bangun, lalu pergi kerja." },
+      { en: "How was your weekend", id: "Gimana akhir pekanmu", pronounce: "hau woz yor wiik-END", example: "How was your weekend?", exampleId: "Gimana akhir pekanmu?" },
+      { en: "Yesterday I went home", id: "Kemarin saya pulang", pronounce: "YES-ter-dei ai went houm", example: "Yesterday I went home late.", exampleId: "Kemarin saya pulang telat." },
+      { en: "I was busy yesterday", id: "Saya sibuk kemarin", pronounce: "ai woz BI-zi YES-ter-dei", example: "I was busy yesterday.", exampleId: "Saya sibuk kemarin." },
+      { en: "We were at office", id: "Kita di kantor (past)", pronounce: "wi wer et O-fis", example: "We were at office at 8.", exampleId: "Kita di kantor jam 8." },
+      { en: "Did you call me", id: "Apakah kamu telepon saya", pronounce: "did yu kol mi", example: "Did you call me yesterday?", exampleId: "Apakah kamu telepon saya kemarin?" },
+      { en: "I visited my family", id: "Saya kunjungi keluarga", pronounce: "ai VI-zi-tid mai FEM-li", example: "I visited my family on weekend.", exampleId: "Saya kunjungi keluarga akhir pekan." },
+      { en: "I finished the report", id: "Saya selesaikan laporan", pronounce: "ai FI-nishd dhe ri-PORT", example: "I finished the report at 5.", exampleId: "Saya selesaikan laporan jam 5." },
+      { en: "She said thank you", id: "Dia bilang terima kasih", pronounce: "shi sed THENG-kyu", example: "She said thank you so much.", exampleId: "Dia bilang terima kasih banyak." },
+      { en: "I had lunch at 12", id: "Saya makan siang jam 12", pronounce: "ai hed lanch et twelv", example: "I had lunch at 12 with team.", exampleId: "Saya makan siang jam 12 dengan tim." }
     ],
     quiz: [
-      { id: "4-6-q1", question: "Past/Future Q1 for Sequence Past", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-6-q2", question: "Past/Future Q2 for Sequence Past", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-6-q3", question: "Past/Future Q3 for Sequence Past", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-6-q4", question: "Past/Future Q4 for Sequence Past", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "4-6-q5", question: "Past/Future Q5 for Sequence Past", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "4-6-q1", question: "Yesterday I ____ (go) home", options: ["go", "went (correct)", "going", "goed"], answer: 1, explanation: "V2: go→went." },
+      { id: "4-6-q2", question: "I ____ busy yesterday", options: ["am", "was (correct)", "were", "is"], answer: 1, explanation: "Past: I was." },
+      { id: "4-6-q3", question: "Did you ____ me", options: ["called", "call (correct)", "calling", "calls"], answer: 1, explanation: "Did + V1." },
+      { id: "4-6-q4", question: "I ____ my family", options: ["visit", "visited (correct)", "visiting", "visits"], answer: 1, explanation: "Past V2." },
+      { id: "4-6-q5", question: "First I woke, ____ I went", options: ["then (correct)", "than", "there", "the"], answer: 0, explanation: "First, then, finally." }
     ]
   },
   {
@@ -1244,49 +1513,60 @@ export const lessons: Lesson[] = [
     order: 25,
     title: "Will: Rencana",
     titleEn: "Will Future",
-    objective: "I will call you",
+    objective: "I will call you tomorrow",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Will: Rencana (Will Future) — I will call you. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Will: Rencana (Will Future) — I will call you tomorrow. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Will: Rencana",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Will Future A", id: "Contoh Will: Rencana A" },
-            { en: "Example Will Future B", id: "Contoh Will: Rencana B" }
+            { en: "I promise to come early.", id: "Saya janji datang awal." },
+            { en: "It will be sunny tomorrow.", id: "Besok akan cerah." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Will Future at work", id: "Saya pakai Will: Rencana di kerja" }
-          ]
+            { en: "Next week I will travel to Bali.", id: "Minggu depan saya travel ke Bali." },
+            { en: "I use Will Future at work today.", id: "Saya pakai Will: Rencana di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Will Future now.", id: "Mari latihan Will: Rencana sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Plan", id: "Rencana", pronounce: "plen", example: "My plan", exampleId: "Rencana saya" },
-      { en: "Tomorrow", id: "Besok", pronounce: "tu-MO-rou", example: "Tomorrow I will", exampleId: "Besok saya akan" },
-      { en: "Next week", id: "Minggu depan", pronounce: "nekst wiik", example: "Next week we will", exampleId: "Minggu depan kita akan" },
-      { en: "Promise", id: "Janji", pronounce: "PRO-mis", example: "I promise", exampleId: "Saya janji" },
-      { en: "Maybe", id: "Mungkin", pronounce: "MEI-bi", example: "Maybe I will", exampleId: "Mungkin saya akan" },
-      { en: "Soon", id: "Segera", pronounce: "sun", example: "See you soon", exampleId: "Sampai jumpa segera" },
-      { en: "Hope", id: "Harap", pronounce: "houp", example: "I hope to go", exampleId: "Saya harap pergi" },
-      { en: "Expect", id: "Mengharapkan", pronounce: "ik-SPEKT", example: "I expect to come", exampleId: "Saya harap datang" },
-      { en: "Will", id: "Akan", pronounce: "wil", example: "I will call", exampleId: "Saya akan telepon" },
-      { en: "Going to", id: "Akan", pronounce: "GO-ing tu", example: "I'm going to go", exampleId: "Saya akan pergi" }
+      { en: "It will be sunny", id: "Akan cerah", pronounce: "it wil bi SA-ni", example: "It will be sunny tomorrow.", exampleId: "Besok akan cerah." },
+      { en: "Next week I will travel", id: "Minggu depan saya travel", pronounce: "nekst wiik ai wil TRE-vel", example: "Next week I will travel to Bali.", exampleId: "Minggu depan saya travel ke Bali." },
+      { en: "Let's meet at 10", id: "Mari ketemu jam 10", pronounce: "lets miit et ten", example: "Let's meet at 10 in lobby.", exampleId: "Mari ketemu jam 10 di lobi." },
+      { en: "Are you free tomorrow", id: "Apakah besok luang", pronounce: "ar yu frii tu-MO-rou", example: "Are you free tomorrow?", exampleId: "Apakah besok luang?" },
+      { en: "I hope to pass", id: "Saya harap lulus", pronounce: "ai houp tu paas", example: "I hope to pass the test.", exampleId: "Saya harap lulus tes." },
+      { en: "Maybe I will come late", id: "Mungkin saya telat", pronounce: "MEI-bi ai wil kam leit", example: "Maybe I will come late.", exampleId: "Mungkin saya telat." },
+      { en: "Expect to finish soon", id: "Harap selesai segera", pronounce: "ik-SPEKT tu FI-nish sun", example: "I expect to finish soon.", exampleId: "Saya harap selesai segera." },
+      { en: "I will call you tomorrow", id: "Saya akan telepon besok", pronounce: "ai wil kol yu tu-MO-rou", example: "I will call you tomorrow at 9.", exampleId: "Saya akan telepon besok jam 9." },
+      { en: "I am going to meet client", id: "Saya akan temu klien", pronounce: "ai em GO-ing tu miit KLAI-en", example: "I am going to meet client at 10.", exampleId: "Saya akan temu klien jam 10." },
+      { en: "I promise to come", id: "Saya janji datang", pronounce: "ai PRO-mis tu kam", example: "I promise to come early.", exampleId: "Saya janji datang awal." }
     ],
     quiz: [
-      { id: "5-1-q1", question: "Past/Future Q1 for Will Future", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-1-q2", question: "Past/Future Q2 for Will Future", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-1-q3", question: "Past/Future Q3 for Will Future", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-1-q4", question: "Past/Future Q4 for Will Future", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-1-q5", question: "Past/Future Q5 for Will Future", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "5-1-q1", question: "I ____ call you", options: ["will (correct)", "are will", "is will", "will to"], answer: 0, explanation: "S + will + V1" },
+      { id: "5-1-q2", question: "I am ____ to go (going)", options: ["go", "going (correct)", "gone", "goes"], answer: 1, explanation: "am/is/are + going to" },
+      { id: "5-1-q3", question: "I will ____ you (help)", options: ["help (correct)", "helping", "helps", "helped"], answer: 0, explanation: "will + V1" },
+      { id: "5-1-q4", question: "Next week I will ____", options: ["travel (correct)", "traveling", "travels", "travelled"], answer: 0, explanation: "Future: will + V1" },
+      { id: "5-1-q5", question: "Let's ____ at 10", options: ["meet (correct)", "meeting", "met", "meets"], answer: 0, explanation: "Let's + V1" }
     ]
   },
   {
@@ -1295,49 +1575,60 @@ export const lessons: Lesson[] = [
     order: 26,
     title: "Going to",
     titleEn: "Going to Plans",
-    objective: "I am going to...",
+    objective: "I am going to meet...",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Going to (Going to Plans) — I am going to.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Going to (Going to Plans) — I am going to meet.... Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Going to",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Going to Plans A", id: "Contoh Going to A" },
-            { en: "Example Going to Plans B", id: "Contoh Going to B" }
+            { en: "Next week I will travel to Bali.", id: "Minggu depan saya travel ke Bali." },
+            { en: "Let's meet at 10 in lobby.", id: "Mari ketemu jam 10 di lobi." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Going to Plans at work", id: "Saya pakai Going to di kerja" }
-          ]
+            { en: "Are you free tomorrow?", id: "Apakah besok luang?" },
+            { en: "I use Going to Plans at work today.", id: "Saya pakai Going to di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Going to Plans now.", id: "Mari latihan Going to sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Next week", id: "Minggu depan", pronounce: "nekst wiik", example: "Next week we will", exampleId: "Minggu depan kita akan" },
-      { en: "Promise", id: "Janji", pronounce: "PRO-mis", example: "I promise", exampleId: "Saya janji" },
-      { en: "Maybe", id: "Mungkin", pronounce: "MEI-bi", example: "Maybe I will", exampleId: "Mungkin saya akan" },
-      { en: "Soon", id: "Segera", pronounce: "sun", example: "See you soon", exampleId: "Sampai jumpa segera" },
-      { en: "Hope", id: "Harap", pronounce: "houp", example: "I hope to go", exampleId: "Saya harap pergi" },
-      { en: "Expect", id: "Mengharapkan", pronounce: "ik-SPEKT", example: "I expect to come", exampleId: "Saya harap datang" },
-      { en: "Will", id: "Akan", pronounce: "wil", example: "I will call", exampleId: "Saya akan telepon" },
-      { en: "Going to", id: "Akan", pronounce: "GO-ing tu", example: "I'm going to go", exampleId: "Saya akan pergi" },
-      { en: "Plan", id: "Rencana", pronounce: "plen", example: "My plan", exampleId: "Rencana saya" },
-      { en: "Tomorrow", id: "Besok", pronounce: "tu-MO-rou", example: "Tomorrow I will", exampleId: "Besok saya akan" }
+      { en: "Are you free tomorrow", id: "Apakah besok luang", pronounce: "ar yu frii tu-MO-rou", example: "Are you free tomorrow?", exampleId: "Apakah besok luang?" },
+      { en: "I hope to pass", id: "Saya harap lulus", pronounce: "ai houp tu paas", example: "I hope to pass the test.", exampleId: "Saya harap lulus tes." },
+      { en: "Maybe I will come late", id: "Mungkin saya telat", pronounce: "MEI-bi ai wil kam leit", example: "Maybe I will come late.", exampleId: "Mungkin saya telat." },
+      { en: "Expect to finish soon", id: "Harap selesai segera", pronounce: "ik-SPEKT tu FI-nish sun", example: "I expect to finish soon.", exampleId: "Saya harap selesai segera." },
+      { en: "I will call you tomorrow", id: "Saya akan telepon besok", pronounce: "ai wil kol yu tu-MO-rou", example: "I will call you tomorrow at 9.", exampleId: "Saya akan telepon besok jam 9." },
+      { en: "I am going to meet client", id: "Saya akan temu klien", pronounce: "ai em GO-ing tu miit KLAI-en", example: "I am going to meet client at 10.", exampleId: "Saya akan temu klien jam 10." },
+      { en: "I promise to come", id: "Saya janji datang", pronounce: "ai PRO-mis tu kam", example: "I promise to come early.", exampleId: "Saya janji datang awal." },
+      { en: "It will be sunny", id: "Akan cerah", pronounce: "it wil bi SA-ni", example: "It will be sunny tomorrow.", exampleId: "Besok akan cerah." },
+      { en: "Next week I will travel", id: "Minggu depan saya travel", pronounce: "nekst wiik ai wil TRE-vel", example: "Next week I will travel to Bali.", exampleId: "Minggu depan saya travel ke Bali." },
+      { en: "Let's meet at 10", id: "Mari ketemu jam 10", pronounce: "lets miit et ten", example: "Let's meet at 10 in lobby.", exampleId: "Mari ketemu jam 10 di lobi." }
     ],
     quiz: [
-      { id: "5-2-q1", question: "Past/Future Q1 for Going to Plans", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-2-q2", question: "Past/Future Q2 for Going to Plans", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-2-q3", question: "Past/Future Q3 for Going to Plans", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-2-q4", question: "Past/Future Q4 for Going to Plans", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-2-q5", question: "Past/Future Q5 for Going to Plans", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "5-2-q1", question: "I ____ call you", options: ["will (correct)", "are will", "is will", "will to"], answer: 0, explanation: "S + will + V1" },
+      { id: "5-2-q2", question: "I am ____ to go (going)", options: ["go", "going (correct)", "gone", "goes"], answer: 1, explanation: "am/is/are + going to" },
+      { id: "5-2-q3", question: "I will ____ you (help)", options: ["help (correct)", "helping", "helps", "helped"], answer: 0, explanation: "will + V1" },
+      { id: "5-2-q4", question: "Next week I will ____", options: ["travel (correct)", "traveling", "travels", "travelled"], answer: 0, explanation: "Future: will + V1" },
+      { id: "5-2-q5", question: "Let's ____ at 10", options: ["meet (correct)", "meeting", "met", "meets"], answer: 0, explanation: "Let's + V1" }
     ]
   },
   {
@@ -1346,49 +1637,60 @@ export const lessons: Lesson[] = [
     order: 27,
     title: "Janji & Tawaran",
     titleEn: "Promises & Offers",
-    objective: "Can I help?",
+    objective: "I will help, Shall I...?",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Janji & Tawaran (Promises & Offers) — Can I help?. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Janji & Tawaran (Promises & Offers) — I will help, Shall I...?. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Janji & Tawaran",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Promises & Offers A", id: "Contoh Janji & Tawaran A" },
-            { en: "Example Promises & Offers B", id: "Contoh Janji & Tawaran B" }
+            { en: "Are you free tomorrow?", id: "Apakah besok luang?" },
+            { en: "I hope to pass the test.", id: "Saya harap lulus tes." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Promises & Offers at work", id: "Saya pakai Janji & Tawaran di kerja" }
-          ]
+            { en: "Maybe I will come late.", id: "Mungkin saya telat." },
+            { en: "I use Promises & Offers at work today.", id: "Saya pakai Janji & Tawaran di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Promises & Offers now.", id: "Mari latihan Janji & Tawaran sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Maybe", id: "Mungkin", pronounce: "MEI-bi", example: "Maybe I will", exampleId: "Mungkin saya akan" },
-      { en: "Soon", id: "Segera", pronounce: "sun", example: "See you soon", exampleId: "Sampai jumpa segera" },
-      { en: "Hope", id: "Harap", pronounce: "houp", example: "I hope to go", exampleId: "Saya harap pergi" },
-      { en: "Expect", id: "Mengharapkan", pronounce: "ik-SPEKT", example: "I expect to come", exampleId: "Saya harap datang" },
-      { en: "Will", id: "Akan", pronounce: "wil", example: "I will call", exampleId: "Saya akan telepon" },
-      { en: "Going to", id: "Akan", pronounce: "GO-ing tu", example: "I'm going to go", exampleId: "Saya akan pergi" },
-      { en: "Plan", id: "Rencana", pronounce: "plen", example: "My plan", exampleId: "Rencana saya" },
-      { en: "Tomorrow", id: "Besok", pronounce: "tu-MO-rou", example: "Tomorrow I will", exampleId: "Besok saya akan" },
-      { en: "Next week", id: "Minggu depan", pronounce: "nekst wiik", example: "Next week we will", exampleId: "Minggu depan kita akan" },
-      { en: "Promise", id: "Janji", pronounce: "PRO-mis", example: "I promise", exampleId: "Saya janji" }
+      { en: "Expect to finish soon", id: "Harap selesai segera", pronounce: "ik-SPEKT tu FI-nish sun", example: "I expect to finish soon.", exampleId: "Saya harap selesai segera." },
+      { en: "I will call you tomorrow", id: "Saya akan telepon besok", pronounce: "ai wil kol yu tu-MO-rou", example: "I will call you tomorrow at 9.", exampleId: "Saya akan telepon besok jam 9." },
+      { en: "I am going to meet client", id: "Saya akan temu klien", pronounce: "ai em GO-ing tu miit KLAI-en", example: "I am going to meet client at 10.", exampleId: "Saya akan temu klien jam 10." },
+      { en: "I promise to come", id: "Saya janji datang", pronounce: "ai PRO-mis tu kam", example: "I promise to come early.", exampleId: "Saya janji datang awal." },
+      { en: "It will be sunny", id: "Akan cerah", pronounce: "it wil bi SA-ni", example: "It will be sunny tomorrow.", exampleId: "Besok akan cerah." },
+      { en: "Next week I will travel", id: "Minggu depan saya travel", pronounce: "nekst wiik ai wil TRE-vel", example: "Next week I will travel to Bali.", exampleId: "Minggu depan saya travel ke Bali." },
+      { en: "Let's meet at 10", id: "Mari ketemu jam 10", pronounce: "lets miit et ten", example: "Let's meet at 10 in lobby.", exampleId: "Mari ketemu jam 10 di lobi." },
+      { en: "Are you free tomorrow", id: "Apakah besok luang", pronounce: "ar yu frii tu-MO-rou", example: "Are you free tomorrow?", exampleId: "Apakah besok luang?" },
+      { en: "I hope to pass", id: "Saya harap lulus", pronounce: "ai houp tu paas", example: "I hope to pass the test.", exampleId: "Saya harap lulus tes." },
+      { en: "Maybe I will come late", id: "Mungkin saya telat", pronounce: "MEI-bi ai wil kam leit", example: "Maybe I will come late.", exampleId: "Mungkin saya telat." }
     ],
     quiz: [
-      { id: "5-3-q1", question: "Past/Future Q1 for Promises & Offers", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-3-q2", question: "Past/Future Q2 for Promises & Offers", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-3-q3", question: "Past/Future Q3 for Promises & Offers", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-3-q4", question: "Past/Future Q4 for Promises & Offers", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-3-q5", question: "Past/Future Q5 for Promises & Offers", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "5-3-q1", question: "I ____ call you", options: ["will (correct)", "are will", "is will", "will to"], answer: 0, explanation: "S + will + V1" },
+      { id: "5-3-q2", question: "I am ____ to go (going)", options: ["go", "going (correct)", "gone", "goes"], answer: 1, explanation: "am/is/are + going to" },
+      { id: "5-3-q3", question: "I will ____ you (help)", options: ["help (correct)", "helping", "helps", "helped"], answer: 0, explanation: "will + V1" },
+      { id: "5-3-q4", question: "Next week I will ____", options: ["travel (correct)", "traveling", "travels", "travelled"], answer: 0, explanation: "Future: will + V1" },
+      { id: "5-3-q5", question: "Let's ____ at 10", options: ["meet (correct)", "meeting", "met", "meets"], answer: 0, explanation: "Let's + V1" }
     ]
   },
   {
@@ -1397,49 +1699,60 @@ export const lessons: Lesson[] = [
     order: 28,
     title: "Prediksi",
     titleEn: "Predictions",
-    objective: "It will be...",
+    objective: "It will be sunny, I think...",
     duration: "14 menit",
     content: {
-      intro: "Pelajaran Prediksi (Predictions) — It will be.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Prediksi (Predictions) — It will be sunny, I think.... Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Prediksi",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Predictions A", id: "Contoh Prediksi A" },
-            { en: "Example Predictions B", id: "Contoh Prediksi B" }
+            { en: "Maybe I will come late.", id: "Mungkin saya telat." },
+            { en: "I expect to finish soon.", id: "Saya harap selesai segera." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Predictions at work", id: "Saya pakai Prediksi di kerja" }
-          ]
+            { en: "I will call you tomorrow at 9.", id: "Saya akan telepon besok jam 9." },
+            { en: "I use Predictions at work today.", id: "Saya pakai Prediksi di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Predictions now.", id: "Mari latihan Prediksi sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Hope", id: "Harap", pronounce: "houp", example: "I hope to go", exampleId: "Saya harap pergi" },
-      { en: "Expect", id: "Mengharapkan", pronounce: "ik-SPEKT", example: "I expect to come", exampleId: "Saya harap datang" },
-      { en: "Will", id: "Akan", pronounce: "wil", example: "I will call", exampleId: "Saya akan telepon" },
-      { en: "Going to", id: "Akan", pronounce: "GO-ing tu", example: "I'm going to go", exampleId: "Saya akan pergi" },
-      { en: "Plan", id: "Rencana", pronounce: "plen", example: "My plan", exampleId: "Rencana saya" },
-      { en: "Tomorrow", id: "Besok", pronounce: "tu-MO-rou", example: "Tomorrow I will", exampleId: "Besok saya akan" },
-      { en: "Next week", id: "Minggu depan", pronounce: "nekst wiik", example: "Next week we will", exampleId: "Minggu depan kita akan" },
-      { en: "Promise", id: "Janji", pronounce: "PRO-mis", example: "I promise", exampleId: "Saya janji" },
-      { en: "Maybe", id: "Mungkin", pronounce: "MEI-bi", example: "Maybe I will", exampleId: "Mungkin saya akan" },
-      { en: "Soon", id: "Segera", pronounce: "sun", example: "See you soon", exampleId: "Sampai jumpa segera" }
+      { en: "I promise to come", id: "Saya janji datang", pronounce: "ai PRO-mis tu kam", example: "I promise to come early.", exampleId: "Saya janji datang awal." },
+      { en: "It will be sunny", id: "Akan cerah", pronounce: "it wil bi SA-ni", example: "It will be sunny tomorrow.", exampleId: "Besok akan cerah." },
+      { en: "Next week I will travel", id: "Minggu depan saya travel", pronounce: "nekst wiik ai wil TRE-vel", example: "Next week I will travel to Bali.", exampleId: "Minggu depan saya travel ke Bali." },
+      { en: "Let's meet at 10", id: "Mari ketemu jam 10", pronounce: "lets miit et ten", example: "Let's meet at 10 in lobby.", exampleId: "Mari ketemu jam 10 di lobi." },
+      { en: "Are you free tomorrow", id: "Apakah besok luang", pronounce: "ar yu frii tu-MO-rou", example: "Are you free tomorrow?", exampleId: "Apakah besok luang?" },
+      { en: "I hope to pass", id: "Saya harap lulus", pronounce: "ai houp tu paas", example: "I hope to pass the test.", exampleId: "Saya harap lulus tes." },
+      { en: "Maybe I will come late", id: "Mungkin saya telat", pronounce: "MEI-bi ai wil kam leit", example: "Maybe I will come late.", exampleId: "Mungkin saya telat." },
+      { en: "Expect to finish soon", id: "Harap selesai segera", pronounce: "ik-SPEKT tu FI-nish sun", example: "I expect to finish soon.", exampleId: "Saya harap selesai segera." },
+      { en: "I will call you tomorrow", id: "Saya akan telepon besok", pronounce: "ai wil kol yu tu-MO-rou", example: "I will call you tomorrow at 9.", exampleId: "Saya akan telepon besok jam 9." },
+      { en: "I am going to meet client", id: "Saya akan temu klien", pronounce: "ai em GO-ing tu miit KLAI-en", example: "I am going to meet client at 10.", exampleId: "Saya akan temu klien jam 10." }
     ],
     quiz: [
-      { id: "5-4-q1", question: "Past/Future Q1 for Predictions", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-4-q2", question: "Past/Future Q2 for Predictions", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-4-q3", question: "Past/Future Q3 for Predictions", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-4-q4", question: "Past/Future Q4 for Predictions", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-4-q5", question: "Past/Future Q5 for Predictions", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "5-4-q1", question: "I ____ call you", options: ["will (correct)", "are will", "is will", "will to"], answer: 0, explanation: "S + will + V1" },
+      { id: "5-4-q2", question: "I am ____ to go (going)", options: ["go", "going (correct)", "gone", "goes"], answer: 1, explanation: "am/is/are + going to" },
+      { id: "5-4-q3", question: "I will ____ you (help)", options: ["help (correct)", "helping", "helps", "helped"], answer: 0, explanation: "will + V1" },
+      { id: "5-4-q4", question: "Next week I will ____", options: ["travel (correct)", "traveling", "travels", "travelled"], answer: 0, explanation: "Future: will + V1" },
+      { id: "5-4-q5", question: "Let's ____ at 10", options: ["meet (correct)", "meeting", "met", "meets"], answer: 0, explanation: "Let's + V1" }
     ]
   },
   {
@@ -1448,49 +1761,60 @@ export const lessons: Lesson[] = [
     order: 29,
     title: "Rencana Minggu Depan",
     titleEn: "Next Week Plan",
-    objective: "I will meet...",
+    objective: "Next week I will...",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Rencana Minggu Depan (Next Week Plan) — I will meet.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Rencana Minggu Depan (Next Week Plan) — Next week I will.... Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Rencana Minggu Depan",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Next Week Plan A", id: "Contoh Rencana Minggu Depan A" },
-            { en: "Example Next Week Plan B", id: "Contoh Rencana Minggu Depan B" }
+            { en: "I will call you tomorrow at 9.", id: "Saya akan telepon besok jam 9." },
+            { en: "I am going to meet client at 10.", id: "Saya akan temu klien jam 10." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Next Week Plan at work", id: "Saya pakai Rencana Minggu Depan di kerja" }
-          ]
+            { en: "I promise to come early.", id: "Saya janji datang awal." },
+            { en: "I use Next Week Plan at work today.", id: "Saya pakai Rencana Minggu Depan di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Next Week Plan now.", id: "Mari latihan Rencana Minggu Depan sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Will", id: "Akan", pronounce: "wil", example: "I will call", exampleId: "Saya akan telepon" },
-      { en: "Going to", id: "Akan", pronounce: "GO-ing tu", example: "I'm going to go", exampleId: "Saya akan pergi" },
-      { en: "Plan", id: "Rencana", pronounce: "plen", example: "My plan", exampleId: "Rencana saya" },
-      { en: "Tomorrow", id: "Besok", pronounce: "tu-MO-rou", example: "Tomorrow I will", exampleId: "Besok saya akan" },
-      { en: "Next week", id: "Minggu depan", pronounce: "nekst wiik", example: "Next week we will", exampleId: "Minggu depan kita akan" },
-      { en: "Promise", id: "Janji", pronounce: "PRO-mis", example: "I promise", exampleId: "Saya janji" },
-      { en: "Maybe", id: "Mungkin", pronounce: "MEI-bi", example: "Maybe I will", exampleId: "Mungkin saya akan" },
-      { en: "Soon", id: "Segera", pronounce: "sun", example: "See you soon", exampleId: "Sampai jumpa segera" },
-      { en: "Hope", id: "Harap", pronounce: "houp", example: "I hope to go", exampleId: "Saya harap pergi" },
-      { en: "Expect", id: "Mengharapkan", pronounce: "ik-SPEKT", example: "I expect to come", exampleId: "Saya harap datang" }
+      { en: "Let's meet at 10", id: "Mari ketemu jam 10", pronounce: "lets miit et ten", example: "Let's meet at 10 in lobby.", exampleId: "Mari ketemu jam 10 di lobi." },
+      { en: "Are you free tomorrow", id: "Apakah besok luang", pronounce: "ar yu frii tu-MO-rou", example: "Are you free tomorrow?", exampleId: "Apakah besok luang?" },
+      { en: "I hope to pass", id: "Saya harap lulus", pronounce: "ai houp tu paas", example: "I hope to pass the test.", exampleId: "Saya harap lulus tes." },
+      { en: "Maybe I will come late", id: "Mungkin saya telat", pronounce: "MEI-bi ai wil kam leit", example: "Maybe I will come late.", exampleId: "Mungkin saya telat." },
+      { en: "Expect to finish soon", id: "Harap selesai segera", pronounce: "ik-SPEKT tu FI-nish sun", example: "I expect to finish soon.", exampleId: "Saya harap selesai segera." },
+      { en: "I will call you tomorrow", id: "Saya akan telepon besok", pronounce: "ai wil kol yu tu-MO-rou", example: "I will call you tomorrow at 9.", exampleId: "Saya akan telepon besok jam 9." },
+      { en: "I am going to meet client", id: "Saya akan temu klien", pronounce: "ai em GO-ing tu miit KLAI-en", example: "I am going to meet client at 10.", exampleId: "Saya akan temu klien jam 10." },
+      { en: "I promise to come", id: "Saya janji datang", pronounce: "ai PRO-mis tu kam", example: "I promise to come early.", exampleId: "Saya janji datang awal." },
+      { en: "It will be sunny", id: "Akan cerah", pronounce: "it wil bi SA-ni", example: "It will be sunny tomorrow.", exampleId: "Besok akan cerah." },
+      { en: "Next week I will travel", id: "Minggu depan saya travel", pronounce: "nekst wiik ai wil TRE-vel", example: "Next week I will travel to Bali.", exampleId: "Minggu depan saya travel ke Bali." }
     ],
     quiz: [
-      { id: "5-5-q1", question: "Past/Future Q1 for Next Week Plan", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-5-q2", question: "Past/Future Q2 for Next Week Plan", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-5-q3", question: "Past/Future Q3 for Next Week Plan", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-5-q4", question: "Past/Future Q4 for Next Week Plan", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-5-q5", question: "Past/Future Q5 for Next Week Plan", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "5-5-q1", question: "I ____ call you", options: ["will (correct)", "are will", "is will", "will to"], answer: 0, explanation: "S + will + V1" },
+      { id: "5-5-q2", question: "I am ____ to go (going)", options: ["go", "going (correct)", "gone", "goes"], answer: 1, explanation: "am/is/are + going to" },
+      { id: "5-5-q3", question: "I will ____ you (help)", options: ["help (correct)", "helping", "helps", "helped"], answer: 0, explanation: "will + V1" },
+      { id: "5-5-q4", question: "Next week I will ____", options: ["travel (correct)", "traveling", "travels", "travelled"], answer: 0, explanation: "Future: will + V1" },
+      { id: "5-5-q5", question: "Let's ____ at 10", options: ["meet (correct)", "meeting", "met", "meets"], answer: 0, explanation: "Let's + V1" }
     ]
   },
   {
@@ -1499,49 +1823,60 @@ export const lessons: Lesson[] = [
     order: 30,
     title: "Booking & Janji",
     titleEn: "Booking & Appointments",
-    objective: "Let's meet at...",
+    objective: "Let's meet at 10, Are you free?",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Booking & Janji (Booking & Appointments) — Let's meet at.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Booking & Janji (Booking & Appointments) — Let's meet at 10, Are you free?. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Booking & Janji",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus 1 Baris",
+          headingId: "Rumus 1 Baris",
+          body: "Tulis rumus di sticky: S + V2 / S + will + V1.",
           examples: [
-            { en: "Example Booking & Appointments A", id: "Contoh Booking & Janji A" },
-            { en: "Example Booking & Appointments B", id: "Contoh Booking & Janji B" }
+            { en: "I promise to come early.", id: "Saya janji datang awal." },
+            { en: "It will be sunny tomorrow.", id: "Besok akan cerah." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Cerita Pendek",
+          headingId: "Cerita Pendek",
+          body: "Sambung 3 kalimat jadi cerita 30 detik.",
           examples: [
-            { en: "I use Booking & Appointments at work", id: "Saya pakai Booking & Janji di kerja" }
-          ]
+            { en: "Next week I will travel to Bali.", id: "Minggu depan saya travel ke Bali." },
+            { en: "I use Booking & Appointments at work today.", id: "Saya pakai Booking & Janji di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Tanya Jawab",
+          headingId: "Tanya Jawab",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Booking & Appointments now.", id: "Mari latihan Booking & Janji sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Plan", id: "Rencana", pronounce: "plen", example: "My plan", exampleId: "Rencana saya" },
-      { en: "Tomorrow", id: "Besok", pronounce: "tu-MO-rou", example: "Tomorrow I will", exampleId: "Besok saya akan" },
-      { en: "Next week", id: "Minggu depan", pronounce: "nekst wiik", example: "Next week we will", exampleId: "Minggu depan kita akan" },
-      { en: "Promise", id: "Janji", pronounce: "PRO-mis", example: "I promise", exampleId: "Saya janji" },
-      { en: "Maybe", id: "Mungkin", pronounce: "MEI-bi", example: "Maybe I will", exampleId: "Mungkin saya akan" },
-      { en: "Soon", id: "Segera", pronounce: "sun", example: "See you soon", exampleId: "Sampai jumpa segera" },
-      { en: "Hope", id: "Harap", pronounce: "houp", example: "I hope to go", exampleId: "Saya harap pergi" },
-      { en: "Expect", id: "Mengharapkan", pronounce: "ik-SPEKT", example: "I expect to come", exampleId: "Saya harap datang" },
-      { en: "Will", id: "Akan", pronounce: "wil", example: "I will call", exampleId: "Saya akan telepon" },
-      { en: "Going to", id: "Akan", pronounce: "GO-ing tu", example: "I'm going to go", exampleId: "Saya akan pergi" }
+      { en: "Maybe I will come late", id: "Mungkin saya telat", pronounce: "MEI-bi ai wil kam leit", example: "Maybe I will come late.", exampleId: "Mungkin saya telat." },
+      { en: "Expect to finish soon", id: "Harap selesai segera", pronounce: "ik-SPEKT tu FI-nish sun", example: "I expect to finish soon.", exampleId: "Saya harap selesai segera." },
+      { en: "I will call you tomorrow", id: "Saya akan telepon besok", pronounce: "ai wil kol yu tu-MO-rou", example: "I will call you tomorrow at 9.", exampleId: "Saya akan telepon besok jam 9." },
+      { en: "I am going to meet client", id: "Saya akan temu klien", pronounce: "ai em GO-ing tu miit KLAI-en", example: "I am going to meet client at 10.", exampleId: "Saya akan temu klien jam 10." },
+      { en: "I promise to come", id: "Saya janji datang", pronounce: "ai PRO-mis tu kam", example: "I promise to come early.", exampleId: "Saya janji datang awal." },
+      { en: "It will be sunny", id: "Akan cerah", pronounce: "it wil bi SA-ni", example: "It will be sunny tomorrow.", exampleId: "Besok akan cerah." },
+      { en: "Next week I will travel", id: "Minggu depan saya travel", pronounce: "nekst wiik ai wil TRE-vel", example: "Next week I will travel to Bali.", exampleId: "Minggu depan saya travel ke Bali." },
+      { en: "Let's meet at 10", id: "Mari ketemu jam 10", pronounce: "lets miit et ten", example: "Let's meet at 10 in lobby.", exampleId: "Mari ketemu jam 10 di lobi." },
+      { en: "Are you free tomorrow", id: "Apakah besok luang", pronounce: "ar yu frii tu-MO-rou", example: "Are you free tomorrow?", exampleId: "Apakah besok luang?" },
+      { en: "I hope to pass", id: "Saya harap lulus", pronounce: "ai houp tu paas", example: "I hope to pass the test.", exampleId: "Saya harap lulus tes." }
     ],
     quiz: [
-      { id: "5-6-q1", question: "Past/Future Q1 for Booking & Appointments", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-6-q2", question: "Past/Future Q2 for Booking & Appointments", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-6-q3", question: "Past/Future Q3 for Booking & Appointments", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-6-q4", question: "Past/Future Q4 for Booking & Appointments", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." },
-      { id: "5-6-q5", question: "Past/Future Q5 for Booking & Appointments", options: ["I go","I went (correct)","I going","I goed"], answer: 1, explanation: "Past pakai V2 (went), bukan goed." }
+      { id: "5-6-q1", question: "I ____ call you", options: ["will (correct)", "are will", "is will", "will to"], answer: 0, explanation: "S + will + V1" },
+      { id: "5-6-q2", question: "I am ____ to go (going)", options: ["go", "going (correct)", "gone", "goes"], answer: 1, explanation: "am/is/are + going to" },
+      { id: "5-6-q3", question: "I will ____ you (help)", options: ["help (correct)", "helping", "helps", "helped"], answer: 0, explanation: "will + V1" },
+      { id: "5-6-q4", question: "Next week I will ____", options: ["travel (correct)", "traveling", "travels", "travelled"], answer: 0, explanation: "Future: will + V1" },
+      { id: "5-6-q5", question: "Let's ____ at 10", options: ["meet (correct)", "meeting", "met", "meets"], answer: 0, explanation: "Let's + V1" }
     ]
   },
   {
@@ -1550,49 +1885,60 @@ export const lessons: Lesson[] = [
     order: 31,
     title: "Email Formal 1",
     titleEn: "Formal Email 1",
-    objective: "Subject & greeting",
+    objective: "Subject & greeting + opening",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Email Formal 1 (Formal Email 1) — Subject & greeting. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Email Formal 1 (Formal Email 1) — Subject & greeting + opening. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Email Formal 1",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example Formal Email 1 A", id: "Contoh Email Formal 1 A" },
-            { en: "Example Formal Email 1 B", id: "Contoh Email Formal 1 B" }
+            { en: "I deal with clients daily.", id: "Saya urus klien tiap hari." },
+            { en: "Please carry out this task.", id: "Tolong laksanakan tugas ini." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use Formal Email 1 at work", id: "Saya pakai Email Formal 1 di kerja" }
-          ]
+            { en: "Kindly confirm by email.", id: "Mohon konfirmasi via email." },
+            { en: "I use Formal Email 1 at work today.", id: "Saya pakai Email Formal 1 di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Formal Email 1 now.", id: "Mari latihan Email Formal 1 sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Could you", id: "Bisakah", pronounce: "kud yu", example: "Could you send?", exampleId: "Bisakah kirim?" },
-      { en: "Kindly", id: "Dengan hormat", pronounce: "KAIN-dli", example: "Kindly check", exampleId: "Mohon cek" },
-      { en: "Regards", id: "Salam", pronounce: "ri-GARDZ", example: "Best regards", exampleId: "Salam hormat" },
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject: Meeting", exampleId: "Subjek: Rapat" },
-      { en: "Urgent", id: "Mendesak", pronounce: "ER-jent", example: "This is urgent", exampleId: "Ini mendesak" },
-      { en: "Confirm", id: "Konfirmasi", pronounce: "kon-FERM", example: "Please confirm", exampleId: "Mohon konfirmasi" },
-      { en: "Forward", id: "Teruskan", pronounce: "FOR-werd", example: "I will forward", exampleId: "Saya akan teruskan" },
-      { en: "Deadline", id: "Batas waktu", pronounce: "DED-lain", example: "Deadline Friday", exampleId: "Batas Jumat" },
-      { en: "Please find", id: "Silakan lihat", pronounce: "pliiz faind", example: "Please find attached", exampleId: "Silakan lihat terlampir" },
-      { en: "Attached", id: "Terlampir", pronounce: "e-TECHD", example: "Attached is file", exampleId: "Terlampir berkas" }
+      { en: "Carry out a task", id: "Laksanakan tugas", pronounce: "KE-ri aut e task", example: "Please carry out this task.", exampleId: "Tolong laksanakan tugas ini." },
+      { en: "Kindly confirm", id: "Mohon konfirmasi", pronounce: "KAIN-dli kon-FERM", example: "Kindly confirm by email.", exampleId: "Mohon konfirmasi via email." },
+      { en: "Best regards, Farha", id: "Salam hormat, Farha", pronounce: "best ri-GARDZ FAR-ha", example: "Best regards, Farha", exampleId: "Salam hormat, Farha" },
+      { en: "Subject: Meeting at 9", id: "Subjek: Rapat jam 9", pronounce: "SAB-jekt MII-ting et nain", example: "Subject: Meeting at 9 AM", exampleId: "Subjek: Rapat jam 9 pagi" },
+      { en: "This is urgent", id: "Ini mendesak", pronounce: "dis iz ER-jent", example: "This is urgent, please reply.", exampleId: "Ini mendesak, tolong balas." },
+      { en: "I will forward the email", id: "Saya akan teruskan email", pronounce: "ai wil FOR-werd dhi II-meil", example: "I will forward the email to boss.", exampleId: "Saya akan teruskan email ke bos." },
+      { en: "Deadline is Friday", id: "Batas Jumat", pronounce: "DED-lain iz FRAI-dei", example: "Deadline is Friday at 5 PM.", exampleId: "Batas Jumat jam 5 sore." },
+      { en: "Please find attached", id: "Silakan lihat terlampir", pronounce: "pliiz faind e-TEchd", example: "Please find attached the report.", exampleId: "Silakan lihat laporan terlampir." },
+      { en: "Make a decision", id: "Buat keputusan", pronounce: "meik e di-SI-zhen", example: "We need to make a decision.", exampleId: "Kita perlu buat keputusan." },
+      { en: "Deal with clients", id: "Urus klien", pronounce: "diil with KLAI-ents", example: "I deal with clients daily.", exampleId: "Saya urus klien tiap hari." }
     ],
     quiz: [
-      { id: "6-1-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-1-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-1-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-1-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-1-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "6-1-q1", question: "Please ____ attached", options: ["find (correct)", "found", "finding", "finds"], answer: 0, explanation: "Please find attached" },
+      { id: "6-1-q2", question: "Could you ____ please", options: ["send (correct)", "sending", "sent", "sends"], answer: 0, explanation: "Could you please + V1" },
+      { id: "6-1-q3", question: "Best ____, Farha", options: ["regard", "regards (correct)", "regarding", "regard's"], answer: 1, explanation: "Best regards," },
+      { id: "6-1-q4", question: "Subject: Meeting ____ 9", options: ["in", "at (correct)", "on", "by"], answer: 1, explanation: "at 9 o'clock" },
+      { id: "6-1-q5", question: "Deadline ____ Friday", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "Deadline is ..." }
     ]
   },
   {
@@ -1601,49 +1947,60 @@ export const lessons: Lesson[] = [
     order: 32,
     title: "Email Formal 2",
     titleEn: "Formal Email 2",
-    objective: "Body & closing",
+    objective: "Body & closing + signature",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Email Formal 2 (Formal Email 2) — Body & closing. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Email Formal 2 (Formal Email 2) — Body & closing + signature. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Email Formal 2",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example Formal Email 2 A", id: "Contoh Email Formal 2 A" },
-            { en: "Example Formal Email 2 B", id: "Contoh Email Formal 2 B" }
+            { en: "Kindly confirm by email.", id: "Mohon konfirmasi via email." },
+            { en: "Best regards, Farha", id: "Salam hormat, Farha" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use Formal Email 2 at work", id: "Saya pakai Email Formal 2 di kerja" }
-          ]
+            { en: "Subject: Meeting at 9 AM", id: "Subjek: Rapat jam 9 pagi" },
+            { en: "I use Formal Email 2 at work today.", id: "Saya pakai Email Formal 2 di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Formal Email 2 now.", id: "Mari latihan Email Formal 2 sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Regards", id: "Salam", pronounce: "ri-GARDZ", example: "Best regards", exampleId: "Salam hormat" },
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject: Meeting", exampleId: "Subjek: Rapat" },
-      { en: "Urgent", id: "Mendesak", pronounce: "ER-jent", example: "This is urgent", exampleId: "Ini mendesak" },
-      { en: "Confirm", id: "Konfirmasi", pronounce: "kon-FERM", example: "Please confirm", exampleId: "Mohon konfirmasi" },
-      { en: "Forward", id: "Teruskan", pronounce: "FOR-werd", example: "I will forward", exampleId: "Saya akan teruskan" },
-      { en: "Deadline", id: "Batas waktu", pronounce: "DED-lain", example: "Deadline Friday", exampleId: "Batas Jumat" },
-      { en: "Please find", id: "Silakan lihat", pronounce: "pliiz faind", example: "Please find attached", exampleId: "Silakan lihat terlampir" },
-      { en: "Attached", id: "Terlampir", pronounce: "e-TECHD", example: "Attached is file", exampleId: "Terlampir berkas" },
-      { en: "Could you", id: "Bisakah", pronounce: "kud yu", example: "Could you send?", exampleId: "Bisakah kirim?" },
-      { en: "Kindly", id: "Dengan hormat", pronounce: "KAIN-dli", example: "Kindly check", exampleId: "Mohon cek" }
+      { en: "Subject: Meeting at 9", id: "Subjek: Rapat jam 9", pronounce: "SAB-jekt MII-ting et nain", example: "Subject: Meeting at 9 AM", exampleId: "Subjek: Rapat jam 9 pagi" },
+      { en: "This is urgent", id: "Ini mendesak", pronounce: "dis iz ER-jent", example: "This is urgent, please reply.", exampleId: "Ini mendesak, tolong balas." },
+      { en: "I will forward the email", id: "Saya akan teruskan email", pronounce: "ai wil FOR-werd dhi II-meil", example: "I will forward the email to boss.", exampleId: "Saya akan teruskan email ke bos." },
+      { en: "Deadline is Friday", id: "Batas Jumat", pronounce: "DED-lain iz FRAI-dei", example: "Deadline is Friday at 5 PM.", exampleId: "Batas Jumat jam 5 sore." },
+      { en: "Please find attached", id: "Silakan lihat terlampir", pronounce: "pliiz faind e-TEchd", example: "Please find attached the report.", exampleId: "Silakan lihat laporan terlampir." },
+      { en: "Make a decision", id: "Buat keputusan", pronounce: "meik e di-SI-zhen", example: "We need to make a decision.", exampleId: "Kita perlu buat keputusan." },
+      { en: "Deal with clients", id: "Urus klien", pronounce: "diil with KLAI-ents", example: "I deal with clients daily.", exampleId: "Saya urus klien tiap hari." },
+      { en: "Carry out a task", id: "Laksanakan tugas", pronounce: "KE-ri aut e task", example: "Please carry out this task.", exampleId: "Tolong laksanakan tugas ini." },
+      { en: "Kindly confirm", id: "Mohon konfirmasi", pronounce: "KAIN-dli kon-FERM", example: "Kindly confirm by email.", exampleId: "Mohon konfirmasi via email." },
+      { en: "Best regards, Farha", id: "Salam hormat, Farha", pronounce: "best ri-GARDZ FAR-ha", example: "Best regards, Farha", exampleId: "Salam hormat, Farha" }
     ],
     quiz: [
-      { id: "6-2-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-2-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-2-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-2-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-2-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "6-2-q1", question: "Please ____ attached", options: ["find (correct)", "found", "finding", "finds"], answer: 0, explanation: "Please find attached" },
+      { id: "6-2-q2", question: "Could you ____ please", options: ["send (correct)", "sending", "sent", "sends"], answer: 0, explanation: "Could you please + V1" },
+      { id: "6-2-q3", question: "Best ____, Farha", options: ["regard", "regards (correct)", "regarding", "regard's"], answer: 1, explanation: "Best regards," },
+      { id: "6-2-q4", question: "Subject: Meeting ____ 9", options: ["in", "at (correct)", "on", "by"], answer: 1, explanation: "at 9 o'clock" },
+      { id: "6-2-q5", question: "Deadline ____ Friday", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "Deadline is ..." }
     ]
   },
   {
@@ -1652,49 +2009,60 @@ export const lessons: Lesson[] = [
     order: 33,
     title: "Chat Kerja Slack",
     titleEn: "Work Chat",
-    objective: "Please check...",
+    objective: "Please check, FYI, ASAP",
     duration: "14 menit",
     content: {
-      intro: "Pelajaran Chat Kerja Slack (Work Chat) — Please check.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Chat Kerja Slack (Work Chat) — Please check, FYI, ASAP. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Chat Kerja Slack",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example Work Chat A", id: "Contoh Chat Kerja Slack A" },
-            { en: "Example Work Chat B", id: "Contoh Chat Kerja Slack B" }
+            { en: "Subject: Meeting at 9 AM", id: "Subjek: Rapat jam 9 pagi" },
+            { en: "This is urgent, please reply.", id: "Ini mendesak, tolong balas." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use Work Chat at work", id: "Saya pakai Chat Kerja Slack di kerja" }
-          ]
+            { en: "I will forward the email to boss.", id: "Saya akan teruskan email ke bos." },
+            { en: "I use Work Chat at work today.", id: "Saya pakai Chat Kerja Slack di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Work Chat now.", id: "Mari latihan Chat Kerja Slack sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Urgent", id: "Mendesak", pronounce: "ER-jent", example: "This is urgent", exampleId: "Ini mendesak" },
-      { en: "Confirm", id: "Konfirmasi", pronounce: "kon-FERM", example: "Please confirm", exampleId: "Mohon konfirmasi" },
-      { en: "Forward", id: "Teruskan", pronounce: "FOR-werd", example: "I will forward", exampleId: "Saya akan teruskan" },
-      { en: "Deadline", id: "Batas waktu", pronounce: "DED-lain", example: "Deadline Friday", exampleId: "Batas Jumat" },
-      { en: "Please find", id: "Silakan lihat", pronounce: "pliiz faind", example: "Please find attached", exampleId: "Silakan lihat terlampir" },
-      { en: "Attached", id: "Terlampir", pronounce: "e-TECHD", example: "Attached is file", exampleId: "Terlampir berkas" },
-      { en: "Could you", id: "Bisakah", pronounce: "kud yu", example: "Could you send?", exampleId: "Bisakah kirim?" },
-      { en: "Kindly", id: "Dengan hormat", pronounce: "KAIN-dli", example: "Kindly check", exampleId: "Mohon cek" },
-      { en: "Regards", id: "Salam", pronounce: "ri-GARDZ", example: "Best regards", exampleId: "Salam hormat" },
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject: Meeting", exampleId: "Subjek: Rapat" }
+      { en: "Deadline is Friday", id: "Batas Jumat", pronounce: "DED-lain iz FRAI-dei", example: "Deadline is Friday at 5 PM.", exampleId: "Batas Jumat jam 5 sore." },
+      { en: "Please find attached", id: "Silakan lihat terlampir", pronounce: "pliiz faind e-TEchd", example: "Please find attached the report.", exampleId: "Silakan lihat laporan terlampir." },
+      { en: "Make a decision", id: "Buat keputusan", pronounce: "meik e di-SI-zhen", example: "We need to make a decision.", exampleId: "Kita perlu buat keputusan." },
+      { en: "Deal with clients", id: "Urus klien", pronounce: "diil with KLAI-ents", example: "I deal with clients daily.", exampleId: "Saya urus klien tiap hari." },
+      { en: "Carry out a task", id: "Laksanakan tugas", pronounce: "KE-ri aut e task", example: "Please carry out this task.", exampleId: "Tolong laksanakan tugas ini." },
+      { en: "Kindly confirm", id: "Mohon konfirmasi", pronounce: "KAIN-dli kon-FERM", example: "Kindly confirm by email.", exampleId: "Mohon konfirmasi via email." },
+      { en: "Best regards, Farha", id: "Salam hormat, Farha", pronounce: "best ri-GARDZ FAR-ha", example: "Best regards, Farha", exampleId: "Salam hormat, Farha" },
+      { en: "Subject: Meeting at 9", id: "Subjek: Rapat jam 9", pronounce: "SAB-jekt MII-ting et nain", example: "Subject: Meeting at 9 AM", exampleId: "Subjek: Rapat jam 9 pagi" },
+      { en: "This is urgent", id: "Ini mendesak", pronounce: "dis iz ER-jent", example: "This is urgent, please reply.", exampleId: "Ini mendesak, tolong balas." },
+      { en: "I will forward the email", id: "Saya akan teruskan email", pronounce: "ai wil FOR-werd dhi II-meil", example: "I will forward the email to boss.", exampleId: "Saya akan teruskan email ke bos." }
     ],
     quiz: [
-      { id: "6-3-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-3-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-3-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-3-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-3-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "6-3-q1", question: "Please ____ attached", options: ["find (correct)", "found", "finding", "finds"], answer: 0, explanation: "Please find attached" },
+      { id: "6-3-q2", question: "Could you ____ please", options: ["send (correct)", "sending", "sent", "sends"], answer: 0, explanation: "Could you please + V1" },
+      { id: "6-3-q3", question: "Best ____, Farha", options: ["regard", "regards (correct)", "regarding", "regard's"], answer: 1, explanation: "Best regards," },
+      { id: "6-3-q4", question: "Subject: Meeting ____ 9", options: ["in", "at (correct)", "on", "by"], answer: 1, explanation: "at 9 o'clock" },
+      { id: "6-3-q5", question: "Deadline ____ Friday", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "Deadline is ..." }
     ]
   },
   {
@@ -1703,49 +2071,60 @@ export const lessons: Lesson[] = [
     order: 34,
     title: "Permintaan Sopan",
     titleEn: "Polite Requests",
-    objective: "Could you...?",
+    objective: "Could you please...? Would you...?",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Permintaan Sopan (Polite Requests) — Could you...?. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Permintaan Sopan (Polite Requests) — Could you please...? Would you...?. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Permintaan Sopan",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example Polite Requests A", id: "Contoh Permintaan Sopan A" },
-            { en: "Example Polite Requests B", id: "Contoh Permintaan Sopan B" }
+            { en: "I will forward the email to boss.", id: "Saya akan teruskan email ke bos." },
+            { en: "Deadline is Friday at 5 PM.", id: "Batas Jumat jam 5 sore." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use Polite Requests at work", id: "Saya pakai Permintaan Sopan di kerja" }
-          ]
+            { en: "Please find attached the report.", id: "Silakan lihat laporan terlampir." },
+            { en: "I use Polite Requests at work today.", id: "Saya pakai Permintaan Sopan di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Polite Requests now.", id: "Mari latihan Permintaan Sopan sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Forward", id: "Teruskan", pronounce: "FOR-werd", example: "I will forward", exampleId: "Saya akan teruskan" },
-      { en: "Deadline", id: "Batas waktu", pronounce: "DED-lain", example: "Deadline Friday", exampleId: "Batas Jumat" },
-      { en: "Please find", id: "Silakan lihat", pronounce: "pliiz faind", example: "Please find attached", exampleId: "Silakan lihat terlampir" },
-      { en: "Attached", id: "Terlampir", pronounce: "e-TECHD", example: "Attached is file", exampleId: "Terlampir berkas" },
-      { en: "Could you", id: "Bisakah", pronounce: "kud yu", example: "Could you send?", exampleId: "Bisakah kirim?" },
-      { en: "Kindly", id: "Dengan hormat", pronounce: "KAIN-dli", example: "Kindly check", exampleId: "Mohon cek" },
-      { en: "Regards", id: "Salam", pronounce: "ri-GARDZ", example: "Best regards", exampleId: "Salam hormat" },
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject: Meeting", exampleId: "Subjek: Rapat" },
-      { en: "Urgent", id: "Mendesak", pronounce: "ER-jent", example: "This is urgent", exampleId: "Ini mendesak" },
-      { en: "Confirm", id: "Konfirmasi", pronounce: "kon-FERM", example: "Please confirm", exampleId: "Mohon konfirmasi" }
+      { en: "Deal with clients", id: "Urus klien", pronounce: "diil with KLAI-ents", example: "I deal with clients daily.", exampleId: "Saya urus klien tiap hari." },
+      { en: "Carry out a task", id: "Laksanakan tugas", pronounce: "KE-ri aut e task", example: "Please carry out this task.", exampleId: "Tolong laksanakan tugas ini." },
+      { en: "Kindly confirm", id: "Mohon konfirmasi", pronounce: "KAIN-dli kon-FERM", example: "Kindly confirm by email.", exampleId: "Mohon konfirmasi via email." },
+      { en: "Best regards, Farha", id: "Salam hormat, Farha", pronounce: "best ri-GARDZ FAR-ha", example: "Best regards, Farha", exampleId: "Salam hormat, Farha" },
+      { en: "Subject: Meeting at 9", id: "Subjek: Rapat jam 9", pronounce: "SAB-jekt MII-ting et nain", example: "Subject: Meeting at 9 AM", exampleId: "Subjek: Rapat jam 9 pagi" },
+      { en: "This is urgent", id: "Ini mendesak", pronounce: "dis iz ER-jent", example: "This is urgent, please reply.", exampleId: "Ini mendesak, tolong balas." },
+      { en: "I will forward the email", id: "Saya akan teruskan email", pronounce: "ai wil FOR-werd dhi II-meil", example: "I will forward the email to boss.", exampleId: "Saya akan teruskan email ke bos." },
+      { en: "Deadline is Friday", id: "Batas Jumat", pronounce: "DED-lain iz FRAI-dei", example: "Deadline is Friday at 5 PM.", exampleId: "Batas Jumat jam 5 sore." },
+      { en: "Please find attached", id: "Silakan lihat terlampir", pronounce: "pliiz faind e-TEchd", example: "Please find attached the report.", exampleId: "Silakan lihat laporan terlampir." },
+      { en: "Make a decision", id: "Buat keputusan", pronounce: "meik e di-SI-zhen", example: "We need to make a decision.", exampleId: "Kita perlu buat keputusan." }
     ],
     quiz: [
-      { id: "6-4-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-4-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-4-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-4-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-4-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "6-4-q1", question: "Please ____ attached", options: ["find (correct)", "found", "finding", "finds"], answer: 0, explanation: "Please find attached" },
+      { id: "6-4-q2", question: "Could you ____ please", options: ["send (correct)", "sending", "sent", "sends"], answer: 0, explanation: "Could you please + V1" },
+      { id: "6-4-q3", question: "Best ____, Farha", options: ["regard", "regards (correct)", "regarding", "regard's"], answer: 1, explanation: "Best regards," },
+      { id: "6-4-q4", question: "Subject: Meeting ____ 9", options: ["in", "at (correct)", "on", "by"], answer: 1, explanation: "at 9 o'clock" },
+      { id: "6-4-q5", question: "Deadline ____ Friday", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "Deadline is ..." }
     ]
   },
   {
@@ -1754,49 +2133,60 @@ export const lessons: Lesson[] = [
     order: 35,
     title: "Laporan Singkat",
     titleEn: "Short Report",
-    objective: "Attached is...",
+    objective: "Attached is report, Please find...",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Laporan Singkat (Short Report) — Attached is.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Laporan Singkat (Short Report) — Attached is report, Please find.... Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Laporan Singkat",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example Short Report A", id: "Contoh Laporan Singkat A" },
-            { en: "Example Short Report B", id: "Contoh Laporan Singkat B" }
+            { en: "Please find attached the report.", id: "Silakan lihat laporan terlampir." },
+            { en: "We need to make a decision.", id: "Kita perlu buat keputusan." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use Short Report at work", id: "Saya pakai Laporan Singkat di kerja" }
-          ]
+            { en: "I deal with clients daily.", id: "Saya urus klien tiap hari." },
+            { en: "I use Short Report at work today.", id: "Saya pakai Laporan Singkat di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Short Report now.", id: "Mari latihan Laporan Singkat sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Please find", id: "Silakan lihat", pronounce: "pliiz faind", example: "Please find attached", exampleId: "Silakan lihat terlampir" },
-      { en: "Attached", id: "Terlampir", pronounce: "e-TECHD", example: "Attached is file", exampleId: "Terlampir berkas" },
-      { en: "Could you", id: "Bisakah", pronounce: "kud yu", example: "Could you send?", exampleId: "Bisakah kirim?" },
-      { en: "Kindly", id: "Dengan hormat", pronounce: "KAIN-dli", example: "Kindly check", exampleId: "Mohon cek" },
-      { en: "Regards", id: "Salam", pronounce: "ri-GARDZ", example: "Best regards", exampleId: "Salam hormat" },
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject: Meeting", exampleId: "Subjek: Rapat" },
-      { en: "Urgent", id: "Mendesak", pronounce: "ER-jent", example: "This is urgent", exampleId: "Ini mendesak" },
-      { en: "Confirm", id: "Konfirmasi", pronounce: "kon-FERM", example: "Please confirm", exampleId: "Mohon konfirmasi" },
-      { en: "Forward", id: "Teruskan", pronounce: "FOR-werd", example: "I will forward", exampleId: "Saya akan teruskan" },
-      { en: "Deadline", id: "Batas waktu", pronounce: "DED-lain", example: "Deadline Friday", exampleId: "Batas Jumat" }
+      { en: "Best regards, Farha", id: "Salam hormat, Farha", pronounce: "best ri-GARDZ FAR-ha", example: "Best regards, Farha", exampleId: "Salam hormat, Farha" },
+      { en: "Subject: Meeting at 9", id: "Subjek: Rapat jam 9", pronounce: "SAB-jekt MII-ting et nain", example: "Subject: Meeting at 9 AM", exampleId: "Subjek: Rapat jam 9 pagi" },
+      { en: "This is urgent", id: "Ini mendesak", pronounce: "dis iz ER-jent", example: "This is urgent, please reply.", exampleId: "Ini mendesak, tolong balas." },
+      { en: "I will forward the email", id: "Saya akan teruskan email", pronounce: "ai wil FOR-werd dhi II-meil", example: "I will forward the email to boss.", exampleId: "Saya akan teruskan email ke bos." },
+      { en: "Deadline is Friday", id: "Batas Jumat", pronounce: "DED-lain iz FRAI-dei", example: "Deadline is Friday at 5 PM.", exampleId: "Batas Jumat jam 5 sore." },
+      { en: "Please find attached", id: "Silakan lihat terlampir", pronounce: "pliiz faind e-TEchd", example: "Please find attached the report.", exampleId: "Silakan lihat laporan terlampir." },
+      { en: "Make a decision", id: "Buat keputusan", pronounce: "meik e di-SI-zhen", example: "We need to make a decision.", exampleId: "Kita perlu buat keputusan." },
+      { en: "Deal with clients", id: "Urus klien", pronounce: "diil with KLAI-ents", example: "I deal with clients daily.", exampleId: "Saya urus klien tiap hari." },
+      { en: "Carry out a task", id: "Laksanakan tugas", pronounce: "KE-ri aut e task", example: "Please carry out this task.", exampleId: "Tolong laksanakan tugas ini." },
+      { en: "Kindly confirm", id: "Mohon konfirmasi", pronounce: "KAIN-dli kon-FERM", example: "Kindly confirm by email.", exampleId: "Mohon konfirmasi via email." }
     ],
     quiz: [
-      { id: "6-5-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-5-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-5-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-5-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-5-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "6-5-q1", question: "Please ____ attached", options: ["find (correct)", "found", "finding", "finds"], answer: 0, explanation: "Please find attached" },
+      { id: "6-5-q2", question: "Could you ____ please", options: ["send (correct)", "sending", "sent", "sends"], answer: 0, explanation: "Could you please + V1" },
+      { id: "6-5-q3", question: "Best ____, Farha", options: ["regard", "regards (correct)", "regarding", "regard's"], answer: 1, explanation: "Best regards," },
+      { id: "6-5-q4", question: "Subject: Meeting ____ 9", options: ["in", "at (correct)", "on", "by"], answer: 1, explanation: "at 9 o'clock" },
+      { id: "6-5-q5", question: "Deadline ____ Friday", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "Deadline is ..." }
     ]
   },
   {
@@ -1805,49 +2195,60 @@ export const lessons: Lesson[] = [
     order: 36,
     title: "Komplain Profesional",
     titleEn: "Complaint Pro",
-    objective: "I am writing to...",
+    objective: "I am writing to complain...",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Komplain Profesional (Complaint Pro) — I am writing to.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Komplain Profesional (Complaint Pro) — I am writing to complain.... Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Komplain Profesional",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example Complaint Pro A", id: "Contoh Komplain Profesional A" },
-            { en: "Example Complaint Pro B", id: "Contoh Komplain Profesional B" }
+            { en: "I deal with clients daily.", id: "Saya urus klien tiap hari." },
+            { en: "Please carry out this task.", id: "Tolong laksanakan tugas ini." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use Complaint Pro at work", id: "Saya pakai Komplain Profesional di kerja" }
-          ]
+            { en: "Kindly confirm by email.", id: "Mohon konfirmasi via email." },
+            { en: "I use Complaint Pro at work today.", id: "Saya pakai Komplain Profesional di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Complaint Pro now.", id: "Mari latihan Komplain Profesional sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Could you", id: "Bisakah", pronounce: "kud yu", example: "Could you send?", exampleId: "Bisakah kirim?" },
-      { en: "Kindly", id: "Dengan hormat", pronounce: "KAIN-dli", example: "Kindly check", exampleId: "Mohon cek" },
-      { en: "Regards", id: "Salam", pronounce: "ri-GARDZ", example: "Best regards", exampleId: "Salam hormat" },
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject: Meeting", exampleId: "Subjek: Rapat" },
-      { en: "Urgent", id: "Mendesak", pronounce: "ER-jent", example: "This is urgent", exampleId: "Ini mendesak" },
-      { en: "Confirm", id: "Konfirmasi", pronounce: "kon-FERM", example: "Please confirm", exampleId: "Mohon konfirmasi" },
-      { en: "Forward", id: "Teruskan", pronounce: "FOR-werd", example: "I will forward", exampleId: "Saya akan teruskan" },
-      { en: "Deadline", id: "Batas waktu", pronounce: "DED-lain", example: "Deadline Friday", exampleId: "Batas Jumat" },
-      { en: "Please find", id: "Silakan lihat", pronounce: "pliiz faind", example: "Please find attached", exampleId: "Silakan lihat terlampir" },
-      { en: "Attached", id: "Terlampir", pronounce: "e-TECHD", example: "Attached is file", exampleId: "Terlampir berkas" }
+      { en: "I will forward the email", id: "Saya akan teruskan email", pronounce: "ai wil FOR-werd dhi II-meil", example: "I will forward the email to boss.", exampleId: "Saya akan teruskan email ke bos." },
+      { en: "Deadline is Friday", id: "Batas Jumat", pronounce: "DED-lain iz FRAI-dei", example: "Deadline is Friday at 5 PM.", exampleId: "Batas Jumat jam 5 sore." },
+      { en: "Please find attached", id: "Silakan lihat terlampir", pronounce: "pliiz faind e-TEchd", example: "Please find attached the report.", exampleId: "Silakan lihat laporan terlampir." },
+      { en: "Make a decision", id: "Buat keputusan", pronounce: "meik e di-SI-zhen", example: "We need to make a decision.", exampleId: "Kita perlu buat keputusan." },
+      { en: "Deal with clients", id: "Urus klien", pronounce: "diil with KLAI-ents", example: "I deal with clients daily.", exampleId: "Saya urus klien tiap hari." },
+      { en: "Carry out a task", id: "Laksanakan tugas", pronounce: "KE-ri aut e task", example: "Please carry out this task.", exampleId: "Tolong laksanakan tugas ini." },
+      { en: "Kindly confirm", id: "Mohon konfirmasi", pronounce: "KAIN-dli kon-FERM", example: "Kindly confirm by email.", exampleId: "Mohon konfirmasi via email." },
+      { en: "Best regards, Farha", id: "Salam hormat, Farha", pronounce: "best ri-GARDZ FAR-ha", example: "Best regards, Farha", exampleId: "Salam hormat, Farha" },
+      { en: "Subject: Meeting at 9", id: "Subjek: Rapat jam 9", pronounce: "SAB-jekt MII-ting et nain", example: "Subject: Meeting at 9 AM", exampleId: "Subjek: Rapat jam 9 pagi" },
+      { en: "This is urgent", id: "Ini mendesak", pronounce: "dis iz ER-jent", example: "This is urgent, please reply.", exampleId: "Ini mendesak, tolong balas." }
     ],
     quiz: [
-      { id: "6-6-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-6-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-6-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-6-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "6-6-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "6-6-q1", question: "Please ____ attached", options: ["find (correct)", "found", "finding", "finds"], answer: 0, explanation: "Please find attached" },
+      { id: "6-6-q2", question: "Could you ____ please", options: ["send (correct)", "sending", "sent", "sends"], answer: 0, explanation: "Could you please + V1" },
+      { id: "6-6-q3", question: "Best ____, Farha", options: ["regard", "regards (correct)", "regarding", "regard's"], answer: 1, explanation: "Best regards," },
+      { id: "6-6-q4", question: "Subject: Meeting ____ 9", options: ["in", "at (correct)", "on", "by"], answer: 1, explanation: "at 9 o'clock" },
+      { id: "6-6-q5", question: "Deadline ____ Friday", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "Deadline is ..." }
     ]
   },
   {
@@ -1856,49 +2257,60 @@ export const lessons: Lesson[] = [
     order: 37,
     title: "Meeting Opini",
     titleEn: "Meeting Opinions",
-    objective: "In my opinion...",
+    objective: "In my opinion, I think, I suggest",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Meeting Opini (Meeting Opinions) — In my opinion.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Meeting Opini (Meeting Opinions) — In my opinion, I think, I suggest. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Meeting Opini",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example Meeting Opinions A", id: "Contoh Meeting Opini A" },
-            { en: "Example Meeting Opinions B", id: "Contoh Meeting Opini B" }
+            { en: "Could you clarify this point?", id: "Bisa jelaskan poin ini?" },
+            { en: "Tell me about yourself in 1 minute.", id: "Ceritakan dirimu 1 menit." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use Meeting Opinions at work", id: "Saya pakai Meeting Opini di kerja" }
-          ]
+            { en: "My strength is teamwork and discipline.", id: "Kelebihan saya kerja tim & disiplin." },
+            { en: "I use Meeting Opinions at work today.", id: "Saya pakai Meeting Opini di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Meeting Opinions now.", id: "Mari latihan Meeting Opini sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Could you clarify", id: "Bisa jelaskan", pronounce: "kud yu KLE-ri-fai", example: "Could you clarify?", exampleId: "Bisa jelaskan?" },
-      { en: "Let me explain", id: "Biar saya jelaskan", pronounce: "let mi ik-SPLEIN", example: "Let me explain", exampleId: "Biar saya jelaskan" },
-      { en: "Strength", id: "Kelebihan", pronounce: "streng", example: "My strength", exampleId: "Kelebihan saya" },
-      { en: "Weakness", id: "Kekurangan", pronounce: "WIIK-nes", example: "My weakness", exampleId: "Kekurangan saya" },
-      { en: "Experience", id: "Pengalaman", pronounce: "ik-SPII-riens", example: "My experience", exampleId: "Pengalaman saya" },
-      { en: "Teamwork", id: "Kerja tim", pronounce: "TIIM-werk", example: "I like teamwork", exampleId: "Saya suka kerja tim" },
-      { en: "Negotiate", id: "Negosiasi", pronounce: "ne-GO-shiet", example: "Let's negotiate", exampleId: "Mari negosiasi" },
-      { en: "Agree", id: "Setuju", pronounce: "e-GRII", example: "I agree", exampleId: "Saya setuju" },
-      { en: "In my opinion", id: "Menurut saya", pronounce: "in mai o-PIN-yon", example: "In my opinion...", exampleId: "Menurut saya..." },
-      { en: "I think", id: "Saya pikir", pronounce: "ai thingk", example: "I think we should", exampleId: "Saya pikir kita harus" }
+      { en: "Tell me about yourself", id: "Ceritakan dirimu", pronounce: "tel mi e-BAUT yor-self", example: "Tell me about yourself in 1 minute.", exampleId: "Ceritakan dirimu 1 menit." },
+      { en: "My strength is teamwork", id: "Kelebihan saya kerja tim", pronounce: "mai streng iz TIIM-werk", example: "My strength is teamwork and discipline.", exampleId: "Kelebihan saya kerja tim & disiplin." },
+      { en: "I am improving my English", id: "Saya tingkatkan Inggris", pronounce: "ai em im-PRUU-ving mai ING-lish", example: "I am improving my English daily.", exampleId: "Saya tingkatkan Inggris tiap hari." },
+      { en: "I have experience in", id: "Saya pengalaman di", pronounce: "ai hev ik-SPII-riens in", example: "I have experience in sales.", exampleId: "Saya pengalaman di sales." },
+      { en: "How about we try", id: "Gimana kalau kita coba", pronounce: "hau e-BAUT wi trai", example: "How about we try next week?", exampleId: "Gimana kalau kita coba minggu depan?" },
+      { en: "I agree with you", id: "Saya setuju", pronounce: "ai e-GRII with yu", example: "I agree with you on that.", exampleId: "Saya setuju soal itu." },
+      { en: "What do you mean", id: "Maksudnya apa", pronounce: "wot du yu miin", example: "What do you mean by that?", exampleId: "Maksudnya apa itu?" },
+      { en: "In my opinion, we should", id: "Menurut saya kita harus", pronounce: "in mai o-PIN-yon wi shud", example: "In my opinion, we should start now.", exampleId: "Menurut saya kita harus mulai sekarang." },
+      { en: "Let me explain briefly", id: "Biar saya jelaskan singkat", pronounce: "let mi ik-SPLEIN BRIIF-li", example: "Let me explain briefly.", exampleId: "Biar saya jelaskan singkat." },
+      { en: "Could you clarify please", id: "Bisa jelaskan tolong", pronounce: "kud yu KLE-ri-fai pliiz", example: "Could you clarify this point?", exampleId: "Bisa jelaskan poin ini?" }
     ],
     quiz: [
-      { id: "7-1-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-1-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-1-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-1-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-1-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "7-1-q1", question: "____ my opinion, we should", options: ["In (correct)", "On", "At", "By"], answer: 0, explanation: "In my opinion" },
+      { id: "7-1-q2", question: "____ me explain", options: ["Let (correct)", "Lets", "Letting", "Let me to"], answer: 0, explanation: "Let me explain" },
+      { id: "7-1-q3", question: "Could you ____ (clarify)", options: ["clarify (correct)", "clarifying", "clarified", "clarifies"], answer: 0, explanation: "Could you clarify?" },
+      { id: "7-1-q4", question: "Tell me ____ yourself", options: ["about (correct)", "of", "to", "with"], answer: 0, explanation: "about yourself" },
+      { id: "7-1-q5", question: "My strength ____ teamwork", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "My strength IS" }
     ]
   },
   {
@@ -1907,49 +2319,60 @@ export const lessons: Lesson[] = [
     order: 38,
     title: "Presentasi 1 Menit",
     titleEn: "1-Min Presentation",
-    objective: "Let me explain...",
+    objective: "Let me explain, First, Second, Finally",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Presentasi 1 Menit (1-Min Presentation) — Let me explain.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Presentasi 1 Menit (1-Min Presentation) — Let me explain, First, Second, Finally. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Presentasi 1 Menit",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example 1-Min Presentation A", id: "Contoh Presentasi 1 Menit A" },
-            { en: "Example 1-Min Presentation B", id: "Contoh Presentasi 1 Menit B" }
+            { en: "My strength is teamwork and discipline.", id: "Kelebihan saya kerja tim & disiplin." },
+            { en: "I am improving my English daily.", id: "Saya tingkatkan Inggris tiap hari." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use 1-Min Presentation at work", id: "Saya pakai Presentasi 1 Menit di kerja" }
-          ]
+            { en: "I have experience in sales.", id: "Saya pengalaman di sales." },
+            { en: "I use 1-Min Presentation at work today.", id: "Saya pakai Presentasi 1 Menit di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice 1-Min Presentation now.", id: "Mari latihan Presentasi 1 Menit sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Strength", id: "Kelebihan", pronounce: "streng", example: "My strength", exampleId: "Kelebihan saya" },
-      { en: "Weakness", id: "Kekurangan", pronounce: "WIIK-nes", example: "My weakness", exampleId: "Kekurangan saya" },
-      { en: "Experience", id: "Pengalaman", pronounce: "ik-SPII-riens", example: "My experience", exampleId: "Pengalaman saya" },
-      { en: "Teamwork", id: "Kerja tim", pronounce: "TIIM-werk", example: "I like teamwork", exampleId: "Saya suka kerja tim" },
-      { en: "Negotiate", id: "Negosiasi", pronounce: "ne-GO-shiet", example: "Let's negotiate", exampleId: "Mari negosiasi" },
-      { en: "Agree", id: "Setuju", pronounce: "e-GRII", example: "I agree", exampleId: "Saya setuju" },
-      { en: "In my opinion", id: "Menurut saya", pronounce: "in mai o-PIN-yon", example: "In my opinion...", exampleId: "Menurut saya..." },
-      { en: "I think", id: "Saya pikir", pronounce: "ai thingk", example: "I think we should", exampleId: "Saya pikir kita harus" },
-      { en: "Could you clarify", id: "Bisa jelaskan", pronounce: "kud yu KLE-ri-fai", example: "Could you clarify?", exampleId: "Bisa jelaskan?" },
-      { en: "Let me explain", id: "Biar saya jelaskan", pronounce: "let mi ik-SPLEIN", example: "Let me explain", exampleId: "Biar saya jelaskan" }
+      { en: "I have experience in", id: "Saya pengalaman di", pronounce: "ai hev ik-SPII-riens in", example: "I have experience in sales.", exampleId: "Saya pengalaman di sales." },
+      { en: "How about we try", id: "Gimana kalau kita coba", pronounce: "hau e-BAUT wi trai", example: "How about we try next week?", exampleId: "Gimana kalau kita coba minggu depan?" },
+      { en: "I agree with you", id: "Saya setuju", pronounce: "ai e-GRII with yu", example: "I agree with you on that.", exampleId: "Saya setuju soal itu." },
+      { en: "What do you mean", id: "Maksudnya apa", pronounce: "wot du yu miin", example: "What do you mean by that?", exampleId: "Maksudnya apa itu?" },
+      { en: "In my opinion, we should", id: "Menurut saya kita harus", pronounce: "in mai o-PIN-yon wi shud", example: "In my opinion, we should start now.", exampleId: "Menurut saya kita harus mulai sekarang." },
+      { en: "Let me explain briefly", id: "Biar saya jelaskan singkat", pronounce: "let mi ik-SPLEIN BRIIF-li", example: "Let me explain briefly.", exampleId: "Biar saya jelaskan singkat." },
+      { en: "Could you clarify please", id: "Bisa jelaskan tolong", pronounce: "kud yu KLE-ri-fai pliiz", example: "Could you clarify this point?", exampleId: "Bisa jelaskan poin ini?" },
+      { en: "Tell me about yourself", id: "Ceritakan dirimu", pronounce: "tel mi e-BAUT yor-self", example: "Tell me about yourself in 1 minute.", exampleId: "Ceritakan dirimu 1 menit." },
+      { en: "My strength is teamwork", id: "Kelebihan saya kerja tim", pronounce: "mai streng iz TIIM-werk", example: "My strength is teamwork and discipline.", exampleId: "Kelebihan saya kerja tim & disiplin." },
+      { en: "I am improving my English", id: "Saya tingkatkan Inggris", pronounce: "ai em im-PRUU-ving mai ING-lish", example: "I am improving my English daily.", exampleId: "Saya tingkatkan Inggris tiap hari." }
     ],
     quiz: [
-      { id: "7-2-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-2-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-2-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-2-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-2-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "7-2-q1", question: "____ my opinion, we should", options: ["In (correct)", "On", "At", "By"], answer: 0, explanation: "In my opinion" },
+      { id: "7-2-q2", question: "____ me explain", options: ["Let (correct)", "Lets", "Letting", "Let me to"], answer: 0, explanation: "Let me explain" },
+      { id: "7-2-q3", question: "Could you ____ (clarify)", options: ["clarify (correct)", "clarifying", "clarified", "clarifies"], answer: 0, explanation: "Could you clarify?" },
+      { id: "7-2-q4", question: "Tell me ____ yourself", options: ["about (correct)", "of", "to", "with"], answer: 0, explanation: "about yourself" },
+      { id: "7-2-q5", question: "My strength ____ teamwork", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "My strength IS" }
     ]
   },
   {
@@ -1958,49 +2381,60 @@ export const lessons: Lesson[] = [
     order: 39,
     title: "Tanya Jawab Meeting",
     titleEn: "Meeting Q&A",
-    objective: "Could you clarify?",
+    objective: "Could you clarify? What do you mean?",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Tanya Jawab Meeting (Meeting Q&A) — Could you clarify?. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Tanya Jawab Meeting (Meeting Q&A) — Could you clarify? What do you mean?. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Tanya Jawab Meeting",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example Meeting Q&A A", id: "Contoh Tanya Jawab Meeting A" },
-            { en: "Example Meeting Q&A B", id: "Contoh Tanya Jawab Meeting B" }
+            { en: "I have experience in sales.", id: "Saya pengalaman di sales." },
+            { en: "How about we try next week?", id: "Gimana kalau kita coba minggu depan?" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use Meeting Q&A at work", id: "Saya pakai Tanya Jawab Meeting di kerja" }
-          ]
+            { en: "I agree with you on that.", id: "Saya setuju soal itu." },
+            { en: "I use Meeting Q&A at work today.", id: "Saya pakai Tanya Jawab Meeting di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Meeting Q&A now.", id: "Mari latihan Tanya Jawab Meeting sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Experience", id: "Pengalaman", pronounce: "ik-SPII-riens", example: "My experience", exampleId: "Pengalaman saya" },
-      { en: "Teamwork", id: "Kerja tim", pronounce: "TIIM-werk", example: "I like teamwork", exampleId: "Saya suka kerja tim" },
-      { en: "Negotiate", id: "Negosiasi", pronounce: "ne-GO-shiet", example: "Let's negotiate", exampleId: "Mari negosiasi" },
-      { en: "Agree", id: "Setuju", pronounce: "e-GRII", example: "I agree", exampleId: "Saya setuju" },
-      { en: "In my opinion", id: "Menurut saya", pronounce: "in mai o-PIN-yon", example: "In my opinion...", exampleId: "Menurut saya..." },
-      { en: "I think", id: "Saya pikir", pronounce: "ai thingk", example: "I think we should", exampleId: "Saya pikir kita harus" },
-      { en: "Could you clarify", id: "Bisa jelaskan", pronounce: "kud yu KLE-ri-fai", example: "Could you clarify?", exampleId: "Bisa jelaskan?" },
-      { en: "Let me explain", id: "Biar saya jelaskan", pronounce: "let mi ik-SPLEIN", example: "Let me explain", exampleId: "Biar saya jelaskan" },
-      { en: "Strength", id: "Kelebihan", pronounce: "streng", example: "My strength", exampleId: "Kelebihan saya" },
-      { en: "Weakness", id: "Kekurangan", pronounce: "WIIK-nes", example: "My weakness", exampleId: "Kekurangan saya" }
+      { en: "What do you mean", id: "Maksudnya apa", pronounce: "wot du yu miin", example: "What do you mean by that?", exampleId: "Maksudnya apa itu?" },
+      { en: "In my opinion, we should", id: "Menurut saya kita harus", pronounce: "in mai o-PIN-yon wi shud", example: "In my opinion, we should start now.", exampleId: "Menurut saya kita harus mulai sekarang." },
+      { en: "Let me explain briefly", id: "Biar saya jelaskan singkat", pronounce: "let mi ik-SPLEIN BRIIF-li", example: "Let me explain briefly.", exampleId: "Biar saya jelaskan singkat." },
+      { en: "Could you clarify please", id: "Bisa jelaskan tolong", pronounce: "kud yu KLE-ri-fai pliiz", example: "Could you clarify this point?", exampleId: "Bisa jelaskan poin ini?" },
+      { en: "Tell me about yourself", id: "Ceritakan dirimu", pronounce: "tel mi e-BAUT yor-self", example: "Tell me about yourself in 1 minute.", exampleId: "Ceritakan dirimu 1 menit." },
+      { en: "My strength is teamwork", id: "Kelebihan saya kerja tim", pronounce: "mai streng iz TIIM-werk", example: "My strength is teamwork and discipline.", exampleId: "Kelebihan saya kerja tim & disiplin." },
+      { en: "I am improving my English", id: "Saya tingkatkan Inggris", pronounce: "ai em im-PRUU-ving mai ING-lish", example: "I am improving my English daily.", exampleId: "Saya tingkatkan Inggris tiap hari." },
+      { en: "I have experience in", id: "Saya pengalaman di", pronounce: "ai hev ik-SPII-riens in", example: "I have experience in sales.", exampleId: "Saya pengalaman di sales." },
+      { en: "How about we try", id: "Gimana kalau kita coba", pronounce: "hau e-BAUT wi trai", example: "How about we try next week?", exampleId: "Gimana kalau kita coba minggu depan?" },
+      { en: "I agree with you", id: "Saya setuju", pronounce: "ai e-GRII with yu", example: "I agree with you on that.", exampleId: "Saya setuju soal itu." }
     ],
     quiz: [
-      { id: "7-3-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-3-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-3-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-3-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-3-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "7-3-q1", question: "____ my opinion, we should", options: ["In (correct)", "On", "At", "By"], answer: 0, explanation: "In my opinion" },
+      { id: "7-3-q2", question: "____ me explain", options: ["Let (correct)", "Lets", "Letting", "Let me to"], answer: 0, explanation: "Let me explain" },
+      { id: "7-3-q3", question: "Could you ____ (clarify)", options: ["clarify (correct)", "clarifying", "clarified", "clarifies"], answer: 0, explanation: "Could you clarify?" },
+      { id: "7-3-q4", question: "Tell me ____ yourself", options: ["about (correct)", "of", "to", "with"], answer: 0, explanation: "about yourself" },
+      { id: "7-3-q5", question: "My strength ____ teamwork", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "My strength IS" }
     ]
   },
   {
@@ -2009,49 +2443,60 @@ export const lessons: Lesson[] = [
     order: 40,
     title: "Interview: Tell me",
     titleEn: "Tell Me About Yourself",
-    objective: "Saya 1 menit",
+    objective: "1 menit perkenalan + STAR",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Interview: Tell me (Tell Me About Yourself) — Saya 1 menit. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Interview: Tell me (Tell Me About Yourself) — 1 menit perkenalan + STAR. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Interview: Tell me",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example Tell Me About Yourself A", id: "Contoh Interview: Tell me A" },
-            { en: "Example Tell Me About Yourself B", id: "Contoh Interview: Tell me B" }
+            { en: "I agree with you on that.", id: "Saya setuju soal itu." },
+            { en: "What do you mean by that?", id: "Maksudnya apa itu?" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use Tell Me About Yourself at work", id: "Saya pakai Interview: Tell me di kerja" }
-          ]
+            { en: "In my opinion, we should start now.", id: "Menurut saya kita harus mulai sekarang." },
+            { en: "I use Tell Me About Yourself at work today.", id: "Saya pakai Interview: Tell me di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Tell Me About Yourself now.", id: "Mari latihan Interview: Tell me sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Negotiate", id: "Negosiasi", pronounce: "ne-GO-shiet", example: "Let's negotiate", exampleId: "Mari negosiasi" },
-      { en: "Agree", id: "Setuju", pronounce: "e-GRII", example: "I agree", exampleId: "Saya setuju" },
-      { en: "In my opinion", id: "Menurut saya", pronounce: "in mai o-PIN-yon", example: "In my opinion...", exampleId: "Menurut saya..." },
-      { en: "I think", id: "Saya pikir", pronounce: "ai thingk", example: "I think we should", exampleId: "Saya pikir kita harus" },
-      { en: "Could you clarify", id: "Bisa jelaskan", pronounce: "kud yu KLE-ri-fai", example: "Could you clarify?", exampleId: "Bisa jelaskan?" },
-      { en: "Let me explain", id: "Biar saya jelaskan", pronounce: "let mi ik-SPLEIN", example: "Let me explain", exampleId: "Biar saya jelaskan" },
-      { en: "Strength", id: "Kelebihan", pronounce: "streng", example: "My strength", exampleId: "Kelebihan saya" },
-      { en: "Weakness", id: "Kekurangan", pronounce: "WIIK-nes", example: "My weakness", exampleId: "Kekurangan saya" },
-      { en: "Experience", id: "Pengalaman", pronounce: "ik-SPII-riens", example: "My experience", exampleId: "Pengalaman saya" },
-      { en: "Teamwork", id: "Kerja tim", pronounce: "TIIM-werk", example: "I like teamwork", exampleId: "Saya suka kerja tim" }
+      { en: "Could you clarify please", id: "Bisa jelaskan tolong", pronounce: "kud yu KLE-ri-fai pliiz", example: "Could you clarify this point?", exampleId: "Bisa jelaskan poin ini?" },
+      { en: "Tell me about yourself", id: "Ceritakan dirimu", pronounce: "tel mi e-BAUT yor-self", example: "Tell me about yourself in 1 minute.", exampleId: "Ceritakan dirimu 1 menit." },
+      { en: "My strength is teamwork", id: "Kelebihan saya kerja tim", pronounce: "mai streng iz TIIM-werk", example: "My strength is teamwork and discipline.", exampleId: "Kelebihan saya kerja tim & disiplin." },
+      { en: "I am improving my English", id: "Saya tingkatkan Inggris", pronounce: "ai em im-PRUU-ving mai ING-lish", example: "I am improving my English daily.", exampleId: "Saya tingkatkan Inggris tiap hari." },
+      { en: "I have experience in", id: "Saya pengalaman di", pronounce: "ai hev ik-SPII-riens in", example: "I have experience in sales.", exampleId: "Saya pengalaman di sales." },
+      { en: "How about we try", id: "Gimana kalau kita coba", pronounce: "hau e-BAUT wi trai", example: "How about we try next week?", exampleId: "Gimana kalau kita coba minggu depan?" },
+      { en: "I agree with you", id: "Saya setuju", pronounce: "ai e-GRII with yu", example: "I agree with you on that.", exampleId: "Saya setuju soal itu." },
+      { en: "What do you mean", id: "Maksudnya apa", pronounce: "wot du yu miin", example: "What do you mean by that?", exampleId: "Maksudnya apa itu?" },
+      { en: "In my opinion, we should", id: "Menurut saya kita harus", pronounce: "in mai o-PIN-yon wi shud", example: "In my opinion, we should start now.", exampleId: "Menurut saya kita harus mulai sekarang." },
+      { en: "Let me explain briefly", id: "Biar saya jelaskan singkat", pronounce: "let mi ik-SPLEIN BRIIF-li", example: "Let me explain briefly.", exampleId: "Biar saya jelaskan singkat." }
     ],
     quiz: [
-      { id: "7-4-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-4-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-4-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-4-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-4-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "7-4-q1", question: "____ my opinion, we should", options: ["In (correct)", "On", "At", "By"], answer: 0, explanation: "In my opinion" },
+      { id: "7-4-q2", question: "____ me explain", options: ["Let (correct)", "Lets", "Letting", "Let me to"], answer: 0, explanation: "Let me explain" },
+      { id: "7-4-q3", question: "Could you ____ (clarify)", options: ["clarify (correct)", "clarifying", "clarified", "clarifies"], answer: 0, explanation: "Could you clarify?" },
+      { id: "7-4-q4", question: "Tell me ____ yourself", options: ["about (correct)", "of", "to", "with"], answer: 0, explanation: "about yourself" },
+      { id: "7-4-q5", question: "My strength ____ teamwork", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "My strength IS" }
     ]
   },
   {
@@ -2060,49 +2505,60 @@ export const lessons: Lesson[] = [
     order: 41,
     title: "Interview: Strength",
     titleEn: "Strength & Weakness",
-    objective: "My strength is...",
+    objective: "My strength is..., I am improving...",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Interview: Strength (Strength & Weakness) — My strength is.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Interview: Strength (Strength & Weakness) — My strength is..., I am improving.... Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Interview: Strength",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example Strength & Weakness A", id: "Contoh Interview: Strength A" },
-            { en: "Example Strength & Weakness B", id: "Contoh Interview: Strength B" }
+            { en: "In my opinion, we should start now.", id: "Menurut saya kita harus mulai sekarang." },
+            { en: "Let me explain briefly.", id: "Biar saya jelaskan singkat." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use Strength & Weakness at work", id: "Saya pakai Interview: Strength di kerja" }
-          ]
+            { en: "Could you clarify this point?", id: "Bisa jelaskan poin ini?" },
+            { en: "I use Strength & Weakness at work today.", id: "Saya pakai Interview: Strength di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Strength & Weakness now.", id: "Mari latihan Interview: Strength sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "In my opinion", id: "Menurut saya", pronounce: "in mai o-PIN-yon", example: "In my opinion...", exampleId: "Menurut saya..." },
-      { en: "I think", id: "Saya pikir", pronounce: "ai thingk", example: "I think we should", exampleId: "Saya pikir kita harus" },
-      { en: "Could you clarify", id: "Bisa jelaskan", pronounce: "kud yu KLE-ri-fai", example: "Could you clarify?", exampleId: "Bisa jelaskan?" },
-      { en: "Let me explain", id: "Biar saya jelaskan", pronounce: "let mi ik-SPLEIN", example: "Let me explain", exampleId: "Biar saya jelaskan" },
-      { en: "Strength", id: "Kelebihan", pronounce: "streng", example: "My strength", exampleId: "Kelebihan saya" },
-      { en: "Weakness", id: "Kekurangan", pronounce: "WIIK-nes", example: "My weakness", exampleId: "Kekurangan saya" },
-      { en: "Experience", id: "Pengalaman", pronounce: "ik-SPII-riens", example: "My experience", exampleId: "Pengalaman saya" },
-      { en: "Teamwork", id: "Kerja tim", pronounce: "TIIM-werk", example: "I like teamwork", exampleId: "Saya suka kerja tim" },
-      { en: "Negotiate", id: "Negosiasi", pronounce: "ne-GO-shiet", example: "Let's negotiate", exampleId: "Mari negosiasi" },
-      { en: "Agree", id: "Setuju", pronounce: "e-GRII", example: "I agree", exampleId: "Saya setuju" }
+      { en: "I am improving my English", id: "Saya tingkatkan Inggris", pronounce: "ai em im-PRUU-ving mai ING-lish", example: "I am improving my English daily.", exampleId: "Saya tingkatkan Inggris tiap hari." },
+      { en: "I have experience in", id: "Saya pengalaman di", pronounce: "ai hev ik-SPII-riens in", example: "I have experience in sales.", exampleId: "Saya pengalaman di sales." },
+      { en: "How about we try", id: "Gimana kalau kita coba", pronounce: "hau e-BAUT wi trai", example: "How about we try next week?", exampleId: "Gimana kalau kita coba minggu depan?" },
+      { en: "I agree with you", id: "Saya setuju", pronounce: "ai e-GRII with yu", example: "I agree with you on that.", exampleId: "Saya setuju soal itu." },
+      { en: "What do you mean", id: "Maksudnya apa", pronounce: "wot du yu miin", example: "What do you mean by that?", exampleId: "Maksudnya apa itu?" },
+      { en: "In my opinion, we should", id: "Menurut saya kita harus", pronounce: "in mai o-PIN-yon wi shud", example: "In my opinion, we should start now.", exampleId: "Menurut saya kita harus mulai sekarang." },
+      { en: "Let me explain briefly", id: "Biar saya jelaskan singkat", pronounce: "let mi ik-SPLEIN BRIIF-li", example: "Let me explain briefly.", exampleId: "Biar saya jelaskan singkat." },
+      { en: "Could you clarify please", id: "Bisa jelaskan tolong", pronounce: "kud yu KLE-ri-fai pliiz", example: "Could you clarify this point?", exampleId: "Bisa jelaskan poin ini?" },
+      { en: "Tell me about yourself", id: "Ceritakan dirimu", pronounce: "tel mi e-BAUT yor-self", example: "Tell me about yourself in 1 minute.", exampleId: "Ceritakan dirimu 1 menit." },
+      { en: "My strength is teamwork", id: "Kelebihan saya kerja tim", pronounce: "mai streng iz TIIM-werk", example: "My strength is teamwork and discipline.", exampleId: "Kelebihan saya kerja tim & disiplin." }
     ],
     quiz: [
-      { id: "7-5-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-5-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-5-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-5-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-5-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "7-5-q1", question: "____ my opinion, we should", options: ["In (correct)", "On", "At", "By"], answer: 0, explanation: "In my opinion" },
+      { id: "7-5-q2", question: "____ me explain", options: ["Let (correct)", "Lets", "Letting", "Let me to"], answer: 0, explanation: "Let me explain" },
+      { id: "7-5-q3", question: "Could you ____ (clarify)", options: ["clarify (correct)", "clarifying", "clarified", "clarifies"], answer: 0, explanation: "Could you clarify?" },
+      { id: "7-5-q4", question: "Tell me ____ yourself", options: ["about (correct)", "of", "to", "with"], answer: 0, explanation: "about yourself" },
+      { id: "7-5-q5", question: "My strength ____ teamwork", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "My strength IS" }
     ]
   },
   {
@@ -2111,49 +2567,60 @@ export const lessons: Lesson[] = [
     order: 42,
     title: "Negosiasi Simple",
     titleEn: "Simple Negotiation",
-    objective: "How about...?",
+    objective: "How about..., What if we...?",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Negosiasi Simple (Simple Negotiation) — How about...?. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Negosiasi Simple (Simple Negotiation) — How about..., What if we...?. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Negosiasi Simple",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Template Kerja (Copas)",
+          headingId: "Template Kerja (Copas)",
+          body: "Copy template, ganti nama/tanggal. Bos bule suka formal.",
           examples: [
-            { en: "Example Simple Negotiation A", id: "Contoh Negosiasi Simple A" },
-            { en: "Example Simple Negotiation B", id: "Contoh Negosiasi Simple B" }
+            { en: "Could you clarify this point?", id: "Bisa jelaskan poin ini?" },
+            { en: "Tell me about yourself in 1 minute.", id: "Ceritakan dirimu 1 menit." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Collocation Wajib",
+          headingId: "Collocation Wajib",
+          body: "Hafal pasangan: make a decision (bukan do), deal with.",
           examples: [
-            { en: "I use Simple Negotiation at work", id: "Saya pakai Negosiasi Simple di kerja" }
-          ]
+            { en: "My strength is teamwork and discipline.", id: "Kelebihan saya kerja tim & disiplin." },
+            { en: "I use Simple Negotiation at work today.", id: "Saya pakai Negosiasi Simple di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Roleplay",
+          headingId: "Roleplay",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Simple Negotiation now.", id: "Mari latihan Negosiasi Simple sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Could you clarify", id: "Bisa jelaskan", pronounce: "kud yu KLE-ri-fai", example: "Could you clarify?", exampleId: "Bisa jelaskan?" },
-      { en: "Let me explain", id: "Biar saya jelaskan", pronounce: "let mi ik-SPLEIN", example: "Let me explain", exampleId: "Biar saya jelaskan" },
-      { en: "Strength", id: "Kelebihan", pronounce: "streng", example: "My strength", exampleId: "Kelebihan saya" },
-      { en: "Weakness", id: "Kekurangan", pronounce: "WIIK-nes", example: "My weakness", exampleId: "Kekurangan saya" },
-      { en: "Experience", id: "Pengalaman", pronounce: "ik-SPII-riens", example: "My experience", exampleId: "Pengalaman saya" },
-      { en: "Teamwork", id: "Kerja tim", pronounce: "TIIM-werk", example: "I like teamwork", exampleId: "Saya suka kerja tim" },
-      { en: "Negotiate", id: "Negosiasi", pronounce: "ne-GO-shiet", example: "Let's negotiate", exampleId: "Mari negosiasi" },
-      { en: "Agree", id: "Setuju", pronounce: "e-GRII", example: "I agree", exampleId: "Saya setuju" },
-      { en: "In my opinion", id: "Menurut saya", pronounce: "in mai o-PIN-yon", example: "In my opinion...", exampleId: "Menurut saya..." },
-      { en: "I think", id: "Saya pikir", pronounce: "ai thingk", example: "I think we should", exampleId: "Saya pikir kita harus" }
+      { en: "I agree with you", id: "Saya setuju", pronounce: "ai e-GRII with yu", example: "I agree with you on that.", exampleId: "Saya setuju soal itu." },
+      { en: "What do you mean", id: "Maksudnya apa", pronounce: "wot du yu miin", example: "What do you mean by that?", exampleId: "Maksudnya apa itu?" },
+      { en: "In my opinion, we should", id: "Menurut saya kita harus", pronounce: "in mai o-PIN-yon wi shud", example: "In my opinion, we should start now.", exampleId: "Menurut saya kita harus mulai sekarang." },
+      { en: "Let me explain briefly", id: "Biar saya jelaskan singkat", pronounce: "let mi ik-SPLEIN BRIIF-li", example: "Let me explain briefly.", exampleId: "Biar saya jelaskan singkat." },
+      { en: "Could you clarify please", id: "Bisa jelaskan tolong", pronounce: "kud yu KLE-ri-fai pliiz", example: "Could you clarify this point?", exampleId: "Bisa jelaskan poin ini?" },
+      { en: "Tell me about yourself", id: "Ceritakan dirimu", pronounce: "tel mi e-BAUT yor-self", example: "Tell me about yourself in 1 minute.", exampleId: "Ceritakan dirimu 1 menit." },
+      { en: "My strength is teamwork", id: "Kelebihan saya kerja tim", pronounce: "mai streng iz TIIM-werk", example: "My strength is teamwork and discipline.", exampleId: "Kelebihan saya kerja tim & disiplin." },
+      { en: "I am improving my English", id: "Saya tingkatkan Inggris", pronounce: "ai em im-PRUU-ving mai ING-lish", example: "I am improving my English daily.", exampleId: "Saya tingkatkan Inggris tiap hari." },
+      { en: "I have experience in", id: "Saya pengalaman di", pronounce: "ai hev ik-SPII-riens in", example: "I have experience in sales.", exampleId: "Saya pengalaman di sales." },
+      { en: "How about we try", id: "Gimana kalau kita coba", pronounce: "hau e-BAUT wi trai", example: "How about we try next week?", exampleId: "Gimana kalau kita coba minggu depan?" }
     ],
     quiz: [
-      { id: "7-6-q1", question: "Work Q1: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-6-q2", question: "Work Q2: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-6-q3", question: "Work Q3: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-6-q4", question: "Work Q4: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." },
-      { id: "7-6-q5", question: "Work Q5: Polite email?", options: ["Could you please... (correct)","You send now!","Give me!","Hey send"], answer: 0, explanation: "Kerja pakai Could you please (sopan)." }
+      { id: "7-6-q1", question: "____ my opinion, we should", options: ["In (correct)", "On", "At", "By"], answer: 0, explanation: "In my opinion" },
+      { id: "7-6-q2", question: "____ me explain", options: ["Let (correct)", "Lets", "Letting", "Let me to"], answer: 0, explanation: "Let me explain" },
+      { id: "7-6-q3", question: "Could you ____ (clarify)", options: ["clarify (correct)", "clarifying", "clarified", "clarifies"], answer: 0, explanation: "Could you clarify?" },
+      { id: "7-6-q4", question: "Tell me ____ yourself", options: ["about (correct)", "of", "to", "with"], answer: 0, explanation: "about yourself" },
+      { id: "7-6-q5", question: "My strength ____ teamwork", options: ["is (correct)", "are", "am", "be"], answer: 0, explanation: "My strength IS" }
     ]
   },
   {
@@ -2162,49 +2629,60 @@ export const lessons: Lesson[] = [
     order: 43,
     title: "TOEFL S-V Agreement",
     titleEn: "Subject-Verb",
-    objective: "He goes, They go",
+    objective: "He goes, They go, Data is",
     duration: "18 menit",
     content: {
-      intro: "Pelajaran TOEFL S-V Agreement (Subject-Verb) — He goes, They go. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran TOEFL S-V Agreement (Subject-Verb) — He goes, They go, Data is. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola TOEFL S-V Agreement",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Subject-Verb A", id: "Contoh TOEFL S-V Agreement A" },
-            { en: "Example Subject-Verb B", id: "Contoh TOEFL S-V Agreement B" }
+            { en: "Therefore we need more time.", id: "Oleh karena itu butuh waktu." },
+            { en: "He goes to office every day.", id: "Dia pergi ke kantor tiap hari." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Subject-Verb at work", id: "Saya pakai TOEFL S-V Agreement di kerja" }
-          ]
+            { en: "Data is important for report.", id: "Data penting untuk laporan." },
+            { en: "I use Subject-Verb at work today.", id: "Saya pakai TOEFL S-V Agreement di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Subject-Verb now.", id: "Mari latihan TOEFL S-V Agreement sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Therefore", id: "Oleh karena itu", pronounce: "DHER-for", example: "Therefore we go", exampleId: "Oleh karena itu kita pergi" },
-      { en: "However", id: "Namun", pronounce: "hau-E-ver", example: "However, I will", exampleId: "Namun, saya akan" },
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject is he", exampleId: "Subjeknya dia" },
-      { en: "Verb", id: "Kata kerja", pronounce: "verb", example: "Verb is go", exampleId: "Katanya pergi" },
-      { en: "Agreement", id: "Kesesuaian", pronounce: "e-GRII-ment", example: "Subject-verb agreement", exampleId: "Kesesuaian subjek-kata kerja" },
-      { en: "Clause", id: "Klausa", pronounce: "kloz", example: "Main clause", exampleId: "Klausa utama" },
-      { en: "Error", id: "Kesalahan", pronounce: "ER-or", example: "Find error", exampleId: "Cari kesalahan" },
-      { en: "Correct", id: "Benar", pronounce: "ko-REKT", example: "The correct is", exampleId: "Yang benar adalah" },
-      { en: "Although", id: "Meskipun", pronounce: "ol-DHOU", example: "Although it rains", exampleId: "Meskipun hujan" },
-      { en: "Because", id: "Karena", pronounce: "bi-KOZ", example: "Because I am busy", exampleId: "Karena saya sibuk" }
+      { en: "He goes to office", id: "Dia pergi ke kantor", pronounce: "hi goz tu O-fis", example: "He goes to office every day.", exampleId: "Dia pergi ke kantor tiap hari." },
+      { en: "Data is important", id: "Data penting", pronounce: "DEI-ta iz im-POR-tent", example: "Data is important for report.", exampleId: "Data penting untuk laporan." },
+      { en: "The book that I read", id: "Buku yang saya baca", pronounce: "dhe buk dhet ai riid", example: "The book that I read is good.", exampleId: "Buku yang saya baca bagus." },
+      { en: "Find the error: He go", id: "Cari salah: He go", pronounce: "faind dhi ER-or hi go", example: "Find error: He go → He goes", exampleId: "Cari salah: He go → He goes" },
+      { en: "In the morning, on Monday", id: "Pagi hari, hari Senin", pronounce: "in dhe MOR-ning on MAN-dei", example: "In the morning on Monday.", exampleId: "Pagi hari di Senin." },
+      { en: "A university, an hour", id: "Sebuah univ, sejam", pronounce: "e yu-ni-VER-si-ti en au-er", example: "A university, an hour", exampleId: "Sebuah universitas, sejam" },
+      { en: "My friend and I go", id: "Saya dan teman pergi", pronounce: "mai frend end ai go", example: "My friend and I go together.", exampleId: "Saya dan teman pergi bersama." },
+      { en: "Although it rains, I go", id: "Meskipun hujan saya pergi", pronounce: "ol-DHOU it reinz ai go", example: "Although it rains, I go to office.", exampleId: "Meskipun hujan saya ke kantor." },
+      { en: "Because I was busy", id: "Karena saya sibuk", pronounce: "bi-KOZ ai woz BI-zi", example: "Because I was busy, I was late.", exampleId: "Karena sibuk, saya telat." },
+      { en: "Therefore we need more time", id: "Oleh karena itu butuh waktu", pronounce: "DHER-for wi niid mor taim", example: "Therefore we need more time.", exampleId: "Oleh karena itu butuh waktu." }
     ],
     quiz: [
-      { id: "8-1-q1", question: "TOEFL Structure Q1: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-1-q2", question: "TOEFL Structure Q2: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-1-q3", question: "TOEFL Structure Q3: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-1-q4", question: "TOEFL Structure Q4: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-1-q5", question: "TOEFL Structure Q5: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." }
+      { id: "8-1-q1", question: "He ____ (go) every day", options: ["go", "goes (correct)", "going", "gone"], answer: 1, explanation: "He goes + s" },
+      { id: "8-1-q2", question: "____ it rains, I go", options: ["Although (correct)", "Because", "So", "But"], answer: 0, explanation: "Although = meskipun" },
+      { id: "8-1-q3", question: "She has ____ (go)", options: ["went", "gone (correct)", "going", "go"], answer: 1, explanation: "has/have + V3" },
+      { id: "8-1-q4", question: "We meet ____ Monday", options: ["in", "on (correct)", "at", "by"], answer: 1, explanation: "on Monday" },
+      { id: "8-1-q5", question: "A ____ (hour)", options: ["a", "an (correct)", "the", "-"], answer: 1, explanation: "an hour (h silent)" }
     ]
   },
   {
@@ -2213,49 +2691,60 @@ export const lessons: Lesson[] = [
     order: 44,
     title: "Clause & Conjunction",
     titleEn: "Clauses",
-    objective: "Although, because",
+    objective: "Although, because, while, that",
     duration: "18 menit",
     content: {
-      intro: "Pelajaran Clause & Conjunction (Clauses) — Although, because. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Clause & Conjunction (Clauses) — Although, because, while, that. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Clause & Conjunction",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Clauses A", id: "Contoh Clause & Conjunction A" },
-            { en: "Example Clauses B", id: "Contoh Clause & Conjunction B" }
+            { en: "Data is important for report.", id: "Data penting untuk laporan." },
+            { en: "The book that I read is good.", id: "Buku yang saya baca bagus." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Clauses at work", id: "Saya pakai Clause & Conjunction di kerja" }
-          ]
+            { en: "Find error: He go → He goes", id: "Cari salah: He go → He goes" },
+            { en: "I use Clauses at work today.", id: "Saya pakai Clause & Conjunction di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Clauses now.", id: "Mari latihan Clause & Conjunction sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject is he", exampleId: "Subjeknya dia" },
-      { en: "Verb", id: "Kata kerja", pronounce: "verb", example: "Verb is go", exampleId: "Katanya pergi" },
-      { en: "Agreement", id: "Kesesuaian", pronounce: "e-GRII-ment", example: "Subject-verb agreement", exampleId: "Kesesuaian subjek-kata kerja" },
-      { en: "Clause", id: "Klausa", pronounce: "kloz", example: "Main clause", exampleId: "Klausa utama" },
-      { en: "Error", id: "Kesalahan", pronounce: "ER-or", example: "Find error", exampleId: "Cari kesalahan" },
-      { en: "Correct", id: "Benar", pronounce: "ko-REKT", example: "The correct is", exampleId: "Yang benar adalah" },
-      { en: "Although", id: "Meskipun", pronounce: "ol-DHOU", example: "Although it rains", exampleId: "Meskipun hujan" },
-      { en: "Because", id: "Karena", pronounce: "bi-KOZ", example: "Because I am busy", exampleId: "Karena saya sibuk" },
-      { en: "Therefore", id: "Oleh karena itu", pronounce: "DHER-for", example: "Therefore we go", exampleId: "Oleh karena itu kita pergi" },
-      { en: "However", id: "Namun", pronounce: "hau-E-ver", example: "However, I will", exampleId: "Namun, saya akan" }
+      { en: "Find the error: He go", id: "Cari salah: He go", pronounce: "faind dhi ER-or hi go", example: "Find error: He go → He goes", exampleId: "Cari salah: He go → He goes" },
+      { en: "In the morning, on Monday", id: "Pagi hari, hari Senin", pronounce: "in dhe MOR-ning on MAN-dei", example: "In the morning on Monday.", exampleId: "Pagi hari di Senin." },
+      { en: "A university, an hour", id: "Sebuah univ, sejam", pronounce: "e yu-ni-VER-si-ti en au-er", example: "A university, an hour", exampleId: "Sebuah universitas, sejam" },
+      { en: "My friend and I go", id: "Saya dan teman pergi", pronounce: "mai frend end ai go", example: "My friend and I go together.", exampleId: "Saya dan teman pergi bersama." },
+      { en: "Although it rains, I go", id: "Meskipun hujan saya pergi", pronounce: "ol-DHOU it reinz ai go", example: "Although it rains, I go to office.", exampleId: "Meskipun hujan saya ke kantor." },
+      { en: "Because I was busy", id: "Karena saya sibuk", pronounce: "bi-KOZ ai woz BI-zi", example: "Because I was busy, I was late.", exampleId: "Karena sibuk, saya telat." },
+      { en: "Therefore we need more time", id: "Oleh karena itu butuh waktu", pronounce: "DHER-for wi niid mor taim", example: "Therefore we need more time.", exampleId: "Oleh karena itu butuh waktu." },
+      { en: "He goes to office", id: "Dia pergi ke kantor", pronounce: "hi goz tu O-fis", example: "He goes to office every day.", exampleId: "Dia pergi ke kantor tiap hari." },
+      { en: "Data is important", id: "Data penting", pronounce: "DEI-ta iz im-POR-tent", example: "Data is important for report.", exampleId: "Data penting untuk laporan." },
+      { en: "The book that I read", id: "Buku yang saya baca", pronounce: "dhe buk dhet ai riid", example: "The book that I read is good.", exampleId: "Buku yang saya baca bagus." }
     ],
     quiz: [
-      { id: "8-2-q1", question: "TOEFL Structure Q1: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-2-q2", question: "TOEFL Structure Q2: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-2-q3", question: "TOEFL Structure Q3: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-2-q4", question: "TOEFL Structure Q4: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-2-q5", question: "TOEFL Structure Q5: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." }
+      { id: "8-2-q1", question: "He ____ (go) every day", options: ["go", "goes (correct)", "going", "gone"], answer: 1, explanation: "He goes + s" },
+      { id: "8-2-q2", question: "____ it rains, I go", options: ["Although (correct)", "Because", "So", "But"], answer: 0, explanation: "Although = meskipun" },
+      { id: "8-2-q3", question: "She has ____ (go)", options: ["went", "gone (correct)", "going", "go"], answer: 1, explanation: "has/have + V3" },
+      { id: "8-2-q4", question: "We meet ____ Monday", options: ["in", "on (correct)", "at", "by"], answer: 1, explanation: "on Monday" },
+      { id: "8-2-q5", question: "A ____ (hour)", options: ["a", "an (correct)", "the", "-"], answer: 1, explanation: "an hour (h silent)" }
     ]
   },
   {
@@ -2264,49 +2753,60 @@ export const lessons: Lesson[] = [
     order: 45,
     title: "Tenses TOEFL",
     titleEn: "Tenses Mix",
-    objective: "Have gone vs went",
+    objective: "Have gone vs went vs had gone",
     duration: "18 menit",
     content: {
-      intro: "Pelajaran Tenses TOEFL (Tenses Mix) — Have gone vs went. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Tenses TOEFL (Tenses Mix) — Have gone vs went vs had gone. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Tenses TOEFL",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Tenses Mix A", id: "Contoh Tenses TOEFL A" },
-            { en: "Example Tenses Mix B", id: "Contoh Tenses TOEFL B" }
+            { en: "Find error: He go → He goes", id: "Cari salah: He go → He goes" },
+            { en: "In the morning on Monday.", id: "Pagi hari di Senin." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Tenses Mix at work", id: "Saya pakai Tenses TOEFL di kerja" }
-          ]
+            { en: "A university, an hour", id: "Sebuah universitas, sejam" },
+            { en: "I use Tenses Mix at work today.", id: "Saya pakai Tenses TOEFL di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Tenses Mix now.", id: "Mari latihan Tenses TOEFL sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Agreement", id: "Kesesuaian", pronounce: "e-GRII-ment", example: "Subject-verb agreement", exampleId: "Kesesuaian subjek-kata kerja" },
-      { en: "Clause", id: "Klausa", pronounce: "kloz", example: "Main clause", exampleId: "Klausa utama" },
-      { en: "Error", id: "Kesalahan", pronounce: "ER-or", example: "Find error", exampleId: "Cari kesalahan" },
-      { en: "Correct", id: "Benar", pronounce: "ko-REKT", example: "The correct is", exampleId: "Yang benar adalah" },
-      { en: "Although", id: "Meskipun", pronounce: "ol-DHOU", example: "Although it rains", exampleId: "Meskipun hujan" },
-      { en: "Because", id: "Karena", pronounce: "bi-KOZ", example: "Because I am busy", exampleId: "Karena saya sibuk" },
-      { en: "Therefore", id: "Oleh karena itu", pronounce: "DHER-for", example: "Therefore we go", exampleId: "Oleh karena itu kita pergi" },
-      { en: "However", id: "Namun", pronounce: "hau-E-ver", example: "However, I will", exampleId: "Namun, saya akan" },
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject is he", exampleId: "Subjeknya dia" },
-      { en: "Verb", id: "Kata kerja", pronounce: "verb", example: "Verb is go", exampleId: "Katanya pergi" }
+      { en: "My friend and I go", id: "Saya dan teman pergi", pronounce: "mai frend end ai go", example: "My friend and I go together.", exampleId: "Saya dan teman pergi bersama." },
+      { en: "Although it rains, I go", id: "Meskipun hujan saya pergi", pronounce: "ol-DHOU it reinz ai go", example: "Although it rains, I go to office.", exampleId: "Meskipun hujan saya ke kantor." },
+      { en: "Because I was busy", id: "Karena saya sibuk", pronounce: "bi-KOZ ai woz BI-zi", example: "Because I was busy, I was late.", exampleId: "Karena sibuk, saya telat." },
+      { en: "Therefore we need more time", id: "Oleh karena itu butuh waktu", pronounce: "DHER-for wi niid mor taim", example: "Therefore we need more time.", exampleId: "Oleh karena itu butuh waktu." },
+      { en: "He goes to office", id: "Dia pergi ke kantor", pronounce: "hi goz tu O-fis", example: "He goes to office every day.", exampleId: "Dia pergi ke kantor tiap hari." },
+      { en: "Data is important", id: "Data penting", pronounce: "DEI-ta iz im-POR-tent", example: "Data is important for report.", exampleId: "Data penting untuk laporan." },
+      { en: "The book that I read", id: "Buku yang saya baca", pronounce: "dhe buk dhet ai riid", example: "The book that I read is good.", exampleId: "Buku yang saya baca bagus." },
+      { en: "Find the error: He go", id: "Cari salah: He go", pronounce: "faind dhi ER-or hi go", example: "Find error: He go → He goes", exampleId: "Cari salah: He go → He goes" },
+      { en: "In the morning, on Monday", id: "Pagi hari, hari Senin", pronounce: "in dhe MOR-ning on MAN-dei", example: "In the morning on Monday.", exampleId: "Pagi hari di Senin." },
+      { en: "A university, an hour", id: "Sebuah univ, sejam", pronounce: "e yu-ni-VER-si-ti en au-er", example: "A university, an hour", exampleId: "Sebuah universitas, sejam" }
     ],
     quiz: [
-      { id: "8-3-q1", question: "TOEFL Structure Q1: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-3-q2", question: "TOEFL Structure Q2: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-3-q3", question: "TOEFL Structure Q3: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-3-q4", question: "TOEFL Structure Q4: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-3-q5", question: "TOEFL Structure Q5: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." }
+      { id: "8-3-q1", question: "He ____ (go) every day", options: ["go", "goes (correct)", "going", "gone"], answer: 1, explanation: "He goes + s" },
+      { id: "8-3-q2", question: "____ it rains, I go", options: ["Although (correct)", "Because", "So", "But"], answer: 0, explanation: "Although = meskipun" },
+      { id: "8-3-q3", question: "She has ____ (go)", options: ["went", "gone (correct)", "going", "go"], answer: 1, explanation: "has/have + V3" },
+      { id: "8-3-q4", question: "We meet ____ Monday", options: ["in", "on (correct)", "at", "by"], answer: 1, explanation: "on Monday" },
+      { id: "8-3-q5", question: "A ____ (hour)", options: ["a", "an (correct)", "the", "-"], answer: 1, explanation: "an hour (h silent)" }
     ]
   },
   {
@@ -2315,49 +2815,60 @@ export const lessons: Lesson[] = [
     order: 46,
     title: "Preposisi Jebakan",
     titleEn: "Prepositions",
-    objective: "In vs On vs At",
+    objective: "In vs On vs At + by, for",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Preposisi Jebakan (Prepositions) — In vs On vs At. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Preposisi Jebakan (Prepositions) — In vs On vs At + by, for. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Preposisi Jebakan",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Prepositions A", id: "Contoh Preposisi Jebakan A" },
-            { en: "Example Prepositions B", id: "Contoh Preposisi Jebakan B" }
+            { en: "A university, an hour", id: "Sebuah universitas, sejam" },
+            { en: "My friend and I go together.", id: "Saya dan teman pergi bersama." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Prepositions at work", id: "Saya pakai Preposisi Jebakan di kerja" }
-          ]
+            { en: "Although it rains, I go to office.", id: "Meskipun hujan saya ke kantor." },
+            { en: "I use Prepositions at work today.", id: "Saya pakai Preposisi Jebakan di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Prepositions now.", id: "Mari latihan Preposisi Jebakan sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Error", id: "Kesalahan", pronounce: "ER-or", example: "Find error", exampleId: "Cari kesalahan" },
-      { en: "Correct", id: "Benar", pronounce: "ko-REKT", example: "The correct is", exampleId: "Yang benar adalah" },
-      { en: "Although", id: "Meskipun", pronounce: "ol-DHOU", example: "Although it rains", exampleId: "Meskipun hujan" },
-      { en: "Because", id: "Karena", pronounce: "bi-KOZ", example: "Because I am busy", exampleId: "Karena saya sibuk" },
-      { en: "Therefore", id: "Oleh karena itu", pronounce: "DHER-for", example: "Therefore we go", exampleId: "Oleh karena itu kita pergi" },
-      { en: "However", id: "Namun", pronounce: "hau-E-ver", example: "However, I will", exampleId: "Namun, saya akan" },
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject is he", exampleId: "Subjeknya dia" },
-      { en: "Verb", id: "Kata kerja", pronounce: "verb", example: "Verb is go", exampleId: "Katanya pergi" },
-      { en: "Agreement", id: "Kesesuaian", pronounce: "e-GRII-ment", example: "Subject-verb agreement", exampleId: "Kesesuaian subjek-kata kerja" },
-      { en: "Clause", id: "Klausa", pronounce: "kloz", example: "Main clause", exampleId: "Klausa utama" }
+      { en: "Therefore we need more time", id: "Oleh karena itu butuh waktu", pronounce: "DHER-for wi niid mor taim", example: "Therefore we need more time.", exampleId: "Oleh karena itu butuh waktu." },
+      { en: "He goes to office", id: "Dia pergi ke kantor", pronounce: "hi goz tu O-fis", example: "He goes to office every day.", exampleId: "Dia pergi ke kantor tiap hari." },
+      { en: "Data is important", id: "Data penting", pronounce: "DEI-ta iz im-POR-tent", example: "Data is important for report.", exampleId: "Data penting untuk laporan." },
+      { en: "The book that I read", id: "Buku yang saya baca", pronounce: "dhe buk dhet ai riid", example: "The book that I read is good.", exampleId: "Buku yang saya baca bagus." },
+      { en: "Find the error: He go", id: "Cari salah: He go", pronounce: "faind dhi ER-or hi go", example: "Find error: He go → He goes", exampleId: "Cari salah: He go → He goes" },
+      { en: "In the morning, on Monday", id: "Pagi hari, hari Senin", pronounce: "in dhe MOR-ning on MAN-dei", example: "In the morning on Monday.", exampleId: "Pagi hari di Senin." },
+      { en: "A university, an hour", id: "Sebuah univ, sejam", pronounce: "e yu-ni-VER-si-ti en au-er", example: "A university, an hour", exampleId: "Sebuah universitas, sejam" },
+      { en: "My friend and I go", id: "Saya dan teman pergi", pronounce: "mai frend end ai go", example: "My friend and I go together.", exampleId: "Saya dan teman pergi bersama." },
+      { en: "Although it rains, I go", id: "Meskipun hujan saya pergi", pronounce: "ol-DHOU it reinz ai go", example: "Although it rains, I go to office.", exampleId: "Meskipun hujan saya ke kantor." },
+      { en: "Because I was busy", id: "Karena saya sibuk", pronounce: "bi-KOZ ai woz BI-zi", example: "Because I was busy, I was late.", exampleId: "Karena sibuk, saya telat." }
     ],
     quiz: [
-      { id: "8-4-q1", question: "TOEFL Structure Q1: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-4-q2", question: "TOEFL Structure Q2: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-4-q3", question: "TOEFL Structure Q3: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-4-q4", question: "TOEFL Structure Q4: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-4-q5", question: "TOEFL Structure Q5: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." }
+      { id: "8-4-q1", question: "He ____ (go) every day", options: ["go", "goes (correct)", "going", "gone"], answer: 1, explanation: "He goes + s" },
+      { id: "8-4-q2", question: "____ it rains, I go", options: ["Although (correct)", "Because", "So", "But"], answer: 0, explanation: "Although = meskipun" },
+      { id: "8-4-q3", question: "She has ____ (go)", options: ["went", "gone (correct)", "going", "go"], answer: 1, explanation: "has/have + V3" },
+      { id: "8-4-q4", question: "We meet ____ Monday", options: ["in", "on (correct)", "at", "by"], answer: 1, explanation: "on Monday" },
+      { id: "8-4-q5", question: "A ____ (hour)", options: ["a", "an (correct)", "the", "-"], answer: 1, explanation: "an hour (h silent)" }
     ]
   },
   {
@@ -2366,49 +2877,60 @@ export const lessons: Lesson[] = [
     order: 47,
     title: "Article a/an/the",
     titleEn: "Articles",
-    objective: "A vs The",
+    objective: "A vs The, countable",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Article a/an/the (Articles) — A vs The. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Article a/an/the (Articles) — A vs The, countable. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Article a/an/the",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Articles A", id: "Contoh Article a/an/the A" },
-            { en: "Example Articles B", id: "Contoh Article a/an/the B" }
+            { en: "Although it rains, I go to office.", id: "Meskipun hujan saya ke kantor." },
+            { en: "Because I was busy, I was late.", id: "Karena sibuk, saya telat." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Articles at work", id: "Saya pakai Article a/an/the di kerja" }
-          ]
+            { en: "Therefore we need more time.", id: "Oleh karena itu butuh waktu." },
+            { en: "I use Articles at work today.", id: "Saya pakai Article a/an/the di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Articles now.", id: "Mari latihan Article a/an/the sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Although", id: "Meskipun", pronounce: "ol-DHOU", example: "Although it rains", exampleId: "Meskipun hujan" },
-      { en: "Because", id: "Karena", pronounce: "bi-KOZ", example: "Because I am busy", exampleId: "Karena saya sibuk" },
-      { en: "Therefore", id: "Oleh karena itu", pronounce: "DHER-for", example: "Therefore we go", exampleId: "Oleh karena itu kita pergi" },
-      { en: "However", id: "Namun", pronounce: "hau-E-ver", example: "However, I will", exampleId: "Namun, saya akan" },
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject is he", exampleId: "Subjeknya dia" },
-      { en: "Verb", id: "Kata kerja", pronounce: "verb", example: "Verb is go", exampleId: "Katanya pergi" },
-      { en: "Agreement", id: "Kesesuaian", pronounce: "e-GRII-ment", example: "Subject-verb agreement", exampleId: "Kesesuaian subjek-kata kerja" },
-      { en: "Clause", id: "Klausa", pronounce: "kloz", example: "Main clause", exampleId: "Klausa utama" },
-      { en: "Error", id: "Kesalahan", pronounce: "ER-or", example: "Find error", exampleId: "Cari kesalahan" },
-      { en: "Correct", id: "Benar", pronounce: "ko-REKT", example: "The correct is", exampleId: "Yang benar adalah" }
+      { en: "The book that I read", id: "Buku yang saya baca", pronounce: "dhe buk dhet ai riid", example: "The book that I read is good.", exampleId: "Buku yang saya baca bagus." },
+      { en: "Find the error: He go", id: "Cari salah: He go", pronounce: "faind dhi ER-or hi go", example: "Find error: He go → He goes", exampleId: "Cari salah: He go → He goes" },
+      { en: "In the morning, on Monday", id: "Pagi hari, hari Senin", pronounce: "in dhe MOR-ning on MAN-dei", example: "In the morning on Monday.", exampleId: "Pagi hari di Senin." },
+      { en: "A university, an hour", id: "Sebuah univ, sejam", pronounce: "e yu-ni-VER-si-ti en au-er", example: "A university, an hour", exampleId: "Sebuah universitas, sejam" },
+      { en: "My friend and I go", id: "Saya dan teman pergi", pronounce: "mai frend end ai go", example: "My friend and I go together.", exampleId: "Saya dan teman pergi bersama." },
+      { en: "Although it rains, I go", id: "Meskipun hujan saya pergi", pronounce: "ol-DHOU it reinz ai go", example: "Although it rains, I go to office.", exampleId: "Meskipun hujan saya ke kantor." },
+      { en: "Because I was busy", id: "Karena saya sibuk", pronounce: "bi-KOZ ai woz BI-zi", example: "Because I was busy, I was late.", exampleId: "Karena sibuk, saya telat." },
+      { en: "Therefore we need more time", id: "Oleh karena itu butuh waktu", pronounce: "DHER-for wi niid mor taim", example: "Therefore we need more time.", exampleId: "Oleh karena itu butuh waktu." },
+      { en: "He goes to office", id: "Dia pergi ke kantor", pronounce: "hi goz tu O-fis", example: "He goes to office every day.", exampleId: "Dia pergi ke kantor tiap hari." },
+      { en: "Data is important", id: "Data penting", pronounce: "DEI-ta iz im-POR-tent", example: "Data is important for report.", exampleId: "Data penting untuk laporan." }
     ],
     quiz: [
-      { id: "8-5-q1", question: "TOEFL Structure Q1: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-5-q2", question: "TOEFL Structure Q2: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-5-q3", question: "TOEFL Structure Q3: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-5-q4", question: "TOEFL Structure Q4: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-5-q5", question: "TOEFL Structure Q5: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." }
+      { id: "8-5-q1", question: "He ____ (go) every day", options: ["go", "goes (correct)", "going", "gone"], answer: 1, explanation: "He goes + s" },
+      { id: "8-5-q2", question: "____ it rains, I go", options: ["Although (correct)", "Because", "So", "But"], answer: 0, explanation: "Although = meskipun" },
+      { id: "8-5-q3", question: "She has ____ (go)", options: ["went", "gone (correct)", "going", "go"], answer: 1, explanation: "has/have + V3" },
+      { id: "8-5-q4", question: "We meet ____ Monday", options: ["in", "on (correct)", "at", "by"], answer: 1, explanation: "on Monday" },
+      { id: "8-5-q5", question: "A ____ (hour)", options: ["a", "an (correct)", "the", "-"], answer: 1, explanation: "an hour (h silent)" }
     ]
   },
   {
@@ -2417,49 +2939,60 @@ export const lessons: Lesson[] = [
     order: 48,
     title: "Error Spotting",
     titleEn: "Error ID",
-    objective: "Find the error",
+    objective: "Find the error + why",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Error Spotting (Error ID) — Find the error. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Error Spotting (Error ID) — Find the error + why. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Error Spotting",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Error ID A", id: "Contoh Error Spotting A" },
-            { en: "Example Error ID B", id: "Contoh Error Spotting B" }
+            { en: "Therefore we need more time.", id: "Oleh karena itu butuh waktu." },
+            { en: "He goes to office every day.", id: "Dia pergi ke kantor tiap hari." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Error ID at work", id: "Saya pakai Error Spotting di kerja" }
-          ]
+            { en: "Data is important for report.", id: "Data penting untuk laporan." },
+            { en: "I use Error ID at work today.", id: "Saya pakai Error Spotting di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Error ID now.", id: "Mari latihan Error Spotting sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Therefore", id: "Oleh karena itu", pronounce: "DHER-for", example: "Therefore we go", exampleId: "Oleh karena itu kita pergi" },
-      { en: "However", id: "Namun", pronounce: "hau-E-ver", example: "However, I will", exampleId: "Namun, saya akan" },
-      { en: "Subject", id: "Subjek", pronounce: "SAB-jekt", example: "Subject is he", exampleId: "Subjeknya dia" },
-      { en: "Verb", id: "Kata kerja", pronounce: "verb", example: "Verb is go", exampleId: "Katanya pergi" },
-      { en: "Agreement", id: "Kesesuaian", pronounce: "e-GRII-ment", example: "Subject-verb agreement", exampleId: "Kesesuaian subjek-kata kerja" },
-      { en: "Clause", id: "Klausa", pronounce: "kloz", example: "Main clause", exampleId: "Klausa utama" },
-      { en: "Error", id: "Kesalahan", pronounce: "ER-or", example: "Find error", exampleId: "Cari kesalahan" },
-      { en: "Correct", id: "Benar", pronounce: "ko-REKT", example: "The correct is", exampleId: "Yang benar adalah" },
-      { en: "Although", id: "Meskipun", pronounce: "ol-DHOU", example: "Although it rains", exampleId: "Meskipun hujan" },
-      { en: "Because", id: "Karena", pronounce: "bi-KOZ", example: "Because I am busy", exampleId: "Karena saya sibuk" }
+      { en: "A university, an hour", id: "Sebuah univ, sejam", pronounce: "e yu-ni-VER-si-ti en au-er", example: "A university, an hour", exampleId: "Sebuah universitas, sejam" },
+      { en: "My friend and I go", id: "Saya dan teman pergi", pronounce: "mai frend end ai go", example: "My friend and I go together.", exampleId: "Saya dan teman pergi bersama." },
+      { en: "Although it rains, I go", id: "Meskipun hujan saya pergi", pronounce: "ol-DHOU it reinz ai go", example: "Although it rains, I go to office.", exampleId: "Meskipun hujan saya ke kantor." },
+      { en: "Because I was busy", id: "Karena saya sibuk", pronounce: "bi-KOZ ai woz BI-zi", example: "Because I was busy, I was late.", exampleId: "Karena sibuk, saya telat." },
+      { en: "Therefore we need more time", id: "Oleh karena itu butuh waktu", pronounce: "DHER-for wi niid mor taim", example: "Therefore we need more time.", exampleId: "Oleh karena itu butuh waktu." },
+      { en: "He goes to office", id: "Dia pergi ke kantor", pronounce: "hi goz tu O-fis", example: "He goes to office every day.", exampleId: "Dia pergi ke kantor tiap hari." },
+      { en: "Data is important", id: "Data penting", pronounce: "DEI-ta iz im-POR-tent", example: "Data is important for report.", exampleId: "Data penting untuk laporan." },
+      { en: "The book that I read", id: "Buku yang saya baca", pronounce: "dhe buk dhet ai riid", example: "The book that I read is good.", exampleId: "Buku yang saya baca bagus." },
+      { en: "Find the error: He go", id: "Cari salah: He go", pronounce: "faind dhi ER-or hi go", example: "Find error: He go → He goes", exampleId: "Cari salah: He go → He goes" },
+      { en: "In the morning, on Monday", id: "Pagi hari, hari Senin", pronounce: "in dhe MOR-ning on MAN-dei", example: "In the morning on Monday.", exampleId: "Pagi hari di Senin." }
     ],
     quiz: [
-      { id: "8-6-q1", question: "TOEFL Structure Q1: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-6-q2", question: "TOEFL Structure Q2: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-6-q3", question: "TOEFL Structure Q3: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-6-q4", question: "TOEFL Structure Q4: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." },
-      { id: "8-6-q5", question: "TOEFL Structure Q5: Find error", options: ["He go (error)","He goes (correct)","They go","We go"], answer: 1, explanation: "He/She/It + goes (s - agreement)." }
+      { id: "8-6-q1", question: "He ____ (go) every day", options: ["go", "goes (correct)", "going", "gone"], answer: 1, explanation: "He goes + s" },
+      { id: "8-6-q2", question: "____ it rains, I go", options: ["Although (correct)", "Because", "So", "But"], answer: 0, explanation: "Although = meskipun" },
+      { id: "8-6-q3", question: "She has ____ (go)", options: ["went", "gone (correct)", "going", "go"], answer: 1, explanation: "has/have + V3" },
+      { id: "8-6-q4", question: "We meet ____ Monday", options: ["in", "on (correct)", "at", "by"], answer: 1, explanation: "on Monday" },
+      { id: "8-6-q5", question: "A ____ (hour)", options: ["a", "an (correct)", "the", "-"], answer: 1, explanation: "an hour (h silent)" }
     ]
   },
   {
@@ -2468,49 +3001,60 @@ export const lessons: Lesson[] = [
     order: 49,
     title: "Listening Keyword",
     titleEn: "Listening Keywords",
-    objective: "Listen for who/what",
+    objective: "Listen for who/what/where",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Listening Keyword (Listening Keywords) — Listen for who/what. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Listening Keyword (Listening Keywords) — Listen for who/what/where. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Listening Keyword",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Listening Keywords A", id: "Contoh Listening Keyword A" },
-            { en: "Example Listening Keywords B", id: "Contoh Listening Keyword B" }
+            { en: "Take notes: who, what, when.", id: "Catat: siapa, apa, kapan." },
+            { en: "Sound: write vs right → trap!", id: "Bunyi: write vs right → jebakan!" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Listening Keywords at work", id: "Saya pakai Listening Keyword di kerja" }
-          ]
+            { en: "Focus on verb, not extra info.", id: "Fokus kata kerja, bukan info tambahan." },
+            { en: "I use Listening Keywords at work today.", id: "Saya pakai Listening Keyword di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Listening Keywords now.", id: "Mari latihan Listening Keyword sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Conversation", id: "Percakapan", pronounce: "kon-ver-SEI-shen", example: "Short conversation", exampleId: "Percakapan pendek" },
-      { en: "Note", id: "Catatan", pronounce: "nout", example: "Take notes", exampleId: "Catat" },
-      { en: "Trick", id: "Trik", pronounce: "trik", example: "Trick answer", exampleId: "Jawaban trik" },
-      { en: "Sound", id: "Suara", pronounce: "saund", example: "Same sound", exampleId: "Suara sama" },
-      { en: "Focus", id: "Fokus", pronounce: "FO-kas", example: "Focus on verb", exampleId: "Fokus ke kata kerja" },
-      { en: "Repeat", id: "Ulangi", pronounce: "ri-PIIT", example: "Please repeat", exampleId: "Tolong ulangi" },
-      { en: "Understand", id: "Mengerti", pronounce: "an-der-STEND", example: "Do you understand?", exampleId: "Apakah mengerti?" },
-      { en: "Question", id: "Pertanyaan", pronounce: "KWES-chen", example: "Answer question", exampleId: "Jawab pertanyaan" },
-      { en: "Listen", id: "Dengarkan", pronounce: "LI-sen", example: "Listen carefully", exampleId: "Dengarkan baik" },
-      { en: "Keyword", id: "Kata kunci", pronounce: "KII-werd", example: "Listen keyword", exampleId: "Dengarkan kata kunci" }
+      { en: "Same sound trap", id: "Jebakan suara sama", pronounce: "seim saund trep", example: "Sound: write vs right → trap!", exampleId: "Bunyi: write vs right → jebakan!" },
+      { en: "Focus on verb, not noun", id: "Fokus kata kerja", pronounce: "FO-kas on verb", example: "Focus on verb, not extra info.", exampleId: "Fokus kata kerja, bukan info tambahan." },
+      { en: "Long talk main idea", id: "Ide utama talk panjang", pronounce: "long tok mein ai-DIA", example: "Long talk: main idea first sentence.", exampleId: "Talk panjang: ide di kalimat pertama." },
+      { en: "Please repeat slowly", id: "Tolong ulangi pelan", pronounce: "pliiz ri-PIIT SLO-li", example: "Please repeat slowly.", exampleId: "Tolong ulangi pelan." },
+      { en: "Do you understand", id: "Apakah paham", pronounce: "du yu an-der-STEND", example: "Do you understand?", exampleId: "Apakah paham?" },
+      { en: "Question about price", id: "Pertanyaan harga", pronounce: "KWES-chen e-BAUT prais", example: "Question about price → listen number.", exampleId: "Soal harga → dengar angka." },
+      { en: "Answer with keyword", id: "Jawab pakai keyword", pronounce: "AN-ser with KII-werd", example: "Answer with keyword, not full.", exampleId: "Jawab pakai kata kunci." },
+      { en: "Listen for who and what", id: "Dengar siapa & apa", pronounce: "LI-sen for hu end wot", example: "Listen for who and what.", exampleId: "Dengar siapa & apa." },
+      { en: "Short conversation trick", id: "Trik percakapan pendek", pronounce: "short kon-ver-SEI-shen trik", example: "Man: I am tired. Q: How is he?", exampleId: "Pria: Saya capek. Q: Gimana dia?" },
+      { en: "Take notes quickly", id: "Catat cepat", pronounce: "teik nouts KUIK-li", example: "Take notes: who, what, when.", exampleId: "Catat: siapa, apa, kapan." }
     ],
     quiz: [
-      { id: "9-1-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-1-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-1-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-1-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-1-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "9-1-q1", question: "Listen for ____", options: ["who/what (correct)", "why only", "how only", "when only"], answer: 0, explanation: "Listen who/what" },
+      { id: "9-1-q2", question: "Trick: same ____", options: ["sound (correct)", "meaning", "color", "size"], answer: 0, explanation: "Same sound trap" },
+      { id: "9-1-q3", question: "Take ____ quickly", options: ["notes (correct)", "note", "noting", "noted"], answer: 0, explanation: "Take notes" },
+      { id: "9-1-q4", question: "Q: What is price? Listen ____", options: ["number (correct)", "name", "color", "verb"], answer: 0, explanation: "Price → number" },
+      { id: "9-1-q5", question: "Long talk: ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Main idea first sentence" }
     ]
   },
   {
@@ -2519,49 +3063,60 @@ export const lessons: Lesson[] = [
     order: 50,
     title: "Short Conversation",
     titleEn: "Short Dialog",
-    objective: "Man: ... Woman: ...",
+    objective: "Man: ... Woman: ... Q: What?",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Short Conversation (Short Dialog) — Man: ... Woman: .... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Short Conversation (Short Dialog) — Man: ... Woman: ... Q: What?. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Short Conversation",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Short Dialog A", id: "Contoh Short Conversation A" },
-            { en: "Example Short Dialog B", id: "Contoh Short Conversation B" }
+            { en: "Focus on verb, not extra info.", id: "Fokus kata kerja, bukan info tambahan." },
+            { en: "Long talk: main idea first sentence.", id: "Talk panjang: ide di kalimat pertama." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Short Dialog at work", id: "Saya pakai Short Conversation di kerja" }
-          ]
+            { en: "Please repeat slowly.", id: "Tolong ulangi pelan." },
+            { en: "I use Short Dialog at work today.", id: "Saya pakai Short Conversation di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Short Dialog now.", id: "Mari latihan Short Conversation sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Trick", id: "Trik", pronounce: "trik", example: "Trick answer", exampleId: "Jawaban trik" },
-      { en: "Sound", id: "Suara", pronounce: "saund", example: "Same sound", exampleId: "Suara sama" },
-      { en: "Focus", id: "Fokus", pronounce: "FO-kas", example: "Focus on verb", exampleId: "Fokus ke kata kerja" },
-      { en: "Repeat", id: "Ulangi", pronounce: "ri-PIIT", example: "Please repeat", exampleId: "Tolong ulangi" },
-      { en: "Understand", id: "Mengerti", pronounce: "an-der-STEND", example: "Do you understand?", exampleId: "Apakah mengerti?" },
-      { en: "Question", id: "Pertanyaan", pronounce: "KWES-chen", example: "Answer question", exampleId: "Jawab pertanyaan" },
-      { en: "Listen", id: "Dengarkan", pronounce: "LI-sen", example: "Listen carefully", exampleId: "Dengarkan baik" },
-      { en: "Keyword", id: "Kata kunci", pronounce: "KII-werd", example: "Listen keyword", exampleId: "Dengarkan kata kunci" },
-      { en: "Conversation", id: "Percakapan", pronounce: "kon-ver-SEI-shen", example: "Short conversation", exampleId: "Percakapan pendek" },
-      { en: "Note", id: "Catatan", pronounce: "nout", example: "Take notes", exampleId: "Catat" }
+      { en: "Please repeat slowly", id: "Tolong ulangi pelan", pronounce: "pliiz ri-PIIT SLO-li", example: "Please repeat slowly.", exampleId: "Tolong ulangi pelan." },
+      { en: "Do you understand", id: "Apakah paham", pronounce: "du yu an-der-STEND", example: "Do you understand?", exampleId: "Apakah paham?" },
+      { en: "Question about price", id: "Pertanyaan harga", pronounce: "KWES-chen e-BAUT prais", example: "Question about price → listen number.", exampleId: "Soal harga → dengar angka." },
+      { en: "Answer with keyword", id: "Jawab pakai keyword", pronounce: "AN-ser with KII-werd", example: "Answer with keyword, not full.", exampleId: "Jawab pakai kata kunci." },
+      { en: "Listen for who and what", id: "Dengar siapa & apa", pronounce: "LI-sen for hu end wot", example: "Listen for who and what.", exampleId: "Dengar siapa & apa." },
+      { en: "Short conversation trick", id: "Trik percakapan pendek", pronounce: "short kon-ver-SEI-shen trik", example: "Man: I am tired. Q: How is he?", exampleId: "Pria: Saya capek. Q: Gimana dia?" },
+      { en: "Take notes quickly", id: "Catat cepat", pronounce: "teik nouts KUIK-li", example: "Take notes: who, what, when.", exampleId: "Catat: siapa, apa, kapan." },
+      { en: "Same sound trap", id: "Jebakan suara sama", pronounce: "seim saund trep", example: "Sound: write vs right → trap!", exampleId: "Bunyi: write vs right → jebakan!" },
+      { en: "Focus on verb, not noun", id: "Fokus kata kerja", pronounce: "FO-kas on verb", example: "Focus on verb, not extra info.", exampleId: "Fokus kata kerja, bukan info tambahan." },
+      { en: "Long talk main idea", id: "Ide utama talk panjang", pronounce: "long tok mein ai-DIA", example: "Long talk: main idea first sentence.", exampleId: "Talk panjang: ide di kalimat pertama." }
     ],
     quiz: [
-      { id: "9-2-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-2-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-2-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-2-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-2-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "9-2-q1", question: "Listen for ____", options: ["who/what (correct)", "why only", "how only", "when only"], answer: 0, explanation: "Listen who/what" },
+      { id: "9-2-q2", question: "Trick: same ____", options: ["sound (correct)", "meaning", "color", "size"], answer: 0, explanation: "Same sound trap" },
+      { id: "9-2-q3", question: "Take ____ quickly", options: ["notes (correct)", "note", "noting", "noted"], answer: 0, explanation: "Take notes" },
+      { id: "9-2-q4", question: "Q: What is price? Listen ____", options: ["number (correct)", "name", "color", "verb"], answer: 0, explanation: "Price → number" },
+      { id: "9-2-q5", question: "Long talk: ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Main idea first sentence" }
     ]
   },
   {
@@ -2570,49 +3125,60 @@ export const lessons: Lesson[] = [
     order: 51,
     title: "Long Conversation",
     titleEn: "Long Talk",
-    objective: "Note taking",
+    objective: "Note taking + main idea",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Long Conversation (Long Talk) — Note taking. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Long Conversation (Long Talk) — Note taking + main idea. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Long Conversation",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Long Talk A", id: "Contoh Long Conversation A" },
-            { en: "Example Long Talk B", id: "Contoh Long Conversation B" }
+            { en: "Please repeat slowly.", id: "Tolong ulangi pelan." },
+            { en: "Do you understand?", id: "Apakah paham?" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Long Talk at work", id: "Saya pakai Long Conversation di kerja" }
-          ]
+            { en: "Question about price → listen number.", id: "Soal harga → dengar angka." },
+            { en: "I use Long Talk at work today.", id: "Saya pakai Long Conversation di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Long Talk now.", id: "Mari latihan Long Conversation sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Focus", id: "Fokus", pronounce: "FO-kas", example: "Focus on verb", exampleId: "Fokus ke kata kerja" },
-      { en: "Repeat", id: "Ulangi", pronounce: "ri-PIIT", example: "Please repeat", exampleId: "Tolong ulangi" },
-      { en: "Understand", id: "Mengerti", pronounce: "an-der-STEND", example: "Do you understand?", exampleId: "Apakah mengerti?" },
-      { en: "Question", id: "Pertanyaan", pronounce: "KWES-chen", example: "Answer question", exampleId: "Jawab pertanyaan" },
-      { en: "Listen", id: "Dengarkan", pronounce: "LI-sen", example: "Listen carefully", exampleId: "Dengarkan baik" },
-      { en: "Keyword", id: "Kata kunci", pronounce: "KII-werd", example: "Listen keyword", exampleId: "Dengarkan kata kunci" },
-      { en: "Conversation", id: "Percakapan", pronounce: "kon-ver-SEI-shen", example: "Short conversation", exampleId: "Percakapan pendek" },
-      { en: "Note", id: "Catatan", pronounce: "nout", example: "Take notes", exampleId: "Catat" },
-      { en: "Trick", id: "Trik", pronounce: "trik", example: "Trick answer", exampleId: "Jawaban trik" },
-      { en: "Sound", id: "Suara", pronounce: "saund", example: "Same sound", exampleId: "Suara sama" }
+      { en: "Answer with keyword", id: "Jawab pakai keyword", pronounce: "AN-ser with KII-werd", example: "Answer with keyword, not full.", exampleId: "Jawab pakai kata kunci." },
+      { en: "Listen for who and what", id: "Dengar siapa & apa", pronounce: "LI-sen for hu end wot", example: "Listen for who and what.", exampleId: "Dengar siapa & apa." },
+      { en: "Short conversation trick", id: "Trik percakapan pendek", pronounce: "short kon-ver-SEI-shen trik", example: "Man: I am tired. Q: How is he?", exampleId: "Pria: Saya capek. Q: Gimana dia?" },
+      { en: "Take notes quickly", id: "Catat cepat", pronounce: "teik nouts KUIK-li", example: "Take notes: who, what, when.", exampleId: "Catat: siapa, apa, kapan." },
+      { en: "Same sound trap", id: "Jebakan suara sama", pronounce: "seim saund trep", example: "Sound: write vs right → trap!", exampleId: "Bunyi: write vs right → jebakan!" },
+      { en: "Focus on verb, not noun", id: "Fokus kata kerja", pronounce: "FO-kas on verb", example: "Focus on verb, not extra info.", exampleId: "Fokus kata kerja, bukan info tambahan." },
+      { en: "Long talk main idea", id: "Ide utama talk panjang", pronounce: "long tok mein ai-DIA", example: "Long talk: main idea first sentence.", exampleId: "Talk panjang: ide di kalimat pertama." },
+      { en: "Please repeat slowly", id: "Tolong ulangi pelan", pronounce: "pliiz ri-PIIT SLO-li", example: "Please repeat slowly.", exampleId: "Tolong ulangi pelan." },
+      { en: "Do you understand", id: "Apakah paham", pronounce: "du yu an-der-STEND", example: "Do you understand?", exampleId: "Apakah paham?" },
+      { en: "Question about price", id: "Pertanyaan harga", pronounce: "KWES-chen e-BAUT prais", example: "Question about price → listen number.", exampleId: "Soal harga → dengar angka." }
     ],
     quiz: [
-      { id: "9-3-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-3-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-3-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-3-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-3-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "9-3-q1", question: "Listen for ____", options: ["who/what (correct)", "why only", "how only", "when only"], answer: 0, explanation: "Listen who/what" },
+      { id: "9-3-q2", question: "Trick: same ____", options: ["sound (correct)", "meaning", "color", "size"], answer: 0, explanation: "Same sound trap" },
+      { id: "9-3-q3", question: "Take ____ quickly", options: ["notes (correct)", "note", "noting", "noted"], answer: 0, explanation: "Take notes" },
+      { id: "9-3-q4", question: "Q: What is price? Listen ____", options: ["number (correct)", "name", "color", "verb"], answer: 0, explanation: "Price → number" },
+      { id: "9-3-q5", question: "Long talk: ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Main idea first sentence" }
     ]
   },
   {
@@ -2621,49 +3187,60 @@ export const lessons: Lesson[] = [
     order: 52,
     title: "Trik Jawab",
     titleEn: "Answer Tricks",
-    objective: "Same sound trap",
+    objective: "Same sound trap, extra info trap",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Trik Jawab (Answer Tricks) — Same sound trap. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Trik Jawab (Answer Tricks) — Same sound trap, extra info trap. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Trik Jawab",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Answer Tricks A", id: "Contoh Trik Jawab A" },
-            { en: "Example Answer Tricks B", id: "Contoh Trik Jawab B" }
+            { en: "Question about price → listen number.", id: "Soal harga → dengar angka." },
+            { en: "Answer with keyword, not full.", id: "Jawab pakai kata kunci." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Answer Tricks at work", id: "Saya pakai Trik Jawab di kerja" }
-          ]
+            { en: "Listen for who and what.", id: "Dengar siapa & apa." },
+            { en: "I use Answer Tricks at work today.", id: "Saya pakai Trik Jawab di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Answer Tricks now.", id: "Mari latihan Trik Jawab sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Understand", id: "Mengerti", pronounce: "an-der-STEND", example: "Do you understand?", exampleId: "Apakah mengerti?" },
-      { en: "Question", id: "Pertanyaan", pronounce: "KWES-chen", example: "Answer question", exampleId: "Jawab pertanyaan" },
-      { en: "Listen", id: "Dengarkan", pronounce: "LI-sen", example: "Listen carefully", exampleId: "Dengarkan baik" },
-      { en: "Keyword", id: "Kata kunci", pronounce: "KII-werd", example: "Listen keyword", exampleId: "Dengarkan kata kunci" },
-      { en: "Conversation", id: "Percakapan", pronounce: "kon-ver-SEI-shen", example: "Short conversation", exampleId: "Percakapan pendek" },
-      { en: "Note", id: "Catatan", pronounce: "nout", example: "Take notes", exampleId: "Catat" },
-      { en: "Trick", id: "Trik", pronounce: "trik", example: "Trick answer", exampleId: "Jawaban trik" },
-      { en: "Sound", id: "Suara", pronounce: "saund", example: "Same sound", exampleId: "Suara sama" },
-      { en: "Focus", id: "Fokus", pronounce: "FO-kas", example: "Focus on verb", exampleId: "Fokus ke kata kerja" },
-      { en: "Repeat", id: "Ulangi", pronounce: "ri-PIIT", example: "Please repeat", exampleId: "Tolong ulangi" }
+      { en: "Take notes quickly", id: "Catat cepat", pronounce: "teik nouts KUIK-li", example: "Take notes: who, what, when.", exampleId: "Catat: siapa, apa, kapan." },
+      { en: "Same sound trap", id: "Jebakan suara sama", pronounce: "seim saund trep", example: "Sound: write vs right → trap!", exampleId: "Bunyi: write vs right → jebakan!" },
+      { en: "Focus on verb, not noun", id: "Fokus kata kerja", pronounce: "FO-kas on verb", example: "Focus on verb, not extra info.", exampleId: "Fokus kata kerja, bukan info tambahan." },
+      { en: "Long talk main idea", id: "Ide utama talk panjang", pronounce: "long tok mein ai-DIA", example: "Long talk: main idea first sentence.", exampleId: "Talk panjang: ide di kalimat pertama." },
+      { en: "Please repeat slowly", id: "Tolong ulangi pelan", pronounce: "pliiz ri-PIIT SLO-li", example: "Please repeat slowly.", exampleId: "Tolong ulangi pelan." },
+      { en: "Do you understand", id: "Apakah paham", pronounce: "du yu an-der-STEND", example: "Do you understand?", exampleId: "Apakah paham?" },
+      { en: "Question about price", id: "Pertanyaan harga", pronounce: "KWES-chen e-BAUT prais", example: "Question about price → listen number.", exampleId: "Soal harga → dengar angka." },
+      { en: "Answer with keyword", id: "Jawab pakai keyword", pronounce: "AN-ser with KII-werd", example: "Answer with keyword, not full.", exampleId: "Jawab pakai kata kunci." },
+      { en: "Listen for who and what", id: "Dengar siapa & apa", pronounce: "LI-sen for hu end wot", example: "Listen for who and what.", exampleId: "Dengar siapa & apa." },
+      { en: "Short conversation trick", id: "Trik percakapan pendek", pronounce: "short kon-ver-SEI-shen trik", example: "Man: I am tired. Q: How is he?", exampleId: "Pria: Saya capek. Q: Gimana dia?" }
     ],
     quiz: [
-      { id: "9-4-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-4-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-4-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-4-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-4-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "9-4-q1", question: "Listen for ____", options: ["who/what (correct)", "why only", "how only", "when only"], answer: 0, explanation: "Listen who/what" },
+      { id: "9-4-q2", question: "Trick: same ____", options: ["sound (correct)", "meaning", "color", "size"], answer: 0, explanation: "Same sound trap" },
+      { id: "9-4-q3", question: "Take ____ quickly", options: ["notes (correct)", "note", "noting", "noted"], answer: 0, explanation: "Take notes" },
+      { id: "9-4-q4", question: "Q: What is price? Listen ____", options: ["number (correct)", "name", "color", "verb"], answer: 0, explanation: "Price → number" },
+      { id: "9-4-q5", question: "Long talk: ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Main idea first sentence" }
     ]
   },
   {
@@ -2672,49 +3249,60 @@ export const lessons: Lesson[] = [
     order: 53,
     title: "Note Taking",
     titleEn: "Notes",
-    objective: "Abbreviate",
+    objective: "Abbreviate, symbol",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Note Taking (Notes) — Abbreviate. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Note Taking (Notes) — Abbreviate, symbol. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Note Taking",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Notes A", id: "Contoh Note Taking A" },
-            { en: "Example Notes B", id: "Contoh Note Taking B" }
+            { en: "Listen for who and what.", id: "Dengar siapa & apa." },
+            { en: "Man: I am tired. Q: How is he?", id: "Pria: Saya capek. Q: Gimana dia?" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Notes at work", id: "Saya pakai Note Taking di kerja" }
-          ]
+            { en: "Take notes: who, what, when.", id: "Catat: siapa, apa, kapan." },
+            { en: "I use Notes at work today.", id: "Saya pakai Note Taking di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Notes now.", id: "Mari latihan Note Taking sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Listen", id: "Dengarkan", pronounce: "LI-sen", example: "Listen carefully", exampleId: "Dengarkan baik" },
-      { en: "Keyword", id: "Kata kunci", pronounce: "KII-werd", example: "Listen keyword", exampleId: "Dengarkan kata kunci" },
-      { en: "Conversation", id: "Percakapan", pronounce: "kon-ver-SEI-shen", example: "Short conversation", exampleId: "Percakapan pendek" },
-      { en: "Note", id: "Catatan", pronounce: "nout", example: "Take notes", exampleId: "Catat" },
-      { en: "Trick", id: "Trik", pronounce: "trik", example: "Trick answer", exampleId: "Jawaban trik" },
-      { en: "Sound", id: "Suara", pronounce: "saund", example: "Same sound", exampleId: "Suara sama" },
-      { en: "Focus", id: "Fokus", pronounce: "FO-kas", example: "Focus on verb", exampleId: "Fokus ke kata kerja" },
-      { en: "Repeat", id: "Ulangi", pronounce: "ri-PIIT", example: "Please repeat", exampleId: "Tolong ulangi" },
-      { en: "Understand", id: "Mengerti", pronounce: "an-der-STEND", example: "Do you understand?", exampleId: "Apakah mengerti?" },
-      { en: "Question", id: "Pertanyaan", pronounce: "KWES-chen", example: "Answer question", exampleId: "Jawab pertanyaan" }
+      { en: "Long talk main idea", id: "Ide utama talk panjang", pronounce: "long tok mein ai-DIA", example: "Long talk: main idea first sentence.", exampleId: "Talk panjang: ide di kalimat pertama." },
+      { en: "Please repeat slowly", id: "Tolong ulangi pelan", pronounce: "pliiz ri-PIIT SLO-li", example: "Please repeat slowly.", exampleId: "Tolong ulangi pelan." },
+      { en: "Do you understand", id: "Apakah paham", pronounce: "du yu an-der-STEND", example: "Do you understand?", exampleId: "Apakah paham?" },
+      { en: "Question about price", id: "Pertanyaan harga", pronounce: "KWES-chen e-BAUT prais", example: "Question about price → listen number.", exampleId: "Soal harga → dengar angka." },
+      { en: "Answer with keyword", id: "Jawab pakai keyword", pronounce: "AN-ser with KII-werd", example: "Answer with keyword, not full.", exampleId: "Jawab pakai kata kunci." },
+      { en: "Listen for who and what", id: "Dengar siapa & apa", pronounce: "LI-sen for hu end wot", example: "Listen for who and what.", exampleId: "Dengar siapa & apa." },
+      { en: "Short conversation trick", id: "Trik percakapan pendek", pronounce: "short kon-ver-SEI-shen trik", example: "Man: I am tired. Q: How is he?", exampleId: "Pria: Saya capek. Q: Gimana dia?" },
+      { en: "Take notes quickly", id: "Catat cepat", pronounce: "teik nouts KUIK-li", example: "Take notes: who, what, when.", exampleId: "Catat: siapa, apa, kapan." },
+      { en: "Same sound trap", id: "Jebakan suara sama", pronounce: "seim saund trep", example: "Sound: write vs right → trap!", exampleId: "Bunyi: write vs right → jebakan!" },
+      { en: "Focus on verb, not noun", id: "Fokus kata kerja", pronounce: "FO-kas on verb", example: "Focus on verb, not extra info.", exampleId: "Fokus kata kerja, bukan info tambahan." }
     ],
     quiz: [
-      { id: "9-5-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-5-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-5-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-5-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-5-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "9-5-q1", question: "Listen for ____", options: ["who/what (correct)", "why only", "how only", "when only"], answer: 0, explanation: "Listen who/what" },
+      { id: "9-5-q2", question: "Trick: same ____", options: ["sound (correct)", "meaning", "color", "size"], answer: 0, explanation: "Same sound trap" },
+      { id: "9-5-q3", question: "Take ____ quickly", options: ["notes (correct)", "note", "noting", "noted"], answer: 0, explanation: "Take notes" },
+      { id: "9-5-q4", question: "Q: What is price? Listen ____", options: ["number (correct)", "name", "color", "verb"], answer: 0, explanation: "Price → number" },
+      { id: "9-5-q5", question: "Long talk: ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Main idea first sentence" }
     ]
   },
   {
@@ -2723,49 +3311,60 @@ export const lessons: Lesson[] = [
     order: 54,
     title: "Simulasi Listening 1",
     titleEn: "Listening Sim 1",
-    objective: "Mini test",
+    objective: "10 soal + audio TTS",
     duration: "18 menit",
     content: {
-      intro: "Pelajaran Simulasi Listening 1 (Listening Sim 1) — Mini test. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Simulasi Listening 1 (Listening Sim 1) — 10 soal + audio TTS. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Simulasi Listening 1",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Listening Sim 1 A", id: "Contoh Simulasi Listening 1 A" },
-            { en: "Example Listening Sim 1 B", id: "Contoh Simulasi Listening 1 B" }
+            { en: "Take notes: who, what, when.", id: "Catat: siapa, apa, kapan." },
+            { en: "Sound: write vs right → trap!", id: "Bunyi: write vs right → jebakan!" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Listening Sim 1 at work", id: "Saya pakai Simulasi Listening 1 di kerja" }
-          ]
+            { en: "Focus on verb, not extra info.", id: "Fokus kata kerja, bukan info tambahan." },
+            { en: "I use Listening Sim 1 at work today.", id: "Saya pakai Simulasi Listening 1 di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Listening Sim 1 now.", id: "Mari latihan Simulasi Listening 1 sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Conversation", id: "Percakapan", pronounce: "kon-ver-SEI-shen", example: "Short conversation", exampleId: "Percakapan pendek" },
-      { en: "Note", id: "Catatan", pronounce: "nout", example: "Take notes", exampleId: "Catat" },
-      { en: "Trick", id: "Trik", pronounce: "trik", example: "Trick answer", exampleId: "Jawaban trik" },
-      { en: "Sound", id: "Suara", pronounce: "saund", example: "Same sound", exampleId: "Suara sama" },
-      { en: "Focus", id: "Fokus", pronounce: "FO-kas", example: "Focus on verb", exampleId: "Fokus ke kata kerja" },
-      { en: "Repeat", id: "Ulangi", pronounce: "ri-PIIT", example: "Please repeat", exampleId: "Tolong ulangi" },
-      { en: "Understand", id: "Mengerti", pronounce: "an-der-STEND", example: "Do you understand?", exampleId: "Apakah mengerti?" },
-      { en: "Question", id: "Pertanyaan", pronounce: "KWES-chen", example: "Answer question", exampleId: "Jawab pertanyaan" },
-      { en: "Listen", id: "Dengarkan", pronounce: "LI-sen", example: "Listen carefully", exampleId: "Dengarkan baik" },
-      { en: "Keyword", id: "Kata kunci", pronounce: "KII-werd", example: "Listen keyword", exampleId: "Dengarkan kata kunci" }
+      { en: "Question about price", id: "Pertanyaan harga", pronounce: "KWES-chen e-BAUT prais", example: "Question about price → listen number.", exampleId: "Soal harga → dengar angka." },
+      { en: "Answer with keyword", id: "Jawab pakai keyword", pronounce: "AN-ser with KII-werd", example: "Answer with keyword, not full.", exampleId: "Jawab pakai kata kunci." },
+      { en: "Listen for who and what", id: "Dengar siapa & apa", pronounce: "LI-sen for hu end wot", example: "Listen for who and what.", exampleId: "Dengar siapa & apa." },
+      { en: "Short conversation trick", id: "Trik percakapan pendek", pronounce: "short kon-ver-SEI-shen trik", example: "Man: I am tired. Q: How is he?", exampleId: "Pria: Saya capek. Q: Gimana dia?" },
+      { en: "Take notes quickly", id: "Catat cepat", pronounce: "teik nouts KUIK-li", example: "Take notes: who, what, when.", exampleId: "Catat: siapa, apa, kapan." },
+      { en: "Same sound trap", id: "Jebakan suara sama", pronounce: "seim saund trep", example: "Sound: write vs right → trap!", exampleId: "Bunyi: write vs right → jebakan!" },
+      { en: "Focus on verb, not noun", id: "Fokus kata kerja", pronounce: "FO-kas on verb", example: "Focus on verb, not extra info.", exampleId: "Fokus kata kerja, bukan info tambahan." },
+      { en: "Long talk main idea", id: "Ide utama talk panjang", pronounce: "long tok mein ai-DIA", example: "Long talk: main idea first sentence.", exampleId: "Talk panjang: ide di kalimat pertama." },
+      { en: "Please repeat slowly", id: "Tolong ulangi pelan", pronounce: "pliiz ri-PIIT SLO-li", example: "Please repeat slowly.", exampleId: "Tolong ulangi pelan." },
+      { en: "Do you understand", id: "Apakah paham", pronounce: "du yu an-der-STEND", example: "Do you understand?", exampleId: "Apakah paham?" }
     ],
     quiz: [
-      { id: "9-6-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-6-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-6-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-6-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "9-6-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "9-6-q1", question: "Listen for ____", options: ["who/what (correct)", "why only", "how only", "when only"], answer: 0, explanation: "Listen who/what" },
+      { id: "9-6-q2", question: "Trick: same ____", options: ["sound (correct)", "meaning", "color", "size"], answer: 0, explanation: "Same sound trap" },
+      { id: "9-6-q3", question: "Take ____ quickly", options: ["notes (correct)", "note", "noting", "noted"], answer: 0, explanation: "Take notes" },
+      { id: "9-6-q4", question: "Q: What is price? Listen ____", options: ["number (correct)", "name", "color", "verb"], answer: 0, explanation: "Price → number" },
+      { id: "9-6-q5", question: "Long talk: ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Main idea first sentence" }
     ]
   },
   {
@@ -2774,49 +3373,60 @@ export const lessons: Lesson[] = [
     order: 55,
     title: "Skimming",
     titleEn: "Skimming",
-    objective: "Baca cepat gagasan",
+    objective: "Baca cepat gagasan 30 detik",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Skimming (Skimming) — Baca cepat gagasan. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Skimming (Skimming) — Baca cepat gagasan 30 detik. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Skimming",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Skimming A", id: "Contoh Skimming A" },
-            { en: "Example Skimming B", id: "Contoh Skimming B" }
+            { en: "Guess 'urgent' from context.", id: "Tebak 'urgent' dari konteks." },
+            { en: "It refers to the book.", id: "It merujuk ke buku." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Skimming at work", id: "Saya pakai Skimming di kerja" }
-          ]
+            { en: "Make inference: he was tired → he slept.", id: "Kesimpulan: dia capek → dia tidur." },
+            { en: "I use Skimming at work today.", id: "Saya pakai Skimming di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Skimming now.", id: "Mari latihan Skimming sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Passage", id: "Bacaan", pronounce: "PES-ij", example: "Read passage", exampleId: "Baca bacaan" },
-      { en: "Inference", id: "Kesimpulan", pronounce: "IN-fer-ens", example: "Make inference", exampleId: "Buat kesimpulan" },
-      { en: "Vocabulary", id: "Kosakata", pronounce: "vo-KEB-yu-le-ri", example: "Vocab context", exampleId: "Kosakata konteks" },
-      { en: "Reference", id: "Rujukan", pronounce: "RE-fer-ens", example: "It refers to", exampleId: "Itu merujuk ke" },
-      { en: "Detail", id: "Detail", pronounce: "DI-teil", example: "Find detail", exampleId: "Cari detail" },
-      { en: "Main idea", id: "Ide utama", pronounce: "mein ai-DIA", example: "Main idea is", exampleId: "Ide utamanya" },
-      { en: "Summary", id: "Ringkasan", pronounce: "SAM-ri", example: "Write summary", exampleId: "Tulis ringkasan" },
-      { en: "Simulate", id: "Simulasi", pronounce: "SIM-yu-leit", example: "Simulate test", exampleId: "Simulasi tes" },
-      { en: "Skim", id: "Baca cepat", pronounce: "skim", example: "Skim the text", exampleId: "Baca cepat teks" },
-      { en: "Scan", id: "Pindai", pronounce: "sken", example: "Scan details", exampleId: "Pindai detail" }
+      { en: "It refers to the book", id: "It merujuk buku", pronounce: "it ri-FERZ tu dhe buk", example: "It refers to the book.", exampleId: "It merujuk ke buku." },
+      { en: "Make inference carefully", id: "Buat kesimpulan hati-hati", pronounce: "meik IN-fer-ens KER-ful-li", example: "Make inference: he was tired → he slept.", exampleId: "Kesimpulan: dia capek → dia tidur." },
+      { en: "Main idea is in title", id: "Ide utama di judul", pronounce: "mein ai-DIA iz in TAI-tel", example: "Main idea is in title + first line.", exampleId: "Ide utama di judul + baris pertama." },
+      { en: "Write summary 1 sentence", id: "Tulis ringkasan 1 kalimat", pronounce: "rait SAM-ri wan SEN-tens", example: "Write summary in 1 sentence.", exampleId: "Tulis ringkasan 1 kalimat." },
+      { en: "Passage about work culture", id: "Bacaan budaya kerja", pronounce: "PES-ij e-BAUT werk KAL-cher", example: "Passage about work culture in Japan.", exampleId: "Bacaan budaya kerja di Jepang." },
+      { en: "Simulate TOEFL 30 min", id: "Simulasi TOEFL 30 menit", pronounce: "SIM-yu-leit TO-fel", example: "Simulate TOEFL 30 min timer.", exampleId: "Simulasi TOEFL 30 menit timer." },
+      { en: "Check time left 5 min", id: "Cek sisa 5 menit", pronounce: "chek taim left faiv min", example: "Check time left 5 min!", exampleId: "Cek sisa 5 menit!" },
+      { en: "Skim the first sentence", id: "Pindai kalimat pertama", pronounce: "skim dhe ferst SEN-tens", example: "Skim the first sentence for idea.", exampleId: "Pindai kalimat pertama untuk ide." },
+      { en: "Scan for numbers quickly", id: "Pindai angka cepat", pronounce: "sken for NAM-bers KUIK-li", example: "Scan for numbers like 2024.", exampleId: "Pindai angka kayak 2024." },
+      { en: "Guess vocab from context", id: "Tebak kosakata dari konteks", pronounce: "ges vo-KEB from KON-tekst", example: "Guess 'urgent' from context.", exampleId: "Tebak 'urgent' dari konteks." }
     ],
     quiz: [
-      { id: "10-1-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-1-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-1-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-1-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-1-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "10-1-q1", question: "Skim: read ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Skim first sentence" },
+      { id: "10-1-q2", question: "Scan for ____", options: ["numbers (correct)", "ideas", "all", "none"], answer: 0, explanation: "Scan numbers/names" },
+      { id: "10-1-q3", question: "It refers to ____", options: ["previous noun (correct)", "next verb", "all", "none"], answer: 0, explanation: "It refers to previous noun" },
+      { id: "10-1-q4", question: "Inference: make ____", options: ["conclusion (correct)", "copy", "skip", "guess random"], answer: 0, explanation: "Make inference" },
+      { id: "10-1-q5", question: "Time check: ____ left", options: ["5 min (correct)", "1 hour", "none", "all"], answer: 0, explanation: "Check time left" }
     ]
   },
   {
@@ -2825,49 +3435,60 @@ export const lessons: Lesson[] = [
     order: 56,
     title: "Scanning",
     titleEn: "Scanning",
-    objective: "Cari detail",
+    objective: "Cari detail angka/nama",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Scanning (Scanning) — Cari detail. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Scanning (Scanning) — Cari detail angka/nama. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Scanning",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Scanning A", id: "Contoh Scanning A" },
-            { en: "Example Scanning B", id: "Contoh Scanning B" }
+            { en: "Make inference: he was tired → he slept.", id: "Kesimpulan: dia capek → dia tidur." },
+            { en: "Main idea is in title + first line.", id: "Ide utama di judul + baris pertama." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Scanning at work", id: "Saya pakai Scanning di kerja" }
-          ]
+            { en: "Write summary in 1 sentence.", id: "Tulis ringkasan 1 kalimat." },
+            { en: "I use Scanning at work today.", id: "Saya pakai Scanning di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Scanning now.", id: "Mari latihan Scanning sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Vocabulary", id: "Kosakata", pronounce: "vo-KEB-yu-le-ri", example: "Vocab context", exampleId: "Kosakata konteks" },
-      { en: "Reference", id: "Rujukan", pronounce: "RE-fer-ens", example: "It refers to", exampleId: "Itu merujuk ke" },
-      { en: "Detail", id: "Detail", pronounce: "DI-teil", example: "Find detail", exampleId: "Cari detail" },
-      { en: "Main idea", id: "Ide utama", pronounce: "mein ai-DIA", example: "Main idea is", exampleId: "Ide utamanya" },
-      { en: "Summary", id: "Ringkasan", pronounce: "SAM-ri", example: "Write summary", exampleId: "Tulis ringkasan" },
-      { en: "Simulate", id: "Simulasi", pronounce: "SIM-yu-leit", example: "Simulate test", exampleId: "Simulasi tes" },
-      { en: "Skim", id: "Baca cepat", pronounce: "skim", example: "Skim the text", exampleId: "Baca cepat teks" },
-      { en: "Scan", id: "Pindai", pronounce: "sken", example: "Scan details", exampleId: "Pindai detail" },
-      { en: "Passage", id: "Bacaan", pronounce: "PES-ij", example: "Read passage", exampleId: "Baca bacaan" },
-      { en: "Inference", id: "Kesimpulan", pronounce: "IN-fer-ens", example: "Make inference", exampleId: "Buat kesimpulan" }
+      { en: "Write summary 1 sentence", id: "Tulis ringkasan 1 kalimat", pronounce: "rait SAM-ri wan SEN-tens", example: "Write summary in 1 sentence.", exampleId: "Tulis ringkasan 1 kalimat." },
+      { en: "Passage about work culture", id: "Bacaan budaya kerja", pronounce: "PES-ij e-BAUT werk KAL-cher", example: "Passage about work culture in Japan.", exampleId: "Bacaan budaya kerja di Jepang." },
+      { en: "Simulate TOEFL 30 min", id: "Simulasi TOEFL 30 menit", pronounce: "SIM-yu-leit TO-fel", example: "Simulate TOEFL 30 min timer.", exampleId: "Simulasi TOEFL 30 menit timer." },
+      { en: "Check time left 5 min", id: "Cek sisa 5 menit", pronounce: "chek taim left faiv min", example: "Check time left 5 min!", exampleId: "Cek sisa 5 menit!" },
+      { en: "Skim the first sentence", id: "Pindai kalimat pertama", pronounce: "skim dhe ferst SEN-tens", example: "Skim the first sentence for idea.", exampleId: "Pindai kalimat pertama untuk ide." },
+      { en: "Scan for numbers quickly", id: "Pindai angka cepat", pronounce: "sken for NAM-bers KUIK-li", example: "Scan for numbers like 2024.", exampleId: "Pindai angka kayak 2024." },
+      { en: "Guess vocab from context", id: "Tebak kosakata dari konteks", pronounce: "ges vo-KEB from KON-tekst", example: "Guess 'urgent' from context.", exampleId: "Tebak 'urgent' dari konteks." },
+      { en: "It refers to the book", id: "It merujuk buku", pronounce: "it ri-FERZ tu dhe buk", example: "It refers to the book.", exampleId: "It merujuk ke buku." },
+      { en: "Make inference carefully", id: "Buat kesimpulan hati-hati", pronounce: "meik IN-fer-ens KER-ful-li", example: "Make inference: he was tired → he slept.", exampleId: "Kesimpulan: dia capek → dia tidur." },
+      { en: "Main idea is in title", id: "Ide utama di judul", pronounce: "mein ai-DIA iz in TAI-tel", example: "Main idea is in title + first line.", exampleId: "Ide utama di judul + baris pertama." }
     ],
     quiz: [
-      { id: "10-2-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-2-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-2-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-2-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-2-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "10-2-q1", question: "Skim: read ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Skim first sentence" },
+      { id: "10-2-q2", question: "Scan for ____", options: ["numbers (correct)", "ideas", "all", "none"], answer: 0, explanation: "Scan numbers/names" },
+      { id: "10-2-q3", question: "It refers to ____", options: ["previous noun (correct)", "next verb", "all", "none"], answer: 0, explanation: "It refers to previous noun" },
+      { id: "10-2-q4", question: "Inference: make ____", options: ["conclusion (correct)", "copy", "skip", "guess random"], answer: 0, explanation: "Make inference" },
+      { id: "10-2-q5", question: "Time check: ____ left", options: ["5 min (correct)", "1 hour", "none", "all"], answer: 0, explanation: "Check time left" }
     ]
   },
   {
@@ -2876,49 +3497,60 @@ export const lessons: Lesson[] = [
     order: 57,
     title: "Vocab in Context",
     titleEn: "Vocab Context",
-    objective: "Guess meaning",
+    objective: "Guess meaning dari konteks",
     duration: "15 menit",
     content: {
-      intro: "Pelajaran Vocab in Context (Vocab Context) — Guess meaning. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Vocab in Context (Vocab Context) — Guess meaning dari konteks. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Vocab in Context",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Vocab Context A", id: "Contoh Vocab in Context A" },
-            { en: "Example Vocab Context B", id: "Contoh Vocab in Context B" }
+            { en: "Write summary in 1 sentence.", id: "Tulis ringkasan 1 kalimat." },
+            { en: "Passage about work culture in Japan.", id: "Bacaan budaya kerja di Jepang." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Vocab Context at work", id: "Saya pakai Vocab in Context di kerja" }
-          ]
+            { en: "Simulate TOEFL 30 min timer.", id: "Simulasi TOEFL 30 menit timer." },
+            { en: "I use Vocab Context at work today.", id: "Saya pakai Vocab in Context di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Vocab Context now.", id: "Mari latihan Vocab in Context sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Detail", id: "Detail", pronounce: "DI-teil", example: "Find detail", exampleId: "Cari detail" },
-      { en: "Main idea", id: "Ide utama", pronounce: "mein ai-DIA", example: "Main idea is", exampleId: "Ide utamanya" },
-      { en: "Summary", id: "Ringkasan", pronounce: "SAM-ri", example: "Write summary", exampleId: "Tulis ringkasan" },
-      { en: "Simulate", id: "Simulasi", pronounce: "SIM-yu-leit", example: "Simulate test", exampleId: "Simulasi tes" },
-      { en: "Skim", id: "Baca cepat", pronounce: "skim", example: "Skim the text", exampleId: "Baca cepat teks" },
-      { en: "Scan", id: "Pindai", pronounce: "sken", example: "Scan details", exampleId: "Pindai detail" },
-      { en: "Passage", id: "Bacaan", pronounce: "PES-ij", example: "Read passage", exampleId: "Baca bacaan" },
-      { en: "Inference", id: "Kesimpulan", pronounce: "IN-fer-ens", example: "Make inference", exampleId: "Buat kesimpulan" },
-      { en: "Vocabulary", id: "Kosakata", pronounce: "vo-KEB-yu-le-ri", example: "Vocab context", exampleId: "Kosakata konteks" },
-      { en: "Reference", id: "Rujukan", pronounce: "RE-fer-ens", example: "It refers to", exampleId: "Itu merujuk ke" }
+      { en: "Check time left 5 min", id: "Cek sisa 5 menit", pronounce: "chek taim left faiv min", example: "Check time left 5 min!", exampleId: "Cek sisa 5 menit!" },
+      { en: "Skim the first sentence", id: "Pindai kalimat pertama", pronounce: "skim dhe ferst SEN-tens", example: "Skim the first sentence for idea.", exampleId: "Pindai kalimat pertama untuk ide." },
+      { en: "Scan for numbers quickly", id: "Pindai angka cepat", pronounce: "sken for NAM-bers KUIK-li", example: "Scan for numbers like 2024.", exampleId: "Pindai angka kayak 2024." },
+      { en: "Guess vocab from context", id: "Tebak kosakata dari konteks", pronounce: "ges vo-KEB from KON-tekst", example: "Guess 'urgent' from context.", exampleId: "Tebak 'urgent' dari konteks." },
+      { en: "It refers to the book", id: "It merujuk buku", pronounce: "it ri-FERZ tu dhe buk", example: "It refers to the book.", exampleId: "It merujuk ke buku." },
+      { en: "Make inference carefully", id: "Buat kesimpulan hati-hati", pronounce: "meik IN-fer-ens KER-ful-li", example: "Make inference: he was tired → he slept.", exampleId: "Kesimpulan: dia capek → dia tidur." },
+      { en: "Main idea is in title", id: "Ide utama di judul", pronounce: "mein ai-DIA iz in TAI-tel", example: "Main idea is in title + first line.", exampleId: "Ide utama di judul + baris pertama." },
+      { en: "Write summary 1 sentence", id: "Tulis ringkasan 1 kalimat", pronounce: "rait SAM-ri wan SEN-tens", example: "Write summary in 1 sentence.", exampleId: "Tulis ringkasan 1 kalimat." },
+      { en: "Passage about work culture", id: "Bacaan budaya kerja", pronounce: "PES-ij e-BAUT werk KAL-cher", example: "Passage about work culture in Japan.", exampleId: "Bacaan budaya kerja di Jepang." },
+      { en: "Simulate TOEFL 30 min", id: "Simulasi TOEFL 30 menit", pronounce: "SIM-yu-leit TO-fel", example: "Simulate TOEFL 30 min timer.", exampleId: "Simulasi TOEFL 30 menit timer." }
     ],
     quiz: [
-      { id: "10-3-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-3-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-3-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-3-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-3-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "10-3-q1", question: "Skim: read ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Skim first sentence" },
+      { id: "10-3-q2", question: "Scan for ____", options: ["numbers (correct)", "ideas", "all", "none"], answer: 0, explanation: "Scan numbers/names" },
+      { id: "10-3-q3", question: "It refers to ____", options: ["previous noun (correct)", "next verb", "all", "none"], answer: 0, explanation: "It refers to previous noun" },
+      { id: "10-3-q4", question: "Inference: make ____", options: ["conclusion (correct)", "copy", "skip", "guess random"], answer: 0, explanation: "Make inference" },
+      { id: "10-3-q5", question: "Time check: ____ left", options: ["5 min (correct)", "1 hour", "none", "all"], answer: 0, explanation: "Check time left" }
     ]
   },
   {
@@ -2927,49 +3559,60 @@ export const lessons: Lesson[] = [
     order: 58,
     title: "Reference & Inference",
     titleEn: "Inference",
-    objective: "It refers to...",
+    objective: "It/They refers to...",
     duration: "16 menit",
     content: {
-      intro: "Pelajaran Reference & Inference (Inference) — It refers to.... Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Reference & Inference (Inference) — It/They refers to.... Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Reference & Inference",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Inference A", id: "Contoh Reference & Inference A" },
-            { en: "Example Inference B", id: "Contoh Reference & Inference B" }
+            { en: "Simulate TOEFL 30 min timer.", id: "Simulasi TOEFL 30 menit timer." },
+            { en: "Check time left 5 min!", id: "Cek sisa 5 menit!" }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Inference at work", id: "Saya pakai Reference & Inference di kerja" }
-          ]
+            { en: "Skim the first sentence for idea.", id: "Pindai kalimat pertama untuk ide." },
+            { en: "I use Inference at work today.", id: "Saya pakai Reference & Inference di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Inference now.", id: "Mari latihan Reference & Inference sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Summary", id: "Ringkasan", pronounce: "SAM-ri", example: "Write summary", exampleId: "Tulis ringkasan" },
-      { en: "Simulate", id: "Simulasi", pronounce: "SIM-yu-leit", example: "Simulate test", exampleId: "Simulasi tes" },
-      { en: "Skim", id: "Baca cepat", pronounce: "skim", example: "Skim the text", exampleId: "Baca cepat teks" },
-      { en: "Scan", id: "Pindai", pronounce: "sken", example: "Scan details", exampleId: "Pindai detail" },
-      { en: "Passage", id: "Bacaan", pronounce: "PES-ij", example: "Read passage", exampleId: "Baca bacaan" },
-      { en: "Inference", id: "Kesimpulan", pronounce: "IN-fer-ens", example: "Make inference", exampleId: "Buat kesimpulan" },
-      { en: "Vocabulary", id: "Kosakata", pronounce: "vo-KEB-yu-le-ri", example: "Vocab context", exampleId: "Kosakata konteks" },
-      { en: "Reference", id: "Rujukan", pronounce: "RE-fer-ens", example: "It refers to", exampleId: "Itu merujuk ke" },
-      { en: "Detail", id: "Detail", pronounce: "DI-teil", example: "Find detail", exampleId: "Cari detail" },
-      { en: "Main idea", id: "Ide utama", pronounce: "mein ai-DIA", example: "Main idea is", exampleId: "Ide utamanya" }
+      { en: "Guess vocab from context", id: "Tebak kosakata dari konteks", pronounce: "ges vo-KEB from KON-tekst", example: "Guess 'urgent' from context.", exampleId: "Tebak 'urgent' dari konteks." },
+      { en: "It refers to the book", id: "It merujuk buku", pronounce: "it ri-FERZ tu dhe buk", example: "It refers to the book.", exampleId: "It merujuk ke buku." },
+      { en: "Make inference carefully", id: "Buat kesimpulan hati-hati", pronounce: "meik IN-fer-ens KER-ful-li", example: "Make inference: he was tired → he slept.", exampleId: "Kesimpulan: dia capek → dia tidur." },
+      { en: "Main idea is in title", id: "Ide utama di judul", pronounce: "mein ai-DIA iz in TAI-tel", example: "Main idea is in title + first line.", exampleId: "Ide utama di judul + baris pertama." },
+      { en: "Write summary 1 sentence", id: "Tulis ringkasan 1 kalimat", pronounce: "rait SAM-ri wan SEN-tens", example: "Write summary in 1 sentence.", exampleId: "Tulis ringkasan 1 kalimat." },
+      { en: "Passage about work culture", id: "Bacaan budaya kerja", pronounce: "PES-ij e-BAUT werk KAL-cher", example: "Passage about work culture in Japan.", exampleId: "Bacaan budaya kerja di Jepang." },
+      { en: "Simulate TOEFL 30 min", id: "Simulasi TOEFL 30 menit", pronounce: "SIM-yu-leit TO-fel", example: "Simulate TOEFL 30 min timer.", exampleId: "Simulasi TOEFL 30 menit timer." },
+      { en: "Check time left 5 min", id: "Cek sisa 5 menit", pronounce: "chek taim left faiv min", example: "Check time left 5 min!", exampleId: "Cek sisa 5 menit!" },
+      { en: "Skim the first sentence", id: "Pindai kalimat pertama", pronounce: "skim dhe ferst SEN-tens", example: "Skim the first sentence for idea.", exampleId: "Pindai kalimat pertama untuk ide." },
+      { en: "Scan for numbers quickly", id: "Pindai angka cepat", pronounce: "sken for NAM-bers KUIK-li", example: "Scan for numbers like 2024.", exampleId: "Pindai angka kayak 2024." }
     ],
     quiz: [
-      { id: "10-4-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-4-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-4-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-4-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-4-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "10-4-q1", question: "Skim: read ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Skim first sentence" },
+      { id: "10-4-q2", question: "Scan for ____", options: ["numbers (correct)", "ideas", "all", "none"], answer: 0, explanation: "Scan numbers/names" },
+      { id: "10-4-q3", question: "It refers to ____", options: ["previous noun (correct)", "next verb", "all", "none"], answer: 0, explanation: "It refers to previous noun" },
+      { id: "10-4-q4", question: "Inference: make ____", options: ["conclusion (correct)", "copy", "skip", "guess random"], answer: 0, explanation: "Make inference" },
+      { id: "10-4-q5", question: "Time check: ____ left", options: ["5 min (correct)", "1 hour", "none", "all"], answer: 0, explanation: "Check time left" }
     ]
   },
   {
@@ -2978,49 +3621,60 @@ export const lessons: Lesson[] = [
     order: 59,
     title: "Simulasi Reading 1",
     titleEn: "Reading Sim 1",
-    objective: "5 passages",
+    objective: "5 passages + 10 soal",
     duration: "18 menit",
     content: {
-      intro: "Pelajaran Simulasi Reading 1 (Reading Sim 1) — 5 passages. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Simulasi Reading 1 (Reading Sim 1) — 5 passages + 10 soal. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Simulasi Reading 1",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Reading Sim 1 A", id: "Contoh Simulasi Reading 1 A" },
-            { en: "Example Reading Sim 1 B", id: "Contoh Simulasi Reading 1 B" }
+            { en: "Skim the first sentence for idea.", id: "Pindai kalimat pertama untuk ide." },
+            { en: "Scan for numbers like 2024.", id: "Pindai angka kayak 2024." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Reading Sim 1 at work", id: "Saya pakai Simulasi Reading 1 di kerja" }
-          ]
+            { en: "Guess 'urgent' from context.", id: "Tebak 'urgent' dari konteks." },
+            { en: "I use Reading Sim 1 at work today.", id: "Saya pakai Simulasi Reading 1 di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Reading Sim 1 now.", id: "Mari latihan Simulasi Reading 1 sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Skim", id: "Baca cepat", pronounce: "skim", example: "Skim the text", exampleId: "Baca cepat teks" },
-      { en: "Scan", id: "Pindai", pronounce: "sken", example: "Scan details", exampleId: "Pindai detail" },
-      { en: "Passage", id: "Bacaan", pronounce: "PES-ij", example: "Read passage", exampleId: "Baca bacaan" },
-      { en: "Inference", id: "Kesimpulan", pronounce: "IN-fer-ens", example: "Make inference", exampleId: "Buat kesimpulan" },
-      { en: "Vocabulary", id: "Kosakata", pronounce: "vo-KEB-yu-le-ri", example: "Vocab context", exampleId: "Kosakata konteks" },
-      { en: "Reference", id: "Rujukan", pronounce: "RE-fer-ens", example: "It refers to", exampleId: "Itu merujuk ke" },
-      { en: "Detail", id: "Detail", pronounce: "DI-teil", example: "Find detail", exampleId: "Cari detail" },
-      { en: "Main idea", id: "Ide utama", pronounce: "mein ai-DIA", example: "Main idea is", exampleId: "Ide utamanya" },
-      { en: "Summary", id: "Ringkasan", pronounce: "SAM-ri", example: "Write summary", exampleId: "Tulis ringkasan" },
-      { en: "Simulate", id: "Simulasi", pronounce: "SIM-yu-leit", example: "Simulate test", exampleId: "Simulasi tes" }
+      { en: "Main idea is in title", id: "Ide utama di judul", pronounce: "mein ai-DIA iz in TAI-tel", example: "Main idea is in title + first line.", exampleId: "Ide utama di judul + baris pertama." },
+      { en: "Write summary 1 sentence", id: "Tulis ringkasan 1 kalimat", pronounce: "rait SAM-ri wan SEN-tens", example: "Write summary in 1 sentence.", exampleId: "Tulis ringkasan 1 kalimat." },
+      { en: "Passage about work culture", id: "Bacaan budaya kerja", pronounce: "PES-ij e-BAUT werk KAL-cher", example: "Passage about work culture in Japan.", exampleId: "Bacaan budaya kerja di Jepang." },
+      { en: "Simulate TOEFL 30 min", id: "Simulasi TOEFL 30 menit", pronounce: "SIM-yu-leit TO-fel", example: "Simulate TOEFL 30 min timer.", exampleId: "Simulasi TOEFL 30 menit timer." },
+      { en: "Check time left 5 min", id: "Cek sisa 5 menit", pronounce: "chek taim left faiv min", example: "Check time left 5 min!", exampleId: "Cek sisa 5 menit!" },
+      { en: "Skim the first sentence", id: "Pindai kalimat pertama", pronounce: "skim dhe ferst SEN-tens", example: "Skim the first sentence for idea.", exampleId: "Pindai kalimat pertama untuk ide." },
+      { en: "Scan for numbers quickly", id: "Pindai angka cepat", pronounce: "sken for NAM-bers KUIK-li", example: "Scan for numbers like 2024.", exampleId: "Pindai angka kayak 2024." },
+      { en: "Guess vocab from context", id: "Tebak kosakata dari konteks", pronounce: "ges vo-KEB from KON-tekst", example: "Guess 'urgent' from context.", exampleId: "Tebak 'urgent' dari konteks." },
+      { en: "It refers to the book", id: "It merujuk buku", pronounce: "it ri-FERZ tu dhe buk", example: "It refers to the book.", exampleId: "It merujuk ke buku." },
+      { en: "Make inference carefully", id: "Buat kesimpulan hati-hati", pronounce: "meik IN-fer-ens KER-ful-li", example: "Make inference: he was tired → he slept.", exampleId: "Kesimpulan: dia capek → dia tidur." }
     ],
     quiz: [
-      { id: "10-5-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-5-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-5-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-5-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-5-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "10-5-q1", question: "Skim: read ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Skim first sentence" },
+      { id: "10-5-q2", question: "Scan for ____", options: ["numbers (correct)", "ideas", "all", "none"], answer: 0, explanation: "Scan numbers/names" },
+      { id: "10-5-q3", question: "It refers to ____", options: ["previous noun (correct)", "next verb", "all", "none"], answer: 0, explanation: "It refers to previous noun" },
+      { id: "10-5-q4", question: "Inference: make ____", options: ["conclusion (correct)", "copy", "skip", "guess random"], answer: 0, explanation: "Make inference" },
+      { id: "10-5-q5", question: "Time check: ____ left", options: ["5 min (correct)", "1 hour", "none", "all"], answer: 0, explanation: "Check time left" }
     ]
   },
   {
@@ -3029,49 +3683,60 @@ export const lessons: Lesson[] = [
     order: 60,
     title: "Simulasi Full TOEFL",
     titleEn: "Full TOEFL Sim",
-    objective: "Full 3 parts",
+    objective: "Full 3 parts 30 soal",
     duration: "25 menit",
     content: {
-      intro: "Pelajaran Simulasi Full TOEFL (Full TOEFL Sim) — Full 3 parts. Fokus 15 menit, hafal EI em.",
+      intro: "Pelajaran Simulasi Full TOEFL (Full TOEFL Sim) — Full 3 parts 30 soal. Guru: fokus 15 menit, EI em pelan, contoh real kerja.",
       sections: [
       {
-          heading: "1. Pola Simulasi Full TOEFL",
-          headingId: "Pola",
-          body: "Rumus 1 baris + EI em.",
+          heading: "1. Rumus TOEFL + Jebakan",
+          headingId: "Rumus TOEFL + Jebakan",
+          body: "Jebakan: He go (salah) vs He goes. EI em: goz.",
           examples: [
-            { en: "Example Full TOEFL Sim A", id: "Contoh Simulasi Full TOEFL A" },
-            { en: "Example Full TOEFL Sim B", id: "Contoh Simulasi Full TOEFL B" }
+            { en: "Guess 'urgent' from context.", id: "Tebak 'urgent' dari konteks." },
+            { en: "It refers to the book.", id: "It merujuk ke buku." }
           ],
-          tip: "EI em membantu pronunciation."
+          tip: "Tip guru: ucapkan EI em pelan, rekam, dengerin balik."
         },
         {
-          heading: "2. Contoh Kerja",
-          headingId: "Kerja",
-          body: "Langsung pakai.",
+          heading: "2. Trik Cepat",
+          headingId: "Trik Cepat",
+          body: "Skim, keyword, same-sound trap.",
           examples: [
-            { en: "I use Full TOEFL Sim at work", id: "Saya pakai Simulasi Full TOEFL di kerja" }
-          ]
+            { en: "Make inference: he was tired → he slept.", id: "Kesimpulan: dia capek → dia tidur." },
+            { en: "I use Full TOEFL Sim at work today.", id: "Saya pakai Simulasi Full TOEFL di kerja hari ini." }
+          ],
+          tip: "Pakai 1 kalimat besok pagi di kantor."
+        },
+        {
+          heading: "3. Simulasi Timer",
+          headingId: "Simulasi Timer",
+          body: "Latih 2 menit.",
+          examples: [
+            { en: "Let's practice Full TOEFL Sim now.", id: "Mari latihan Simulasi Full TOEFL sekarang." }
+          ],
+          tip: "Buka Speaking 3D → rekam → cek waveform."
         }
       ]
     },
     vocab: [
-      { en: "Passage", id: "Bacaan", pronounce: "PES-ij", example: "Read passage", exampleId: "Baca bacaan" },
-      { en: "Inference", id: "Kesimpulan", pronounce: "IN-fer-ens", example: "Make inference", exampleId: "Buat kesimpulan" },
-      { en: "Vocabulary", id: "Kosakata", pronounce: "vo-KEB-yu-le-ri", example: "Vocab context", exampleId: "Kosakata konteks" },
-      { en: "Reference", id: "Rujukan", pronounce: "RE-fer-ens", example: "It refers to", exampleId: "Itu merujuk ke" },
-      { en: "Detail", id: "Detail", pronounce: "DI-teil", example: "Find detail", exampleId: "Cari detail" },
-      { en: "Main idea", id: "Ide utama", pronounce: "mein ai-DIA", example: "Main idea is", exampleId: "Ide utamanya" },
-      { en: "Summary", id: "Ringkasan", pronounce: "SAM-ri", example: "Write summary", exampleId: "Tulis ringkasan" },
-      { en: "Simulate", id: "Simulasi", pronounce: "SIM-yu-leit", example: "Simulate test", exampleId: "Simulasi tes" },
-      { en: "Skim", id: "Baca cepat", pronounce: "skim", example: "Skim the text", exampleId: "Baca cepat teks" },
-      { en: "Scan", id: "Pindai", pronounce: "sken", example: "Scan details", exampleId: "Pindai detail" }
+      { en: "Simulate TOEFL 30 min", id: "Simulasi TOEFL 30 menit", pronounce: "SIM-yu-leit TO-fel", example: "Simulate TOEFL 30 min timer.", exampleId: "Simulasi TOEFL 30 menit timer." },
+      { en: "Check time left 5 min", id: "Cek sisa 5 menit", pronounce: "chek taim left faiv min", example: "Check time left 5 min!", exampleId: "Cek sisa 5 menit!" },
+      { en: "Skim the first sentence", id: "Pindai kalimat pertama", pronounce: "skim dhe ferst SEN-tens", example: "Skim the first sentence for idea.", exampleId: "Pindai kalimat pertama untuk ide." },
+      { en: "Scan for numbers quickly", id: "Pindai angka cepat", pronounce: "sken for NAM-bers KUIK-li", example: "Scan for numbers like 2024.", exampleId: "Pindai angka kayak 2024." },
+      { en: "Guess vocab from context", id: "Tebak kosakata dari konteks", pronounce: "ges vo-KEB from KON-tekst", example: "Guess 'urgent' from context.", exampleId: "Tebak 'urgent' dari konteks." },
+      { en: "It refers to the book", id: "It merujuk buku", pronounce: "it ri-FERZ tu dhe buk", example: "It refers to the book.", exampleId: "It merujuk ke buku." },
+      { en: "Make inference carefully", id: "Buat kesimpulan hati-hati", pronounce: "meik IN-fer-ens KER-ful-li", example: "Make inference: he was tired → he slept.", exampleId: "Kesimpulan: dia capek → dia tidur." },
+      { en: "Main idea is in title", id: "Ide utama di judul", pronounce: "mein ai-DIA iz in TAI-tel", example: "Main idea is in title + first line.", exampleId: "Ide utama di judul + baris pertama." },
+      { en: "Write summary 1 sentence", id: "Tulis ringkasan 1 kalimat", pronounce: "rait SAM-ri wan SEN-tens", example: "Write summary in 1 sentence.", exampleId: "Tulis ringkasan 1 kalimat." },
+      { en: "Passage about work culture", id: "Bacaan budaya kerja", pronounce: "PES-ij e-BAUT werk KAL-cher", example: "Passage about work culture in Japan.", exampleId: "Bacaan budaya kerja di Jepang." }
     ],
     quiz: [
-      { id: "10-6-q1", question: "TOEFL Q1: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-6-q2", question: "TOEFL Q2: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-6-q3", question: "TOEFL Q3: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-6-q4", question: "TOEFL Q4: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." },
-      { id: "10-6-q5", question: "TOEFL Q5: Main idea?", options: ["Skim first (correct)","Read word by word","Skip all","Guess"], answer: 0, explanation: "Skimming untuk ide utama." }
+      { id: "10-6-q1", question: "Skim: read ____ sentence", options: ["first (correct)", "last", "middle", "all"], answer: 0, explanation: "Skim first sentence" },
+      { id: "10-6-q2", question: "Scan for ____", options: ["numbers (correct)", "ideas", "all", "none"], answer: 0, explanation: "Scan numbers/names" },
+      { id: "10-6-q3", question: "It refers to ____", options: ["previous noun (correct)", "next verb", "all", "none"], answer: 0, explanation: "It refers to previous noun" },
+      { id: "10-6-q4", question: "Inference: make ____", options: ["conclusion (correct)", "copy", "skip", "guess random"], answer: 0, explanation: "Make inference" },
+      { id: "10-6-q5", question: "Time check: ____ left", options: ["5 min (correct)", "1 hour", "none", "all"], answer: 0, explanation: "Check time left" }
     ]
   },
 ];

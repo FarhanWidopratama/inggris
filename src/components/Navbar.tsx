@@ -31,6 +31,9 @@ export default function Navbar() {
           <Link href="/dashboard" className={linkCls("/dashboard")}>
             Dashboard
           </Link>
+          <Link href="/speaking" className={linkCls("/speaking")}>
+            Speaking 3D
+          </Link>
           <Link href="/dashboard#levels" className="hidden sm:inline rounded-full px-4 py-2 text-sm font-medium text-zinc-600 hover:bg-zinc-100">
             Level
           </Link>

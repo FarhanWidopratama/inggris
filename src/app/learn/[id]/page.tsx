@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { getLessonById, lessons } from "@/lib/curriculum";
 import Flashcard from "@/components/Flashcard";
 import Quiz from "@/components/Quiz";
+import Speaking3D from "@/components/Speaking3D";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { completeLesson, loadProgress } from "@/lib/progress";
@@ -12,7 +13,7 @@ export default function LearnPage() {
   const params = useParams<{ id: string }>();
   const id = params.id;
   const lesson = getLessonById(id);
-  const [tab, setTab] = useState<"materi" | "vocab" | "quiz">("materi");
+  const [tab, setTab] = useState<"materi" | "vocab" | "quiz" | "speaking">("materi");
   const [completed, setCompleted] = useState(false);
   const [score, setScore] = useState<number | null>(null);
 
@@ -65,20 +66,22 @@ export default function LearnPage() {
       <p className="text-sm font-medium text-zinc-500">{lesson.titleEn} • {lesson.duration} • {lesson.objective}</p>
 
       {/* Tabs */}
-      <div className="mt-6 flex gap-2 overflow-x-auto">
+      <div className="mt-6 flex gap-2 overflow-x-auto pb-1">
         {[
           ["materi", "📖 Materi"],
           ["vocab", "🔤 Vocab (10)"],
           ["quiz", "📝 Quiz (5)"],
+          ["speaking", "🎙️ Speaking 3D"],
         ].map(([k, label]) => (
           <button
             key={k}
             onClick={() => setTab(k as never)}
-            className={`whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-bold transition ${tab === k ? "bg-zinc-900 text-white" : "border border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50"}`}
+            className={`whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-black transition ${tab === k ? "bg-zinc-900 text-white shadow" : "border border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50"}`}
           >
             {label}
           </button>
         ))}
+        <Link href="/speaking" className="whitespace-nowrap rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-xs font-black text-emerald-700 hover:bg-emerald-100">Lab →</Link>
       </div>
 
       <div className="mt-6">
@@ -143,6 +146,9 @@ export default function LearnPage() {
               <div className="mb-4 rounded-xl bg-emerald-50 p-3 text-sm font-semibold text-emerald-900">Skor terakhir: {score}/5 — Sudah lulus ✓</div>
             )}
             <Quiz questions={lesson.quiz} onComplete={handleQuizComplete} />
+            <div className="mt-4 flex justify-center">
+              <button onClick={() => setTab("speaking")} className="rounded-full bg-gradient-to-r from-emerald-500 to-sky-500 px-6 py-2.5 text-sm font-black text-white shadow">Lanjut Speaking 3D →</button>
+            </div>
             {completed && nextLesson && (
               <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-6 text-center">
                 <p className="text-sm font-bold text-emerald-900">🎉 Lesson selesai! Lanjut?</p>
@@ -152,6 +158,21 @@ export default function LearnPage() {
               </div>
             )}
             {!completed && <p className="mt-3 text-center text-xs text-zinc-500">Lulus 3/5 (60%) untuk membuka lesson berikutnya.</p>}
+          </div>
+        )}
+
+        {tab === "speaking" && (
+          <div className="space-y-4">
+            <Speaking3D target={lesson.content.sections[1]?.examples[0]?.en || lesson.content.sections[0]?.examples[0]?.en || lesson.title} targetId={lesson.content.sections[1]?.examples[0]?.id || lesson.titleEn} hint={lesson.content.sections[1]?.tip || "Ucapkan pelan & jelas, bandingkan dengan native"} />
+            <div className="rounded-2xl border border-zinc-200 bg-white p-4">
+              <h4 className="text-sm font-black">Latihan per Vocab — Pilih kata buat Speaking</h4>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {lesson.vocab.slice(0, 6).map((v) => (
+                  <span key={v.en} className="rounded-full border border-zinc-200 bg-[#fcfbf8] px-3 py-1.5 text-xs font-bold">{v.en} <span className="font-normal text-zinc-500">/{v.pronounce}/</span></span>
+                ))}
+              </div>
+              <p className="mt-3 text-xs text-zinc-500">Pilih salah satu kata di atas, lalu rekam di box Speaking 3D di atas. Atau buka <Link href="/speaking" className="font-bold underline">Speaking Lab</Link> buat drill full.</p>
+            </div>
           </div>
         )}
       </div>

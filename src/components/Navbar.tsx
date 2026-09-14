@@ -27,25 +27,16 @@ export default function Navbar() {
           <span className="text-sm font-semibold tracking-tight">Inggris Dari 0</span>
           <span className="hidden rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold tracking-widest text-emerald-700 sm:inline">10 LEVEL</span>
         </Link>
-        <nav className="flex items-center gap-1">
-          <Link href="/dashboard" className={linkCls("/dashboard")}>
-            Dashboard
-          </Link>
-          <Link href="/review" className={linkCls("/review")}>
-            Review
-          </Link>
-          <Link href="/hafalan" className={linkCls("/hafalan")}>
-            Hafalan
-          </Link>
-          <Link href="/history" className={linkCls("/history")}>
-            Record
-          </Link>
-          <Link href="/speaking" className={linkCls("/speaking")}>
-            Speaking
-          </Link>
-          <Link href="/auth" className={linkCls("/auth")}>
-            Auth
-          </Link>
+        <nav className="flex items-center gap-1 overflow-x-auto">
+          <Link href="/dashboard" className={linkCls("/dashboard")}>Dashboard</Link>
+          <Link href="/review" className={linkCls("/review")}>Review</Link>
+          <Link href="/writing" className={linkCls("/writing")}>Writing</Link>
+          <Link href="/listening" className={linkCls("/listening")}>Listen</Link>
+          <Link href="/reading" className={linkCls("/reading")}>Reading</Link>
+          <Link href="/hafalan" className={linkCls("/hafalan")}>Hafalan</Link>
+          <Link href="/speaking" className={linkCls("/speaking")}>Speaking</Link>
+          <Link href="/history" className={linkCls("/history")}>Record</Link>
+          <Link href="/auth" className={linkCls("/auth")}>Auth</Link>
         </nav>
         <div className="flex items-center gap-2">
           <div className="hidden sm:flex items-center gap-1 rounded-full border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold">

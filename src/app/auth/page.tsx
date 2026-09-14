@@ -20,6 +20,16 @@ export default function AuthPage() {
     return () => sub.subscription.unsubscribe();
   }, []);
 
+  const [resending, setResending] = useState(false);
+  async function resendConfirm() {
+    if (!supabase || !email) return;
+    setResending(true);
+    const { error } = await supabase.auth.resend({ type: "signup", email });
+    setResending(false);
+    if (error) setMsg(`❌ Gagal kirim ulang: ${error.message}`);
+    else setMsg("✅ Email konfirmasi dikirim ulang — cek inbox/spam, klik link, lalu login lagi. Atau matikan Confirm email di Supabase biar langsung login (lihat bawah).");
+  }
+
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     setMsg(null);
@@ -27,10 +37,16 @@ export default function AuthPage() {
     if (!email || !password) { setMsg("Isi email & password dulu bro"); return; }
     try {
       if (mode === "register") {
-        const { error } = await supabase.auth.signUp({ email, password });
+        const { error, data } = await supabase.auth.signUp({ email, password });
         if (error) throw error;
-        setMsg("✅ Daftar sukses! Cek email untuk konfirmasi (kalau diminta), lalu login.");
-        setMode("login");
+        // kalau langsung ada session (confirm mati), auto login
+        if (data.session) {
+          setMsg("✅ Daftar + login sukses! Langsung sync permanen.");
+          setTimeout(() => router.push("/dashboard"), 600);
+        } else {
+          setMsg("✅ Daftar sukses! Cek email untuk konfirmasi, lalu login. Kalau mau langsung tanpa konfirmasi, lihat cara di bawah.");
+          setMode("login");
+        }
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
@@ -39,7 +55,11 @@ export default function AuthPage() {
       }
     } catch (err: unknown) {
       const m = err instanceof Error ? err.message : String(err);
-      setMsg(`❌ ${m}`);
+      if (m.toLowerCase().includes("email not confirmed")) {
+        setMsg(`❌ Email belum dikonfirmasi — cek inbox/spam lu (${email}) dan klik link konfirmasi. Atau klik 'Kirim ulang' di bawah.`);
+      } else {
+        setMsg(`❌ ${m}`);
+      }
     }
   }
 
@@ -89,9 +109,24 @@ export default function AuthPage() {
         <div className="text-xs text-zinc-500">Supabase Auth email/pass. Data ke-save di <code>auth.users</code> + <code>profiles</code> + <code>user_progress</code>.</div>
       </form>
 
-      {msg && <div className={`mt-3 rounded-xl p-3 text-sm font-semibold border ${msg.startsWith("✅") ? "bg-emerald-50 border-emerald-200" : "bg-amber-50 border-amber-200"}`}>{msg}</div>}
+      {msg && (
+        <div className={`mt-3 rounded-xl p-3 text-sm font-semibold border ${msg.startsWith("✅") ? "bg-emerald-50 border-emerald-200" : "bg-amber-50 border-amber-200"}`}>
+          <div>{msg}</div>
+          {msg.toLowerCase().includes("email") && msg.toLowerCase().includes("confirm") && (
+            <button onClick={resendConfirm} disabled={resending} className="mt-2 rounded-full bg-amber-500 px-4 py-1.5 text-xs font-black text-white hover:bg-amber-600 disabled:opacity-50">
+              {resending ? "Mengirim..." : "↻ Kirim ulang email konfirmasi"}
+            </button>
+          )}
+        </div>
+      )}
 
-      <div className="mt-4 text-center text-xs text-zinc-500">Belum ada akun? Klik Daftar. Udah ada? Login langsung sync.</div>
+      <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-3 text-xs leading-relaxed">
+        <div className="font-black">🔧 Biar gak ribet Email not confirmed (dipermudah):</div>
+        <div className="mt-1">Buka Supabase Dashboard → project <b>iakvcfxsjlrsentganni</b> → <b>Authentication → Providers → Email</b> → matikan <b>Confirm email</b> (uncheck) → Save. Habis itu daftar/login langsung tanpa cek email. Ini yang bikin error di screenshot lu.</div>
+        <a href="https://supabase.com/dashboard/project/iakvcfxsjlrsentganni/auth/providers" target="_blank" className="mt-2 inline-block rounded-full bg-zinc-900 px-3 py-1 text-xs font-bold text-white">Buka Supabase Auth Settings →</a>
+      </div>
+
+      <div className="mt-3 text-center text-xs text-zinc-500">Belum ada akun? Klik Daftar. Udah ada? Login langsung sync.</div>
     </div>
   );
 }

@@ -36,8 +36,9 @@ export default function Navbar() {
           <Link href="/hafalan" className={linkCls("/hafalan")}>Hafalan</Link>
           <Link href="/speaking" className={linkCls("/speaking")}>Speaking</Link>
           <Link href="/friends" className={linkCls("/friends")}>Friends</Link>
+          <Link href="/profile" className={linkCls("/profile")}>Profil</Link>
           <Link href="/history" className={linkCls("/history")}>Record</Link>
-          <Link href="/auth" className={linkCls("/auth")}>Auth</Link>
+          <Link href="/auth" className={linkCls("/auth")}>Masuk</Link>
         </nav>
         <div className="flex items-center gap-2">
           <div className="hidden sm:flex items-center gap-1 rounded-full border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold">

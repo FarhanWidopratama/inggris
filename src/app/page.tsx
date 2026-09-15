@@ -75,13 +75,16 @@ export default function Home() {
             <motion.div variants={fadeUp} className="mt-6 flex flex-wrap gap-3">
               <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.98 }}>
                 <Link href="/dashboard" className="inline-flex rounded-full bg-zinc-900 px-7 py-3.5 text-sm font-black text-white shadow-[0_10px_30px_rgba(0,0,0,0.18)] hover:bg-black">
-                  Mulai Level 1 — 3D →
+                  Mulai Level 1 — gratis →
                 </Link>
               </motion.div>
               <motion.a whileHover={{ y: -2 }} href="#levels" className="rounded-full border border-zinc-200 bg-white px-7 py-3.5 text-sm font-bold shadow-sm hover:bg-zinc-50">
                 Lihat 10 Level ↓
               </motion.a>
             </motion.div>
+            <motion.p variants={fadeUp} className="mt-3 text-xs leading-relaxed text-zinc-500">
+              ✅ Tanpa daftar langsung bisa coba • Daftar (1 menit) cuma kalau mau simpan progres + ajak temen battle
+            </motion.p>
 
             <motion.div variants={fadeUp} className="mt-6 flex flex-wrap gap-2 text-xs font-bold">
               <span className="rounded-full bg-white px-3 py-1.5 shadow-sm">✨ Framer Motion</span>
@@ -193,12 +196,12 @@ export default function Home() {
         <motion.div initial={{ opacity: 0, scale: 0.96 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative overflow-hidden rounded-[28px] bg-zinc-900 p-6 text-white sm:p-8">
           <div className="pointer-events-none absolute -top-20 -right-20 h-80 w-80 rounded-full bg-emerald-500/20 blur-[60px]" />
           <div className="pointer-events-none absolute -bottom-20 -left-20 h-80 w-80 rounded-full bg-sky-500/15 blur-[60px]" />
-          <h3 className="relative text-lg font-black">Gimana pakainya biar gak hilang arah?</h3>
+          <h3 className="relative text-lg font-black">Baru pertama kali? Ikutin 3 ini aja 👇</h3>
           <div className="relative mt-4 grid gap-3 text-sm leading-relaxed text-zinc-300 sm:grid-cols-3">
             {[
-              ["1. Buka Dashboard", "Liat Level 1 Lesson 1. Jangan buka Level 10 dulu."],
-              ["2. 15 menit/hari", "Baca materi → Hafal 10 vocab (flashcard 3D) → Quiz 5 soal."],
-              ["3. Lulus 60%", "Baru lesson berikutnya kebuka. Streak 3D jalan tiap hari."],
+              ["1. Klik Mulai Level 1", "Langsung belajar, tanpa daftar. 15 menit aja, jangan buka Level 10 dulu."],
+              ["2. Kerjain tiap hari", "Baca dikit → hafalin kartu kata → quiz 5 soal. Salah itu wajar, diulangin otomatis."],
+              ["3. Ajak temen biar nagih", "Daftar 1 menit → add temen → adu streak + battle. Yang kalah traktir kopi ☕"],
             ].map(([title, desc], i) => (
               <motion.div key={i} whileHover={{ y: -4, scale: 1.02 }} className="rounded-2xl bg-white/10 p-4 backdrop-blur">
                 <b className="text-white">{title}</b> → {desc}

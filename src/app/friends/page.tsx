@@ -17,6 +17,7 @@ import {
   type ProfileHit,
 } from "@/lib/friends";
 import { battleLessons, createBattle, listBattles, acceptBattle, type Battle } from "@/lib/battle";
+import { displayNameOf } from "@/lib/achievements";
 
 export default function FriendsPage() {
   const router = useRouter();
@@ -330,14 +331,14 @@ export default function FriendsPage() {
               <div className="mt-2 space-y-1.5">
                 {hits.map((h) => (
                   <div key={h.id} className="flex items-center gap-2 rounded-xl border border-zinc-100 bg-[#fcfbf8] p-2.5">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-xs font-black text-emerald-700">
-                      {(h.username ?? "?").slice(0, 1).toUpperCase()}
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-base">
+                      {h.avatar ?? "🦊"}
                     </span>
                     <div className="min-w-0 flex-1">
-                      <div className="truncate text-sm font-bold">{h.username}</div>
+                      <div className="truncate text-sm font-bold">{displayNameOf(h)}</div>
                       <div className="text-xs text-zinc-500">🔥 {h.streak} streak</div>
                     </div>
-                    <button disabled={busy} onClick={() => addById(h.id, h.username ?? "temen")} className="rounded-full bg-zinc-900 px-4 py-1.5 text-xs font-bold text-white disabled:opacity-40">
+                    <button disabled={busy} onClick={() => addById(h.id, displayNameOf(h))} className="rounded-full bg-zinc-900 px-4 py-1.5 text-xs font-bold text-white disabled:opacity-40">
                       Add +
                     </button>
                   </div>
@@ -383,7 +384,7 @@ export default function FriendsPage() {
                 {accepted.map((r) => {
                   const fid = r.requester_id === meId ? r.addressee_id : r.requester_id;
                   const prof = board.find((b) => b.id === fid);
-                  return <option key={r.id} value={fid} className="text-zinc-900">{prof?.username ?? "Temen"}</option>;
+                  return <option key={r.id} value={fid} className="text-zinc-900">{prof ? displayNameOf(prof) : "Temen"}</option>;
                 })}
               </select>
               <select value={challengeLesson} onChange={(e) => setChallengeLesson(e.target.value)} className="rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-sm font-bold text-white">
@@ -438,17 +439,19 @@ export default function FriendsPage() {
             ) : (
               <div className="mt-3 space-y-2">
                 {board.map((f, i) => (
-                  <div key={f.id} className={`flex items-center gap-3 rounded-xl border p-3 ${f.isSelf ? "border-zinc-900 bg-zinc-900 text-white" : "border-zinc-100 bg-[#fcfbf8]"}`}>
+                  <Link key={f.id} href={f.isSelf ? "/profile" : `/profile/${f.id}`} className={`flex items-center gap-3 rounded-xl border p-3 transition hover:shadow ${f.isSelf ? "border-zinc-900 bg-zinc-900 text-white" : "border-zinc-100 bg-[#fcfbf8] hover:bg-white"}`}>
                     <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black/5 text-sm font-black">{i === 0 ? "🥇" : i === 1 ? "🥈" : "🥉"}</span>
+                    <span className="text-xl">{f.avatar ?? "🦊"}</span>
                     <div className="min-w-0 flex-1">
-                      <div className="truncate text-sm font-bold">{f.username ?? "(tanpa nama)"} {f.isSelf && "• (Lu)"}</div>
+                      <div className="truncate text-sm font-bold">{displayNameOf(f)} {f.isSelf && "• (Lu)"}</div>
                       <div className={`text-xs ${f.isSelf ? "text-zinc-300" : "text-zinc-500"}`}>🔥 {f.streak} streak • ✓ {f.completedCount}/60 lesson</div>
                     </div>
                     {onlineIds.includes(f.id) && !f.isSelf && <span className="text-xs font-bold text-emerald-600">🟢</span>}
                     {!f.isSelf && f.completedCount < (board.find((b) => b.isSelf)?.completedCount ?? 0) && (
                       <span className="rounded-full bg-emerald-100 px-2 py-1 text-xs font-bold text-emerald-700">Lu mimpin! 😎</span>
                     )}
-                  </div>
+                    {!f.isSelf && <span className="text-xs text-zinc-400">Profil →</span>}
+                  </Link>
                 ))}
               </div>
             )}
@@ -492,9 +495,11 @@ export default function FriendsPage() {
                   const prof = board.find((b) => b.id === fid);
                   return (
                     <div key={r.id} className="flex items-center gap-3 rounded-xl border border-zinc-100 bg-[#fcfbf8] p-3">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-100 text-sm">💑</span>
+                      <Link href={`/profile/${fid}`} className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-100 text-xl hover:scale-110" title="Lihat profil">
+                        {prof?.avatar ?? "💑"}
+                      </Link>
                       <div className="flex-1">
-                        <div className="text-sm font-bold">{prof?.username ?? "Temen"} {onlineIds.includes(fid) && <span className="text-xs text-emerald-600">🟢 online</span>}</div>
+                        <Link href={`/profile/${fid}`} className="text-sm font-bold hover:underline">{prof ? displayNameOf(prof) : "Temen"} {onlineIds.includes(fid) && <span className="text-xs text-emerald-600">🟢 online</span>}</Link>
                         <div className="text-xs text-zinc-500">🔥 {prof?.streak ?? 0} • ✓ {prof?.completedCount ?? 0}/60</div>
                       </div>
                       <button onClick={() => { setChallengeFriend(fid); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="rounded-full bg-pink-500 px-3 py-1 text-xs font-bold text-white">⚔️</button>

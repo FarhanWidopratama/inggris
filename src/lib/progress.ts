@@ -42,6 +42,10 @@ export function completeLesson(lessonId: string, score: number) {
     p.lastStudyDate = today;
   }
   saveProgress(p);
+  // sync permanen ke Supabase kalau lagi login (fire-and-forget, gak blokir UI)
+  try {
+    import("./supabase/sync").then((m) => m.syncLessonToSupabase(lessonId, p.scores[lessonId], true));
+  } catch {}
   return p;
 }
 

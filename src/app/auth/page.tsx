@@ -50,8 +50,27 @@ export default function AuthPage() {
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
-        setMsg("✅ Login sukses! Record lu bakal kesimpen permanen ke Supabase.");
-        setTimeout(() => router.push("/dashboard"), 600);
+        setMsg("✅ Login sukses! Sync record lokal → Supabase...");
+        try {
+          const { loadProgress, saveProgress } = await import("@/lib/progress");
+          const { pushAllLocalToSupabase, fetchSupabaseProgress } = await import("@/lib/supabase/sync");
+          const local = loadProgress();
+          if (local.completedLessons.length > 0) {
+            const n = await pushAllLocalToSupabase(local);
+            setMsg(`✅ Login sukses! ${n} lesson lokal di-push ke Supabase permanen.`);
+          } else {
+            // gak ada lokal, tarik dari cloud
+            const cloud = await fetchSupabaseProgress();
+            if (cloud && cloud.completedLessons.length > 0) {
+              const merged = { ...local, completedLessons: cloud.completedLessons, scores: cloud.scores, streak: Math.max(local.streak, cloud.streak) };
+              saveProgress(merged);
+              setMsg(`✅ Login sukses! ${cloud.completedLessons.length} lesson dari cloud di-restore.`);
+            } else {
+              setMsg("✅ Login sukses! Record lu bakal kesimpen permanen ke Supabase.");
+            }
+          }
+        } catch {}
+        setTimeout(() => router.push("/dashboard"), 900);
       }
     } catch (err: unknown) {
       const m = err instanceof Error ? err.message : String(err);

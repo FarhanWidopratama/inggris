@@ -27,6 +27,8 @@ export async function getCurrentUser() {
   return data.user ?? null;
 }
 
+export type ProfileHit = { id: string; username: string | null; streak: number };
+
 export async function searchProfileByEmail(email: string) {
   const supabase = createClient();
   if (!supabase) throw new Error("Supabase belum connect");
@@ -39,7 +41,54 @@ export async function searchProfileByEmail(email: string) {
     .limit(1)
     .maybeSingle();
   if (error) throw error;
-  return data as { id: string; username: string | null; streak: number } | null;
+  return data as ProfileHit | null;
+}
+
+// Cari sebagian (nama/email) — max 5 hasil, buat add friend yang gampang
+export async function searchProfiles(query: string, excludeId?: string) {
+  const supabase = createClient();
+  if (!supabase) throw new Error("Supabase belum connect");
+  const clean = query.trim();
+  if (clean.length < 2) return [];
+  const { data, error } = await supabase
+    .from("profiles")
+    .select("id,username,streak")
+    .ilike("username", `%${clean}%`)
+    .limit(5);
+  if (error) throw error;
+  const list = (data ?? []) as ProfileHit[];
+  return excludeId ? list.filter((p) => p.id !== excludeId) : list;
+}
+
+// Cek relasi dua arah sebelum kirim request
+export async function checkExisting(meId: string, otherId: string) {
+  const supabase = createClient();
+  if (!supabase) return null;
+  const { data } = await supabase
+    .from("friendships")
+    .select("id,requester_id,addressee_id,status")
+    .or(
+      `and(requester_id.eq.${meId},addressee_id.eq.${otherId}),and(requester_id.eq.${otherId},addressee_id.eq.${meId})`
+    )
+    .limit(1)
+    .maybeSingle();
+  return data as { id: string; requester_id: string; addressee_id: string; status: FriendStatus } | null;
+}
+
+export async function sendFriendRequestSmart(addresseeId: string) {
+  const supabase = createClient();
+  if (!supabase) throw new Error("Supabase belum connect");
+  const { data } = await supabase.auth.getUser();
+  const me = data.user;
+  if (!me) throw new Error("Login dulu");
+  if (me.id === addresseeId) throw new Error("Itu diri lu sendiri 😅");
+  const existing = await checkExisting(me.id, addresseeId);
+  if (existing) {
+    if (existing.status === "accepted") throw new Error("Udah temenan ✅ — cek leaderboard!");
+    if (existing.requester_id === me.id) throw new Error("Udah kirim request — tinggal tunggu dia accept ⏳");
+    throw new Error("REVERSE_EXISTS");
+  }
+  await sendFriendRequest(addresseeId);
 }
 
 export async function sendFriendRequest(addresseeId: string) {

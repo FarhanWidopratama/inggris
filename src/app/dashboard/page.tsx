@@ -210,7 +210,19 @@ export default function DashboardPage() {
         );
       })}
 
-      <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-10 rounded-2xl border border-zinc-200 bg-white p-6">
+      <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-10 rounded-2xl border border-pink-200 bg-gradient-to-br from-pink-50 to-white p-6">
+        <div className="flex flex-wrap items-center gap-3">
+          <div className="flex-1">
+            <h3 className="font-black">Belajar bareng cewe lu? 💑</h3>
+            <p className="mt-1 text-sm text-zinc-600">Add temen, adu streak + progress di leaderboard yang sama. Yang kalah traktir kopi ☕</p>
+          </div>
+          <Link href="/friends" className="rounded-full bg-pink-500 px-6 py-2.5 text-sm font-bold text-white hover:bg-pink-600">
+            Buka Friends →
+          </Link>
+        </div>
+      </motion.div>
+
+      <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-6 rounded-2xl border border-zinc-200 bg-white p-6">
         <h3 className="font-black">Mau connect Supabase (Opsi B)?</h3>
         <p className="mt-1 text-sm leading-relaxed text-zinc-600">
           Progress sekarang di <code className="rounded bg-zinc-100 px-1.5 py-0.5 text-xs">localStorage</code> + <code className="rounded bg-emerald-100 px-1.5 py-0.5 text-xs">Supabase Connected ✓</code> — buka di HP lain tetap sync setelah login. Schema ada di <code className="rounded bg-zinc-100 px-1.5 py-0.5 text-xs">supabase-schema.sql</code>.

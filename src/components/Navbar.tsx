@@ -35,6 +35,7 @@ export default function Navbar() {
           <Link href="/reading" className={linkCls("/reading")}>Reading</Link>
           <Link href="/hafalan" className={linkCls("/hafalan")}>Hafalan</Link>
           <Link href="/speaking" className={linkCls("/speaking")}>Speaking</Link>
+          <Link href="/friends" className={linkCls("/friends")}>Friends</Link>
           <Link href="/history" className={linkCls("/history")}>Record</Link>
           <Link href="/auth" className={linkCls("/auth")}>Auth</Link>
         </nav>
